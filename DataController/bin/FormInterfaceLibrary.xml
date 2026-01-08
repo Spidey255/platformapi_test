@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FormInterfaceLibrary</name>
+    </assembly>
+    <members>
+        <member name="M:CPS.Proof.DFSExtension.IExternalQueryController.GetGridDataSource(CPS.Proof.DFSExtension.ConnectionString,System.String,System.Data.DataTable@)">
+            <summary>
+            Represents the method that is used to get
+            the grid data source based on the given 
+            query and connection string.
+            </summary>
+            <param name="query">
+            A <see cref="T:System.String"/>that holds the Query.
+            </param>
+            <param name="connectionString">
+            A <see cref="T:System.String"/> that holds the connectionString
+            </param>
+            <param name="queryResults">
+            A <see cref="T:System.Collections.Generic.List`1"/> that holds the Query Results.
+            </param>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.IExternalQueryController.ExecuteQuery(System.String,System.String,System.Collections.Generic.Dictionary{System.Int16,System.Object}@)">
+            <summary>
+            Represents the method that is used to execute 
+            the query based on the given details.
+            </summary>
+            <param name="query">
+            A <see cref="T:System.String"/>that holds the Query.
+            </param>
+            <param name="connectionString">
+            A <see cref="T:System.String"/> that holds the connectionString
+            </param>
+            <param name="queryResults">
+            A <see cref="T:System.Collections.Generic.Dictionary`2"/> that holds the Query Results.
+            </param>
+            <returns>Execution Status</returns>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.IExternalQueryController.ConnectionById(System.String,System.String)">
+            <summary>
+            Represents the method that retrieves the System
+            Application Settings Details.
+            </summary>
+            <param name="ProofconnectionId">
+            A <see cref="T:System.String"/> 
+            that contains the proof connection Id
+            </param>
+            <param name="AppConnectionId">
+            A <see cref="T:System.String"/> 
+            that contains the Application  connectionsettings Id
+            </param>
+            <returns>
+            A <see cref="T:CPS.Proof.DFSExtension.ConnectionString"/> that holds the Application Connection string
+            </returns>
+        </member>
+        <member name="T:CPS.Proof.DFSExtension.ISlotMonitor">
+            <summary>
+            Represents the interface that will be implemented by the SlotMonitor 
+            class.
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.ISlotMonitor.IsSlotValid(CPS.Proof.DFSExtension.SlotToken@,CPS.Proof.DFSExtension.UserActivities)">
+            <summary>
+            Represents the method used to validate a slotId
+            </summary>
+            <param name="token">
+            A <see cref="T:System.String"/> that holds the slot identifier
+            for the user.
+            </param>
+            <returns>
+            Returns true if slot is a valid slot. Otherwise false.
+            </returns>
+        </member>
+    </members>
+</doc>

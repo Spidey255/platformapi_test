@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "nd8B508tEqccRh4bEpfpH6M8q5Y+StWQuCKwfYrKH56kzLsMat8n1nCAmAiOjOu3nwnsUmday+MVYfuxGs/ncA==",
+  "success": true,
+  "projectFilePath": "/home/cpsadmin/Presentations/iProofDFSAPISolution/DynamicDFSAPI/testGrid/FormInterfaceLibrary/FormInterfaceLibrary.csproj",
+  "expectedPackageFiles": [
+    "/root/.nuget/packages/system.text.json/6.0.11/system.text.json.6.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}

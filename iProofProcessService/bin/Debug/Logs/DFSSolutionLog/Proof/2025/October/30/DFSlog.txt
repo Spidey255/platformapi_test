@@ -1,0 +1,124 @@
+DEBUG 30:10:2025:01:19:09 CPS.Proof.DFSExtension.iProofServicesHubController [SaveWidgetInstanceData 468] Entering SaveWidgetInstanceData
+DEBUG 30:10:2025:01:19:48 CPS.Proof.DFSExtension.SlotMonitorSql [IsSlotValid 58] Entering IsSlotValid
+DEBUG 30:10:2025:01:19:48 CPS.Proof.DFSExtension.SlotMonitorSql [GetConnectionStringById 88] Entering GetConnectionStringById
+DEBUG 30:10:2025:01:20:35 CPS.Proof.DFSExtension.iProofServicesHubController [SaveWidgetInstanceData 468] Entering SaveWidgetInstanceData
+DEBUG 30:10:2025:01:20:43 CPS.Proof.DFSExtension.SlotMonitorSql [IsSlotValid 58] Entering IsSlotValid
+DEBUG 30:10:2025:01:20:43 CPS.Proof.DFSExtension.SlotMonitorSql [GetConnectionStringById 88] Entering GetConnectionStringById
+ERROR 30:10:2025:01:20:43 CPS.Proof.DFSExtension.SlotMonitorSql [GetConnectionStringById 106] Error in GetConnectionStringById
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (53): The network path was not found.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.GetNewOpenConnection()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.GetWrappedConnection()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command)
+   at CPS.Proof.DFSExtension.MsSQLControllerBase.GetConnectionStringById(String repConnectionName, String ProofConnectionId) in D:\iProofDFSAPISolution\DynamicDFSAPI\testGrid\DataController\MsSQLControllerBase.cs:line 106
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+DEBUG 30:10:2025:01:20:43 CPS.Proof.DFSExtension.SlotMonitorSql [GetConnectionStringById 85] Exiting GetConnectionStringById
+ERROR 30:10:2025:01:20:43 CPS.Proof.DFSExtension.SlotMonitorSql [GetConnectionStringById 106] Error in GetConnectionStringById
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (53): The network path was not found.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.GetNewOpenConnection()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.GetWrappedConnection()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command)
+   at CPS.Proof.DFSExtension.MsSQLControllerBase.GetConnectionStringById(String repConnectionName, String ProofConnectionId) in D:\iProofDFSAPISolution\DynamicDFSAPI\testGrid\DataController\MsSQLControllerBase.cs:line 106
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+DEBUG 30:10:2025:01:20:43 CPS.Proof.DFSExtension.SlotMonitorSql [GetConnectionStringById 85] Exiting GetConnectionStringById
+ERROR 30:10:2025:01:20:43 CPS.Proof.DFSExtension.SlotMonitorSql [IsSlotValid 64] ERROR in IsSlotValid
+System.ArgumentException: The value can not be null or an empty string. (Parameter 'connectionString')
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database..ctor(String connectionString, DbProviderFactory dbProviderFactory)
+   at CPS.Proof.DFSExtension.MsSQLControllerBase.CreateSQLDatabase(String connectionstring) in D:\iProofDFSAPISolution\DynamicDFSAPI\testGrid\DataController\MsSQLControllerBase.cs:line 165
+   at CPS.Proof.DFSExtension.MsSQLControllerBase.GetProofInstance(SlotToken token) in D:\iProofDFSAPISolution\DynamicDFSAPI\testGrid\DataController\MsSQLControllerBase.cs:line 234
+   at CPS.Proof.DFSExtension.MsSQLControllerBase.GetDatabaseInstance(SlotToken token) in D:\iProofDFSAPISolution\DynamicDFSAPI\testGrid\DataController\MsSQLControllerBase.cs:line 72
+   at CPS.Proof.DFSExtension.SlotMonitorSql.IsSlotValid(SlotToken& token, UserActivities activities) in D:\iProofDFSAPISolution\DynamicDFSAPI\testGrid\DataController\SlotMonitor.Sql.cs:line 64
+ERROR 30:10:2025:01:20:43 CPS.Proof.DFSExtension.SlotMonitorSql [IsSlotValid 64] ERROR in IsSlotValid
+System.ArgumentException: The value can not be null or an empty string. (Parameter 'connectionString')
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database..ctor(String connectionString, DbProviderFactory dbProviderFactory)
+   at CPS.Proof.DFSExtension.MsSQLControllerBase.CreateSQLDatabase(String connectionstring) in D:\iProofDFSAPISolution\DynamicDFSAPI\testGrid\DataController\MsSQLControllerBase.cs:line 165
+   at CPS.Proof.DFSExtension.MsSQLControllerBase.GetProofInstance(SlotToken token) in D:\iProofDFSAPISolution\DynamicDFSAPI\testGrid\DataController\MsSQLControllerBase.cs:line 234
+   at CPS.Proof.DFSExtension.MsSQLControllerBase.GetDatabaseInstance(SlotToken token) in D:\iProofDFSAPISolution\DynamicDFSAPI\testGrid\DataController\MsSQLControllerBase.cs:line 72
+   at CPS.Proof.DFSExtension.SlotMonitorSql.IsSlotValid(SlotToken& token, UserActivities activities) in D:\iProofDFSAPISolution\DynamicDFSAPI\testGrid\DataController\SlotMonitor.Sql.cs:line 64
+DEBUG 30:10:2025:02:25:17 CPS.Proof.DFSExtension.iProofServicesHubController [SaveWidgetInstanceData 468] Entering SaveWidgetInstanceData
+DEBUG 30:10:2025:02:25:21 CPS.Proof.DFSExtension.SlotMonitorSql [IsSlotValid 58] Entering IsSlotValid
+DEBUG 30:10:2025:02:25:21 CPS.Proof.DFSExtension.SlotMonitorSql [GetConnectionStringById 88] Entering GetConnectionStringById
+DEBUG 30:10:2025:02:25:24 CPS.Proof.DFSExtension.SlotMonitorSql [GetConnectionStringById 85] Exiting GetConnectionStringById
+DEBUG 30:10:2025:02:25:24 CPS.Proof.DFSExtension.SlotMonitorSql [IsSlotValid 52] Exiting IsSlotValid
+DEBUG 30:10:2025:02:25:32 CPS.Proof.DFSExtension.ExternalQueryExecutorMsSql [SaveFormInstanceData 747] Entering SaveFormData
+DEBUG 30:10:2025:02:25:34 CPS.Proof.DFSExtension.ExternalQueryExecutorMsSql [GetConnectionStringById 88] Entering GetConnectionStringById
+DEBUG 30:10:2025:02:25:34 CPS.Proof.DFSExtension.ExternalQueryExecutorMsSql [GetConnectionStringById 85] Exiting GetConnectionStringById
+DEBUG 30:10:2025:02:25:35 CPS.Proof.DFSExtension.ExternalQueryExecutorMsSql [InsertGridData 1175] Entering  InsertGridData
+DEBUG 30:10:2025:02:57:29 CPS.Proof.DFSExtension.iProofServicesHubController [SaveWidgetInstanceData 468] Entering SaveWidgetInstanceData
+DEBUG 30:10:2025:02:57:29 CPS.Proof.DFSExtension.SlotMonitorSql [IsSlotValid 58] Entering IsSlotValid
+DEBUG 30:10:2025:02:57:29 CPS.Proof.DFSExtension.SlotMonitorSql [GetConnectionStringById 88] Entering GetConnectionStringById
+DEBUG 30:10:2025:02:57:30 CPS.Proof.DFSExtension.SlotMonitorSql [GetConnectionStringById 85] Exiting GetConnectionStringById
+DEBUG 30:10:2025:02:57:30 CPS.Proof.DFSExtension.SlotMonitorSql [IsSlotValid 52] Exiting IsSlotValid
+DEBUG 30:10:2025:02:57:30 CPS.Proof.DFSExtension.ExternalQueryExecutorMsSql [SaveFormInstanceData 747] Entering SaveFormData
+DEBUG 30:10:2025:02:57:30 CPS.Proof.DFSExtension.ExternalQueryExecutorMsSql [GetConnectionStringById 88] Entering GetConnectionStringById
+DEBUG 30:10:2025:02:57:30 CPS.Proof.DFSExtension.ExternalQueryExecutorMsSql [GetConnectionStringById 85] Exiting GetConnectionStringById
+DEBUG 30:10:2025:02:57:30 CPS.Proof.DFSExtension.ExternalQueryExecutorMsSql [InsertGridData 1175] Entering  InsertGridData
+ERROR 30:10:2025:02:57:30 CPS.Proof.DFSExtension.ExternalQueryExecutorMsSql [SaveFormInstanceData 774] Error in SaveFormData
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near '8dd27b1f-e715-44fd-a786-2c4b119f33cf'.
+Incorrect syntax near '8dd27b1f-e715-44fd-a786-2c4b119f33cf'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteNonQuery(DbCommand command)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteNonQuery(DbCommand command)
+   at CPS.Proof.DFSExtension.ExternalQueryExecutorMsSql.SaveFormInstanceData(SlotToken token, Context context, String formJsondata) in D:\iProofDFSAPISolution\DynamicDFSAPI\testGrid\DataController\ExternalQueryExecutor.MsSql.cs:line 774
+ClientConnectionId:f7b06482-831e-484d-9cb5-b88cfdd82ad5
+Error Number:102,State:1,Class:15
+DEBUG 30:10:2025:02:57:30 CPS.Proof.DFSExtension.ExternalQueryExecutorMsSql [SaveFormInstanceData 746] Exiting SaveFormData
+DEBUG 30:10:2025:02:57:40 CPS.Proof.DFSExtension.iProofServicesHubController [SaveWidgetInstanceData 468] Entering SaveWidgetInstanceData
+DEBUG 30:10:2025:02:57:40 CPS.Proof.DFSExtension.SlotMonitorSql [IsSlotValid 58] Entering IsSlotValid
+DEBUG 30:10:2025:02:57:40 CPS.Proof.DFSExtension.SlotMonitorSql [GetConnectionStringById 88] Entering GetConnectionStringById
+DEBUG 30:10:2025:02:57:40 CPS.Proof.DFSExtension.SlotMonitorSql [GetConnectionStringById 85] Exiting GetConnectionStringById
+DEBUG 30:10:2025:02:57:40 CPS.Proof.DFSExtension.SlotMonitorSql [IsSlotValid 52] Exiting IsSlotValid
+DEBUG 30:10:2025:02:57:40 CPS.Proof.DFSExtension.ExternalQueryExecutorMsSql [SaveFormInstanceData 747] Entering SaveFormData
+DEBUG 30:10:2025:02:57:40 CPS.Proof.DFSExtension.ExternalQueryExecutorMsSql [GetConnectionStringById 88] Entering GetConnectionStringById
+DEBUG 30:10:2025:02:57:40 CPS.Proof.DFSExtension.ExternalQueryExecutorMsSql [GetConnectionStringById 85] Exiting GetConnectionStringById
+DEBUG 30:10:2025:02:57:40 CPS.Proof.DFSExtension.ExternalQueryExecutorMsSql [InsertGridData 1175] Entering  InsertGridData
+ERROR 30:10:2025:02:57:40 CPS.Proof.DFSExtension.ExternalQueryExecutorMsSql [SaveFormInstanceData 774] Error in SaveFormData
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near '8dd27b1f-e715-44fd-a786-2c4b119f33cf'.
+Incorrect syntax near '8dd27b1f-e715-44fd-a786-2c4b119f33cf'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteNonQuery(DbCommand command)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteNonQuery(DbCommand command)
+   at CPS.Proof.DFSExtension.ExternalQueryExecutorMsSql.SaveFormInstanceData(SlotToken token, Context context, String formJsondata) in D:\iProofDFSAPISolution\DynamicDFSAPI\testGrid\DataController\ExternalQueryExecutor.MsSql.cs:line 774
+ClientConnectionId:f7b06482-831e-484d-9cb5-b88cfdd82ad5
+Error Number:102,State:1,Class:15
+DEBUG 30:10:2025:02:57:40 CPS.Proof.DFSExtension.ExternalQueryExecutorMsSql [SaveFormInstanceData 746] Exiting SaveFormData
+DEBUG 30:10:2025:02:58:30 CPS.Proof.DFSExtension.iProofServicesHubController [SaveWidgetInstanceData 468] Entering SaveWidgetInstanceData
+DEBUG 30:10:2025:02:58:30 CPS.Proof.DFSExtension.SlotMonitorSql [IsSlotValid 58] Entering IsSlotValid
+DEBUG 30:10:2025:02:58:30 CPS.Proof.DFSExtension.SlotMonitorSql [GetConnectionStringById 88] Entering GetConnectionStringById
+DEBUG 30:10:2025:02:58:30 CPS.Proof.DFSExtension.SlotMonitorSql [GetConnectionStringById 85] Exiting GetConnectionStringById
+DEBUG 30:10:2025:02:58:31 CPS.Proof.DFSExtension.SlotMonitorSql [IsSlotValid 52] Exiting IsSlotValid
+DEBUG 30:10:2025:02:58:33 CPS.Proof.DFSExtension.ExternalQueryExecutorMsSql [SaveFormInstanceData 747] Entering SaveFormData
+DEBUG 30:10:2025:02:58:33 CPS.Proof.DFSExtension.ExternalQueryExecutorMsSql [GetConnectionStringById 88] Entering GetConnectionStringById
+DEBUG 30:10:2025:02:58:33 CPS.Proof.DFSExtension.ExternalQueryExecutorMsSql [GetConnectionStringById 85] Exiting GetConnectionStringById
+DEBUG 30:10:2025:02:58:36 CPS.Proof.DFSExtension.ExternalQueryExecutorMsSql [InsertGridData 1175] Entering  InsertGridData
+DEBUG 30:10:2025:02:58:52 CPS.Proof.DFSExtension.ExternalQueryExecutorMsSql [SaveFormInstanceData 746] Exiting SaveFormData

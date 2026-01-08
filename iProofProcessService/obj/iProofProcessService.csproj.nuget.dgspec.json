@@ -1,0 +1,285 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/cpsadmin/Presentations/iProofDFSAPISolution/DynamicDFSAPI/testGrid/iProofProcessService/iProofProcessService.csproj": {}
+  },
+  "projects": {
+    "/home/cpsadmin/Presentations/iProofDFSAPISolution/DynamicDFSAPI/testGrid/DataController/DataController.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/cpsadmin/Presentations/iProofDFSAPISolution/DynamicDFSAPI/testGrid/DataController/DataController.csproj",
+        "projectName": "DataController",
+        "projectPath": "/home/cpsadmin/Presentations/iProofDFSAPISolution/DynamicDFSAPI/testGrid/DataController/DataController.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/home/cpsadmin/Presentations/iProofDFSAPISolution/DynamicDFSAPI/testGrid/DataController/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/root/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/cpsadmin/Presentations/iProofDFSAPISolution/DynamicDFSAPI/testGrid/FormInterfaceLibrary/FormInterfaceLibrary.csproj": {
+                "projectPath": "/home/cpsadmin/Presentations/iProofDFSAPISolution/DynamicDFSAPI/testGrid/FormInterfaceLibrary/FormInterfaceLibrary.csproj"
+              },
+              "/home/cpsadmin/Presentations/iProofDFSAPISolution/DynamicDFSAPI/testGrid/FormModels/FormModels.csproj": {
+                "projectPath": "/home/cpsadmin/Presentations/iProofDFSAPISolution/DynamicDFSAPI/testGrid/FormModels/FormModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "EnterpriseLibrary.Data.NetCore": {
+              "target": "Package",
+              "version": "[6.3.2, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[6.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.135/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/cpsadmin/Presentations/iProofDFSAPISolution/DynamicDFSAPI/testGrid/FormInterfaceLibrary/FormInterfaceLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/cpsadmin/Presentations/iProofDFSAPISolution/DynamicDFSAPI/testGrid/FormInterfaceLibrary/FormInterfaceLibrary.csproj",
+        "projectName": "FormInterfaceLibrary",
+        "projectPath": "/home/cpsadmin/Presentations/iProofDFSAPISolution/DynamicDFSAPI/testGrid/FormInterfaceLibrary/FormInterfaceLibrary.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/home/cpsadmin/Presentations/iProofDFSAPISolution/DynamicDFSAPI/testGrid/FormInterfaceLibrary/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/root/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/cpsadmin/Presentations/iProofDFSAPISolution/DynamicDFSAPI/testGrid/FormModels/FormModels.csproj": {
+                "projectPath": "/home/cpsadmin/Presentations/iProofDFSAPISolution/DynamicDFSAPI/testGrid/FormModels/FormModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[6.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.135/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/cpsadmin/Presentations/iProofDFSAPISolution/DynamicDFSAPI/testGrid/FormModels/FormModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/cpsadmin/Presentations/iProofDFSAPISolution/DynamicDFSAPI/testGrid/FormModels/FormModels.csproj",
+        "projectName": "FormModels",
+        "projectPath": "/home/cpsadmin/Presentations/iProofDFSAPISolution/DynamicDFSAPI/testGrid/FormModels/FormModels.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/home/cpsadmin/Presentations/iProofDFSAPISolution/DynamicDFSAPI/testGrid/FormModels/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/root/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[6.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.135/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/cpsadmin/Presentations/iProofDFSAPISolution/DynamicDFSAPI/testGrid/iProofProcessService/iProofProcessService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/cpsadmin/Presentations/iProofDFSAPISolution/DynamicDFSAPI/testGrid/iProofProcessService/iProofProcessService.csproj",
+        "projectName": "iProofProcessService",
+        "projectPath": "/home/cpsadmin/Presentations/iProofDFSAPISolution/DynamicDFSAPI/testGrid/iProofProcessService/iProofProcessService.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/home/cpsadmin/Presentations/iProofDFSAPISolution/DynamicDFSAPI/testGrid/iProofProcessService/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/root/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/cpsadmin/Presentations/iProofDFSAPISolution/DynamicDFSAPI/testGrid/DataController/DataController.csproj": {
+                "projectPath": "/home/cpsadmin/Presentations/iProofDFSAPISolution/DynamicDFSAPI/testGrid/DataController/DataController.csproj"
+              },
+              "/home/cpsadmin/Presentations/iProofDFSAPISolution/DynamicDFSAPI/testGrid/FormInterfaceLibrary/FormInterfaceLibrary.csproj": {
+                "projectPath": "/home/cpsadmin/Presentations/iProofDFSAPISolution/DynamicDFSAPI/testGrid/FormInterfaceLibrary/FormInterfaceLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "SpanJson": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[6.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.135/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1056 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>iProofProcessService</name>
+    </assembly>
+    <members>
+        <member name="T:CPS.Proof.DFSExtension.iProofServicesHubController">
+            <summary>
+            Represents the controller that handles iProofServicesHub
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.iProofServicesHubController._sysLog">
+            <summary>
+            A <see cref="T:log4net.ILog"/> instance used for application logging.
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.iProofServicesHubController.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Represents the constructor that creates an instance
+            of AssetVerification Controller.
+            </summary>
+            <param name="configuration">
+            A <see cref="T:Microsoft.Extensions.Configuration.IConfiguration"/> that holds  
+            destination details.
+            </param>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.iProofServicesHubController.ExecuteFormLoad(CPS.Proof.DFSExtension.Context)">
+            <summary>
+            Represents the method that Executes Form Load and returns Response
+            by posting message in queue.
+            </summary>
+            <param name="context">              
+            A <see cref="T:CPS.Proof.DFSExtension.Context"/> that contains details to be sent   
+            </param> 
+            <returns>
+            Returns the Response
+            </returns>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.ISpace._log">
+            <summary>
+            Member variable for Log instance
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.ISpace.GetAttributeType(System.String)">
+            <summary>
+            Represents the method that gets the attribute type based on 
+            given property.
+            </summary>
+            <param name="property">
+            A <see cref="T:System.String"/> that holds property string.
+            </param>
+            <returns>
+            Returns ElementAttributeType
+            </returns>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.ISpace.SetControlProperty(System.String,System.String,System.Object,System.Collections.Generic.Dictionary{System.String,CPS.Proof.DFSExtension.ServiceElementData}@)">
+            <summary>
+            Represents a method the sets property and value to control.
+            </summary>
+            <param name="elementName">
+            A <see cref="T:System.String"/> that represents element name.
+            </param>
+            <param name="property">
+            A <see cref="T:System.String"/> that represents property name.
+            </param>
+            <param name="controlValue">
+            A <see cref="T:System.String"/> that represents the property value.
+            </param>
+            <param name="iSpace">
+            A <see cref="T:System.Collections.Generic.Dictionary`2"/> that represents the Dictionary of ServiceElementData
+            </param>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.ISpace.SetUIControlProperty(System.String,System.String,System.Object,System.Collections.Generic.Dictionary{System.String,CPS.Proof.DFSExtension.ServiceElementData}@)">
+            <summary>
+            Represents a method the sets property and value to UI control.
+            </summary>
+            <param name="elementName">
+            A <see cref="T:System.String"/> that represents element name.
+            </param>
+            <param name="property">
+            A <see cref="T:System.String"/> that represents property name.
+            </param>
+            <param name="value">
+            A <see cref="T:System.String"/> that represents the property value.
+            </param>
+            <param name="ISpace">
+            A <see cref="T:System.Collections.Generic.Dictionary`2"/> that represents ISpace object.
+            </param>  
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.ISpace.SetGridData(System.Data.DataTable,System.Collections.Generic.List{CPS.Proof.DFSExtension.Triplet{System.String,System.Int16,System.Nullable{System.Int16}}},System.String,System.Collections.Generic.Dictionary{System.String,CPS.Proof.DFSExtension.ServiceElementData}@)">
+            <summary>
+            Represents the method that set the grid data to 
+            the respective columns.
+            </summary>
+            <param name="queryresult">
+            A <see cref="T:System.Data.DataTable"/> that represents the quary expression id.
+            </param>
+            <param name="bindings">
+            A list of triplets. Each triplet contains:
+            - a <see cref="T:System.String"/> FirstValue,
+            - a <see cref="T:System.Int16"/> Second Value,
+            - a nullable <see cref="T:System.Int16"/> Third Value
+            </param>
+            <param name="elementId">
+            A <see cref="T:System.String"/> that represents ElementId.
+            </param>
+            <param name="ISpace">
+            A <see cref="T:System.Collections.Generic.Dictionary`2"/> that represents ISpace object.
+            </param>
+            <returns>
+            Nothing
+            </returns>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.ISpace.SetLoopExpressionData(System.String,System.String,System.Int32,System.String,System.Collections.Generic.Dictionary{System.String,CPS.Proof.DFSExtension.ServiceElementData}@)">
+            <summary>
+            Represents the method that set the grid data to 
+            the respective columns.
+            </summary>
+            <param name="queryresult">
+            A <see cref="T:System.Data.DataTable"/> that represents the quary expression id.
+            </param>
+            <param name="bindings">
+            A list of triplets. Each triplet contains:
+            - a <see cref="T:System.String"/> FirstValue,
+            - a <see cref="T:System.Int16"/> Second Value,
+            - a nullable <see cref="T:System.Int16"/> Third Value
+            </param>
+            <param name="gridName">
+            A <see cref="T:System.String"/> that represents gridName.
+            </param>
+            <param name="ISpace">
+            A <see cref="T:System.Collections.Generic.Dictionary`2"/> that represents ISpace object.
+            </param>
+            <returns>
+            Nothing
+            </returns>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.VirtualForm.YearConst">
+            <summary>
+            A <see cref="T:System.String"/> that represents the year
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.VirtualForm.MonthConst">
+            <summary>
+            A <see cref="T:System.String"/> that represents the month
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.VirtualForm.DayConst">
+            <summary>
+            A <see cref="T:System.String"/> that represents the day
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.VirtualForm.Hour">
+            <summary>
+            A <see cref="T:System.String"/> that represents the hour
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.VirtualForm.Minute">
+            <summary>
+            A <see cref="T:System.String"/> that represents the minute
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.VirtualForm.Second">
+            <summary>
+            A <see cref="T:System.String"/> that represents the second
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.VirtualForm.ComboBox">
+            <summary>
+            A <see cref="T:System.String"/> that represents the ComboBox
+            Control Type
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.VirtualForm.MultiSelectComboBox">
+            <summary>
+            A <see cref="T:System.String"/> that represents the MultiSelectComboBox
+            Control Type
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.VirtualForm.Grid">
+            <summary>
+            A <see cref="T:System.String"/> that represents the Grid
+            Control Type
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.VirtualForm.ListBox">
+            <summary>
+            A <see cref="T:System.String"/> that represents the ListBox
+            Control Type
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.VirtualForm.RadioButton">
+            <summary>
+            A <see cref="T:System.String"/> that represents the RadioButton
+            Control Type
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.VirtualForm.NumericTextBox">
+            <summary>
+            A <see cref="T:System.String"/> that represents the NumericTextBox
+            Control Type
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.VirtualForm.CheckBox">
+            <summary>
+            A <see cref="T:System.String"/> that represents the CheckBox
+            Control Type
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.VirtualForm.JSON">
+            <summary>
+            A <see cref="T:System.String"/> that represents the JSON
+            Control Type
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.VirtualForm.DateTimePicker">
+            <summary>
+            A <see cref="T:System.String"/> that represents the DateTimePicker
+            Control Type
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.VirtualForm.DocumentType">
+            <summary>
+            A <see cref="T:System.String"/> that represents document type.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.VirtualForm.gvDestinationActivity">
+            <summary>
+            A <see cref="T:System.String"/> that represents gvDestinationActivity.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.VirtualForm.ISpacePage">
+            <summary>
+            A <see cref="T:System.String"/> that represents ISpacePage.0
+            </summary>0
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.VirtualForm.ISpaceUnsigned">
+            <summary>
+            A <see cref="T:System.String"/> that represents ISpaceUnsigned.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.VirtualForm.ISpaceAnonymous">
+            <summary>
+            A <see cref="T:System.String"/> that represents ISpaceAnonymous.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.VirtualForm.ISpaceUrlPath">
+            <summary>
+            A <see cref="T:System.String"/> that represents ISpaceUrlPath.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.VirtualForm.BaseUrlPath">
+            <summary>
+            A <see cref="T:System.String"/> that represents BaseUrl.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.VirtualForm.StandardDateFormat">
+            <summary>
+            A <see cref="T:System.String"/> that represents BaseUrl.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.VirtualForm.customDateFormats">
+            <summary>
+            A <see cref="T:System.String"/> that represents customDateFormats.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.VirtualForm._months">
+            <summary>
+            Represents a private member to hold grid commands.
+            </summary>
+            <summary>
+            A <see cref="T:System.Collections.Generic.List`1"/> where I represents the
+            <see cref="T:System.String"/> containing the months of the year
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.VirtualForm._log">
+            <summary>
+            Member variable for Log instance
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.ExecuteMethod(System.String,System.String,System.Collections.Generic.Dictionary{System.String,CPS.Proof.DFSExtension.ServiceElementData}@)">
+            <summary>
+            Represents the method that executes given method name.
+            </summary>
+            <param name="action">
+            A <see cref="T:System.String"/> that holds action name.
+            </param>
+            <param name="element">
+            A <see cref="T:System.String"/> that holds Element Name.
+            </param>
+            <param name="dfsparams">
+            A <see cref="T:System.Collections.Generic.Dictionary`2"/> that holds Element Name.
+            </param>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.IsValidPostalCode(System.String)">
+            <summary>
+            Represents a method that checks valid PostalCode.
+            </summary>
+            <param name="value">
+            A <see cref="T:System.String"/> that represents element value.
+            </param>
+             <returns >it returns if tha PostalCode is correct else returns false</returns>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.RegularExpression(System.Object,System.String,System.String)">
+            <summary>
+             Method for RegularExpression
+            </summary>
+            <param name="inputString"></param>
+            <param name="regExPattern"></param>
+            <param name="index"></param> 
+            <returns></returns>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.IsValidEmail(System.String)">
+            <summary>
+            Represents a method the sets property and value to control.
+            </summary>
+            <param name="value">
+            A <see cref="T:System.String"/> that represents element name.
+            </param>
+             <returns >it returns if tha email is correct else returns false</returns>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.CurrentDate">
+            <summary>
+            Represents a method to get current date time.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.SubString(System.String,System.Int32,System.Int32)">
+            <summary>
+            Represents a method to get the substring.
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.Upper(System.String)">
+            <summary>
+            Method converts the input string to upper case.
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.Lower(System.String)">
+            <summary>
+            Method converts the input string to lower case.
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.CamelC(System.String)">
+            <summary>
+            Represents a method to convert a string to 
+            camel case
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.PascalC(System.String)">
+            <summary>
+            Represents a method to convert a string to
+            pascal case.
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.ProperC(System.String)">
+            <summary>
+            Represents a method to convert a string to 
+            proper case
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.Empty">
+            <summary>
+            Represents a method to get string.Empty.
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.NewId">
+            <summary>
+            Represents a method to get new GUID.
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.Encrypt(System.String)">
+            <summary>
+            Represents a method to convert a string to 
+            Encrypted data.
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.Decrypt(System.String)">
+            <summary>
+            Represents a method to convert a string to 
+            Decrypted data.
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.Length(System.String)">
+            <summary>
+            Method returns the length of the string.
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.Replace(System.String,System.String,System.String)">
+            <summary>
+            Method used to replace the string.
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.Trim(System.String)">
+            <summary>
+            Method to trim a string.
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.Contains(System.String,System.String,System.Boolean)">
+            <summary>
+             Method for contains
+            </summary>
+            <param name="inputString"></param>
+            <param name="searchText"></param>
+            <param name="caseSensitive"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.IndexOf(System.String,System.String,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+             Method for IndexOf
+            </summary>
+            <param name="inputString"></param>
+            <param name="searchText"></param>
+            <param name="startIndex"></param>  
+            <param name="length"></param>    
+            <param name="caseSensitive"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.Insert(System.String,System.String,System.Int32)">
+            <summary>
+             Method for Insert
+            </summary>
+            <param name="inputString"></param>
+            <param name="insertText"></param>
+            <param name="index"></param> 
+            <returns></returns>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.CommaSeparatedValues(System.String,System.String,System.Int32)">
+            <summary>
+             Method for CommaSeparatedValues
+            </summary>
+            <param name="inputString"></param>
+            <param name="delimiter"></param>
+            <param name="index"></param> 
+            <returns></returns>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.RegularExpression(System.String,System.String,System.String)">
+            <summary>
+             Method for RegularExpression
+            </summary>
+            <param name="inputString"></param>
+            <param name="regExPattern"></param>
+            <param name="index"></param> 
+            <returns></returns>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.IsNullOrEmpty(System.Object)">
+            <summary>
+             Method for IsNullOrEmpty
+            </summary>
+            <param name="input"></param> 
+            <returns></returns>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.IsDictionary(System.Object)">
+            <summary>
+            Represents the method that checks
+            whether given object is dictionary or not
+            </summary>
+            <param name="obj">
+            A <see cref="T:System.Object"/> that holds
+            object
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.StringCompare(System.String,System.String,System.Boolean)">
+            <summary>
+             Method for StringCompare
+            </summary>
+            <param name="inputString"></param>
+            <param name="compareString"></param>
+            <param name="caseSensitive"></param> 
+            <returns></returns>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.StringFormat(System.String,System.Object[])">
+            <summary>
+             Method for StringFormat
+            </summary>
+            <param name="format"></param>
+            <param name="args"></param>       
+            <returns></returns>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.UTCDate">
+            <summary>
+            Represents a method to get current UTC date time.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.AddDay(System.DateTime,System.Int32)">
+            <summary>
+            Method to add days.
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.AddYear(System.DateTime,System.Int32)">
+            <summary>
+            Method to add year.
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.AddMonth(System.DateTime,System.Int32)">
+            <summary>
+            Method to add year.
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.AddHour(System.DateTime,System.Double)">
+            <summary>
+            Method to add hours.
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.AddMinute(System.DateTime,System.Double)">
+            <summary>
+            Method to add minute.
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.AddSeconds(System.DateTime,System.Double)">
+            <summary>
+            Method to add seconds.
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.Day(System.DateTime)">
+            <summary>
+            Method to get day
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.DayOfWeek(System.DateTime)">
+            <summary>
+            Method to get day of week
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.DayOfWeekString(System.DateTime)">
+            <summary>
+            Method to get day of week
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.DayOfYear(System.DateTime)">
+            <summary>
+            Method to get day of year
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.Month(System.DateTime)">
+            <summary>
+            Method to get month
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.GetHour(System.DateTime)">
+            <summary>
+            Method to get Hour
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.GetMinute(System.DateTime)">
+            <summary>
+            Method to get Minute
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.GetSeconds(System.DateTime)">
+            <summary>
+            Method to get Seconds
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.MonthString(System.DateTime)">
+            <summary>
+            Method to get month string
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.Year(System.DateTime)">
+            <summary>
+            Method to get Year
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.DateCompare(System.String,System.DateTime,System.DateTime)">
+            <summary>
+            Method to find the data difference between two dates.
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.Round(System.Object,System.Int32)">
+            <summary>
+            Method to round off the decimal values to decimals.
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.Round(System.Object)">
+            <summary>
+            Method to round off the decimal values to integer.
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.Floor(System.Object)">
+            <summary>
+            Method to Floor the decimal values to integer.
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.Ceiling(System.Object)">
+            <summary>
+            Method to Ceiling the decimal values to integer.
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.Absolute(System.Object)">
+            <summary>
+            Method to Absolute the decimal values to integer.
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.SquareRoot(System.Double)">
+            <summary>
+            Method to SquareRoot the double values to integer.
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.ToInteger(System.String)">
+            <summary>
+            Method to convert string to integer
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.Tostring(System.Object)">
+            <summary>
+            Represents a property to convert object to 
+            string.
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.ToBoolean(System.String)">
+            <summary>
+            Method to convert string to bool
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.ToDateTime(System.String)">
+            <summary>
+            Method to convert string to DateTime
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.DateFormatS(System.DateTime,System.String)">
+            <summary>
+            method to convert inputdate to specified dateformat
+            </summary>
+            <param name="input">A<see cref="T:System.DateTime"/>holds the date</param>
+            <param name="format">A<see cref="T:System.String"/>holds the date format</param>
+            <returns>A<see cref="T:System.String"/> returns formated datetime</returns>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.ToTimeZone(System.DateTime,System.String)">
+            <summary>
+            method to convert utcdate to specified timezone
+            </summary>
+            <param name="utcDate">A<see cref="T:System.DateTime"/>
+            holds the utcdate</param>
+            <param name="timeZone">A<see cref="T:System.String"/>
+            holds the timezone id</param>
+            <returns>A<see cref="T:System.DateTime"/> 
+            returns Converted zonedatetime</returns>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.ToShort(System.Object)">
+            <summary>
+            Method to convert dynamic to short
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.ToLong(System.Object)">
+            <summary>
+            Method to convert dynamic to Long
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.ToDecimal(System.Object)">
+            <summary>
+            Method to convert dynamic to decimal
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.ToDouble(System.Object)">
+            <summary>
+            Method to convert dynamic to double
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.GetRepositoryColumnObject(System.String,System.String,System.Boolean,System.Nullable{System.Boolean},System.Int32)">
+            <summary>
+            Represents a method used to get repository column data.
+            </summary>
+            <param name="elementData">
+            </param>
+            <param name="columnName"></param>
+            <param name="isPrimaryKey"></param>
+            <param name="isIdentity"></param>
+            <param name="dataType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.VirtualForm.ExecuteQueryBinding(System.String,System.Collections.Generic.Dictionary{System.Int16,System.Object})">
+            <summary>
+            Represents a method used to bind query results to
+            elements based on specified index.
+            </summary>
+            <param name="queryExpressionId"></param>
+            <param name="dic"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.ExtensionActivityBase.GetValidFormVersionId(System.String,CPS.Proof.DFSExtension.ViewportTypes)">
+            <summary>
+            Method to check is given formversionId is valid,
+            if given formversion is invalid then fallback 
+            and return the next valid formversion
+            </summary>
+            <param name="formVersionId"></param>
+            <param name="viewPort">A<see cref="T:CPS.Proof.DFSExtension.ViewportTypes"/>holds the user
+            viewport </param>
+            <returns>Returns the values of Get Valid Form Version Id </returns>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ExtensionProcessBase.PackageId">
+            <summary>
+            Gets a <see cref="T:System.Int64"/> that contains the package id.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ExtensionProcessBase.PackageName">
+            <summary>
+            Gets a <see cref="T:System.String"/> that contains the package name.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ExtensionProcessBase.PackageProcessMapId">
+            <summary>
+            Gets a <see cref="T:System.String"/> that contains the package process map id.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ExtensionProcessBase.PackageDescription">
+            <summary>
+            Gets a <see cref="T:System.String"/> that contains the package
+            description.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ExtensionProcessBase.ProcessId">
+            <summary>
+            Gets a <see cref="T:System.Int64"/> that contains the process id.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ExtensionProcessBase.ProcessName">
+            <summary>
+            Gets a <see cref="T:System.String"/> that contains the process name.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ExtensionProcessBase.ProcessDescription">
+            <summary>
+            Gets a <see cref="T:System.String"/> that contains the process
+            description.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ExtensionProcessBase.ProcessType">
+            <summary>
+            Gets a <see cref="!:SRA.Proof.Helpers.ProcessType"/> that contains
+            the ProcessType.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ExtensionProcessBase.Comments">
+            <summary>
+            Gets a <see cref="T:System.String"/> that contains the comments.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ExtensionProcessBase.FileGroupId">
+            <summary>
+            Gets a <see cref="T:System.String"/> that contains the FileGroupId.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ExtensionProcessBase.FileGroup">
+            <summary>
+            Gets a <see cref="T:System.String"/> that contains the FileGroup.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ExtensionProcessBase.MasterFormId">
+            <summary>
+            Gets or Sets <see cref="T:System.String"/> master form id.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ExtensionProcessBase.ProcessInstanceMode">
+            <summary>
+            Gets or Sets <see cref="T:System.Byte"/> process instance mode.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ExtensionProcessBase.Version">
+            <summary>
+            Represents the version of process definition 
+            assembly.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ExtensionProcessBase.GlobalVariables">
+            <summary>
+            Represents the property that holds global Variables
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ExtensionProcessBase.UserVariables">
+            <summary>
+            Represent the property that holds the user 
+            variables.
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.ExtObjectFactoryBase.GetDfsVirtualInstance(System.String)">
+            <summary>
+            Represents the method that is used to get the 
+            dfs virtual instance.
+            </summary>
+            <param name="processActivityMapId">
+            A <see cref="T:System.String"/> that contains the 
+            processActivityMapid
+            </param>
+            <returns>
+            A new virtual instance is returned.
+            </returns>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.ExtObjectFactoryBase.GetQueryExpressionDataSource(System.String)">
+            <summary>
+            Represents the method that is used to get the 
+            query expression data source. 
+            </summary>
+            <param name="expressionId">
+            A <see cref="T:System.String"/> that contains the 
+            expression id.
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.ExtObjectFactoryBase.GetComboDataSource(System.String)">
+            <summary>
+            Represents the method that is used to get the 
+            Combo data source. 
+            </summary>
+            <param name="ElementName">
+            A <see cref="T:System.String"/> that contains the 
+            ElementName.
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.ExtObjectFactoryBase.GetGridRPP(System.String)">
+            <summary>
+            Represents the method that is used to get the 
+            Grid Rows Per Page Value. 
+            </summary>
+            <param name="ElementName">
+            A <see cref="T:System.String"/> that contains the 
+            ElementName
+            </param>
+            <returns></returns>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.AssetVerificationDataElementFactory._sysLog">
+            <summary>
+            A <see cref="T:log4net.ILog"/> that contains the logger instance for 
+            logging
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.Common.SToken">
+            <summary>
+            Property to get and set the SlotToken on every validate function
+            If exception occurs after validation operatio,
+            updating the exception in useractivitylog using this token
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.Common.Authorize(System.String,CPS.Proof.DFSExtension.UserActivities)">
+            <summary>
+            Represents a method to Decrypt and Deserialize
+            Slot token
+            </summary>
+            <param name="strslotToken">
+            <see cref="T:CPS.Proof.DFSExtension.SlotToken"/>contain the current slot token
+            </param>
+            <param name="activity">
+            <see cref="T:CPS.Proof.DFSExtension.UserActivities"/>contain the activityContext
+            </param>
+            <returns>
+            The <see cref="T:CPS.Proof.DFSExtension.SlotToken"/>SlotToken
+            </returns>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.Common.GetSlotTokenfromDB(System.String,CPS.Proof.DFSExtension.UserActivities,System.String)">
+            <summary>
+            Represents the GetSlotTokenfromDB Method in case of ChangePassword
+            </summary>
+            <param name="strslotToken" cref="T:System.String">
+            holds the SlotId
+            </param>
+            <param name="activity" cref="T:CPS.Proof.DFSExtension.UserActivities">
+            holds the UserActivities Details
+            </param>
+            <param name="isStaySignedIn" cref="T:System.String">
+            holds the IsStaySignedIn Detail
+            </param>
+            <returns>
+            returns SlotToken
+            </returns>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.JSONSerializer.Serialize``1(``0)">
+            <summary>
+            Represents the Method to Serialize string  using SpanJson        
+            </summary>
+            <returns>
+            string
+            </returns>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.JSONSerializer.Deserialize``1(System.String)">
+            <summary>
+            Represents the Method to Deserialie Json string to type {TData}
+            </summary>
+            <returns>
+            Object of type {TData}
+            </returns>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.JSONSerializer.DeserializeDataTable``1(System.String)">
+            <summary>
+            Represents the Method to Deserialie string  to type DataTable
+            using NewtonSoft Serialization (since SpanJson does not support for DataTable)
+            </summary>
+            <returns>
+            Object of type TData
+            </returns>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.JSONSerializer.SerializeDataTable``1(``0)">
+            <summary>
+            Represents the Method to Serialize DataTable
+            using NewtonSoft Serialization (since SpanJson does not support for DataTable)
+            </summary>
+            <returns>
+            string
+            </returns>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.JSONSerializer.NewtonDeserialize``1(System.String)">
+            <summary>
+            Represents the Method to Deserialize string
+            to type {TData}
+            using NewtonSoft Serialization (since SpanJson does not support for DataTable)
+            </summary>
+            <returns>
+            Object of type {TData}     
+            </returns>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.JSONSerializer.NewtonSerialize``1(``0)">
+            <summary>
+            Represents the Method to Serialize object of type TData        
+            using NewtonSoft Serialization (since SpanJson does not support for DataTable)
+            </summary>
+            <returns>
+            string
+            </returns>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.IExtBaseMetaData.PackageProcessMapId">
+            <summary>
+            Gets a <see cref="T:System.String"/> that contains the package process map id.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.IExtBaseMetaData.ProcessId">
+            <summary>
+            Gets a <see cref="T:System.Int64"/> that contains the process id.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.IExtBaseMetaData.ProcessName">
+            <summary>
+            Gets a <see cref="T:System.String"/> that contains the process name.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.IExtBaseMetaData.ProcessType">
+            <summary>
+            Gets a <see cref="T:System.Object"/> that contains
+            the ProcessType.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.IExtBaseMetaData.FileGroupId">
+            <summary>
+            Gets a <see cref="T:System.String"/> that contains the File group Id.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.IExtBaseMetaData.FileGroup">
+            <summary>
+            Gets a <see cref="T:System.String"/> that contains the File group Name.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.IExtBaseMetaData.MasterFormId">
+            <summary>
+            Gets a <see cref="T:System.String"/> that contains the Master FormId.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.IExtBaseMetaData.ProcessInstanceMode">
+            <summary>
+            Gets or Sets <see cref="T:System.Byte"/> process instance mode.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.IExtBaseMetaData.Version">
+            <summary>
+            Get a <see cref="T:System.Int32"/> that contains the 
+            version of definition assembly
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.IExtObjectFactory.GetQueryExpressionDataSource(System.String)">
+            <summary>
+            Represents the method that is used to get the 
+            query expression data source. 
+            </summary>
+            <param name="expressionId">
+            A <see cref="T:System.String"/> that contains the 
+            expression id.
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.IISpace.SetGridDataSource(System.Collections.Generic.Dictionary{System.String,System.String},System.Int32,System.String)">
+            <summary>
+            Represents the method that set the 
+            data source to the grid.
+            </summary>
+            <param name="querySourceDetails">
+            A <see cref="T:System.Collections.Generic.Dictionary`2"/> that represents the  querySourceDetails.
+            </param>
+            <param name="query">
+            A <see cref="T:System.String"/> that contains the query 
+            </param>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.IISpace.SetGridData(System.Data.DataTable,System.Collections.Generic.List{CPS.Proof.DFSExtension.Triplet{System.String,System.Int16,System.Nullable{System.Int16}}},System.String,System.Collections.Generic.Dictionary{System.String,CPS.Proof.DFSExtension.ServiceElementData}@)">
+            <summary>
+            Represents the method that set the grid data to 
+            the respective columns.
+            </summary>
+            <param name="queryresult">
+            A <see cref="T:System.Data.DataTable"/> that represents the quary expression id.
+            </param>
+            <param name="bindings">
+            A list of triplets. Each triplet contains:
+            - a <see cref="T:System.String"/> FirstValue,
+            - a <see cref="T:System.Int16"/> Second Value,
+            - a nullable <see cref="T:System.Int16"/> Third Value
+            </param>
+            <param name="elementId">
+            A <see cref="T:System.String"/> that represents ElementId.
+            </param>
+            <param name="ISpace">
+            A <see cref="T:System.Collections.Generic.Dictionary`2"/> that represents ISpace object.
+            </param>
+            <returns>
+            Nothing
+            </returns>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.IISpace.SetControlProperty(System.String,System.String,System.Object,System.Collections.Generic.Dictionary{System.String,CPS.Proof.DFSExtension.ServiceElementData}@)">
+            <summary>
+            Represents a method the sets property and value to control.
+            </summary>
+            <param name="elementName">
+            A <see cref="T:System.String"/> that represents element name.
+            </param>
+            <param name="property">
+            A <see cref="T:System.String"/> that represents property name.
+            </param>
+            <param name="controlValue">
+            A <see cref="T:System.String"/> that represents the property value.
+            </param>
+            <param name="iSpace">
+            A <see cref="T:System.Collections.Generic.Dictionary`2"/> that represents the Dictionary of ServiceElementData
+            </param>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.IISpace.SetUIControlProperty(System.String,System.String,System.Object,System.Collections.Generic.Dictionary{System.String,CPS.Proof.DFSExtension.ServiceElementData}@)">
+            <summary>
+            Represents a method the sets property and value to UI control.
+            </summary>
+            <param name="elementName">
+            A <see cref="T:System.String"/> that represents element name.
+            </param>
+            <param name="property">
+            A <see cref="T:System.String"/> that represents property name.
+            </param>
+            <param name="value">
+            A <see cref="T:System.String"/> that represents the property value.
+            </param>
+            <param name="iSpace">
+            A <see cref="T:System.Collections.Generic.Dictionary`2"/> that represents the Dictionary of ServiceElementData
+            </param>
+        </member>
+    </members>
+</doc>
