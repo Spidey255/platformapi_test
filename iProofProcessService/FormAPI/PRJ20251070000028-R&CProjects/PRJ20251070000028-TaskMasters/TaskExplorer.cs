@@ -575,7 +575,7 @@ namespace CPS.Proof.DFSExtension
       }
 
 
-      public override Status GetGridLoopQuery(string gridId,string gridName,Dictionary<string,ServiceElementData> gridData)
+      public override string GetGridLoopQuery(string gridId,string gridName,Dictionary<string,ServiceElementData> gridData)
         {
             _sysLog.Debug("Entering GetGridLoopQuery");
 
@@ -620,7 +620,7 @@ namespace CPS.Proof.DFSExtension
                             splitcols = colList.Split(',');
 
                             if (splitcols.Length <= 0)
-                                return Status.Failure;
+                                return null;
 
                             foreach (var gridChild in gridData[gridName].Child)
                             {                            
@@ -706,14 +706,14 @@ namespace CPS.Proof.DFSExtension
 
                          
 
-                return Status.Success;
+                return bulkInsertQuery;
 
             }
             catch (Exception ex)
             {
                 _sysLog.Error("Error in  GetGridLoopQuery", ex);
 
-                return Status.Failure;
+                return null;
             }
            
         }

@@ -607,7 +607,7 @@ namespace CPS.Proof.DFSExtension
       }
 
 
-      public override Status GetGridLoopQuery(string gridId,string gridName,Dictionary<string,ServiceElementData> gridData)
+      public override string GetGridLoopQuery(string gridId,string gridName,Dictionary<string,ServiceElementData> gridData)
         {
             _sysLog.Debug("Entering GetGridLoopQuery");
 
@@ -652,7 +652,7 @@ namespace CPS.Proof.DFSExtension
                             splitcols = colList.Split(',');
 
                             if (splitcols.Length <= 0)
-                                return Status.Failure;
+                                return null;
 
                             foreach (var gridChild in gridData[gridName].Child)
                             {                            
@@ -738,14 +738,14 @@ namespace CPS.Proof.DFSExtension
 
                          
 
-                return Status.Success;
+                return bulkInsertQuery;
 
             }
             catch (Exception ex)
             {
                 _sysLog.Error("Error in  GetGridLoopQuery", ex);
 
-                return Status.Failure;
+                return null;
             }
            
         }
@@ -807,7 +807,10 @@ foreach(var gridChild in ISpace["TaskStep"].Child)
 {
 base.WriteDebugInfo(@"EXEC InnovaceNoCode..[GridSave_4EA7F6C5-7148-44C1-A8EF-2BB10145EC09]  #MG_w2_step_id,'#MG_w2_task_description',#MG_w2_task_id,'#MG_w2_step_state',#TaskStep_Sequence,'#MG_w2_updated_at',#MG_w2_updated_by,#MG_w2_created_by,'#MG_w2_created_at',#MG_w2_is_active");
 
-base.WriteDebugInfo(@"");
+var querySource9091171C8D1644E8A4B890B74247A920 =GetQueryExpressionDataSource("9091171C-8D16-44E8-A4B8-90B74247A920");
+Dictionary<short,object> result9091171C8D1644E8A4B890B74247A920=iSpace.ExecuteQuery(querySource9091171C8D1644E8A4B890B74247A920,@"EXEC InnovaceNoCode..[GridSave_4EA7F6C5-7148-44C1-A8EF-2BB10145EC09]  " + ISpace["MG_w2_step_id"].Value + @",'" + ISpace["MG_w2_task_description"].Value + @"'," + ISpace["MG_w2_task_id"].Value + @",'" + ISpace["MG_w2_step_state"].Value + @"'," + ISpace["TaskStep_Sequence"].Value + @",'" + ISpace["MG_w2_updated_at"].Value + @"'," + ISpace["MG_w2_updated_by"].Value + @"," + ISpace["MG_w2_created_by"].Value + @",'" + ISpace["MG_w2_created_at"].Value + @"'," + ISpace["MG_w2_is_active"].Value + @"",false);
+
+base.WriteDebugInfo(@"var querySource9091171C8D1644E8A4B890B74247A920 =GetQueryExpressionDataSource(""9091171C-8D16-44E8-A4B8-90B74247A920"");Dictionary<short,object> result9091171C8D1644E8A4B890B74247A920=iSpace.ExecuteQuery(querySource9091171C8D1644E8A4B890B74247A920,@""EXEC InnovaceNoCode..[GridSave_4EA7F6C5-7148-44C1-A8EF-2BB10145EC09]  "" + ISpace[""MG_w2_step_id""].Value + @"",'"" + ISpace[""MG_w2_task_description""].Value + @""',"" + ISpace[""MG_w2_task_id""].Value + @"",'"" + ISpace[""MG_w2_step_state""].Value + @""',"" + ISpace[""TaskStep_Sequence""].Value + @"",'"" + ISpace[""MG_w2_updated_at""].Value + @""',"" + ISpace[""MG_w2_updated_by""].Value + @"","" + ISpace[""MG_w2_created_by""].Value + @"",'"" + ISpace[""MG_w2_created_at""].Value + @""',"" + ISpace[""MG_w2_is_active""].Value + @"""",false);");
 base.WriteDebugInfo(@"");
 
 if((result9091171C8D1644E8A4B890B74247A920!=null) && (result9091171C8D1644E8A4B890B74247A920.Count!=0))

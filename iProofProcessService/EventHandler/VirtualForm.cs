@@ -227,6 +227,7 @@ namespace CPS.Proof.DFSExtension
 
         public IExtObjectFactory _objectFactory { get; set; }       
 
+        public IExtElementBase _elementBase { get; set; }
 
         #endregion
 

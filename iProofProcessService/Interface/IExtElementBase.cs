@@ -13,5 +13,7 @@ namespace CPS.Proof.DFSExtension
 
         string GetInsertGridDataQuery(string instanceId, string packageProcessMapId, string processActivityMapId,
           string formId, long usermapid, string formJsonData);
+
+        string GetGridLoopQuery(string gridId, string gridName, Dictionary<string, ServiceElementData> gridData);
     }
 }
