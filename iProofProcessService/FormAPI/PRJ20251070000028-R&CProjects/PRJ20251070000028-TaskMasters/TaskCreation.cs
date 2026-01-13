@@ -770,6 +770,8 @@ private void SubscribeFormEvents_root(ref Dictionary<string, ServiceElementData>
 {
 try
 {
+Dictionary<short, object> keyValuePairs = null;base.WriteDebugInfo(@"Root-OnAfterFormLoad");
+
 }
 catch(Exception ex)
 {
@@ -782,6 +784,26 @@ IISpace iSpace = new ISpace();
 try
 {
 base.WriteDebugInfo(@"SubmitForm-OnClick");
+if(1==1)
+{
+base.WriteDebugInfo(@"if(1==1)");
+if(ISpace["MF_w1_task_type_code"].Value=="")
+{
+base.WriteDebugInfo(@"if(ISpace[""MF_w1_task_type_code""].Value=="""")");
+ISpace["Message"].Value=@"Please select Task Type Code and Proceed";
+base.WriteDebugInfo(@"ISpace[""Message""].Value=@""Please select Task Type Code and Proceed"";");
+return;
+base.WriteDebugInfo(@"return;");
+}
+if(ISpace["MF_w1_task_name"].Value=="")
+{
+base.WriteDebugInfo(@"if(ISpace[""MF_w1_task_name""].Value=="""")");
+ISpace["Message"].Value=@"Please fill Task Name and Proceed";
+base.WriteDebugInfo(@"ISpace[""Message""].Value=@""Please fill Task Name and Proceed"";");
+return;
+base.WriteDebugInfo(@"return;");
+}
+}
 base.WriteDebugInfo(@"EXEC InnovaceNoCode..[FormSave_3cfe092a-c9df-42bd-bb7a-d4a6e90379fc]  #MF_w1_task_id,'#MF_w1_task_code','#MF_w1_task_name','#MF_w1_task_type_code','#MF_w1_complexity_code','#MF_w1_requirement_id','#MF_w1_task_status',#MF_w1_is_active,'#MF_w1_created_at',#MF_w1_created_by,#MF_w1_updated_by,'#MF_w1_updated_at',#MFG_w2_step_id,'#MFG_w2_task_description',#MFG_w2_task_id,'#MFG_w2_step_state',#MFG_w2_step_sequence,'#MFG_w2_updated_at',#MFG_w2_updated_by,#MFG_w2_created_by,'#MFG_w2_created_at',#MFG_w2_is_active");
 
 var querySourceB3A202679C7A48409026AAC7DCD63BBD =GetQueryExpressionDataSource("B3A20267-9C7A-4840-9026-AAC7DCD63BBD");
