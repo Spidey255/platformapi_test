@@ -144,7 +144,7 @@ namespace CPS.Proof.DFSExtension
 												     @"38C753DC-ED33-454B-85AF-DD4DF536B530"),
 			
 						
-			     new Triplet<string, string, string>("CDDDADEF-C972-4A1C-A9B7-D03CC3D65B57","C3BEA3AF-C9B7-4DEA-AE35-EA1C626191C0",
+			     new Triplet<string, string, string>("E7F4446B-3E00-4038-A24C-73BD6EFC4A82","C3BEA3AF-C9B7-4DEA-AE35-EA1C626191C0",
 												     @"38C753DC-ED33-454B-85AF-DD4DF536B530"),
 			
 						
@@ -758,22 +758,22 @@ if(1==1)
 base.WriteDebugInfo(@"if(1==1)");
 base.WriteDebugInfo(@"EXEC GetTaskSummary");
 
-var querySourceCDDDADEFC9724A1CA9B7D03CC3D65B57 =GetQueryExpressionDataSource("CDDDADEF-C972-4A1C-A9B7-D03CC3D65B57");
-Dictionary<short,object> resultCDDDADEFC9724A1CA9B7D03CC3D65B57=iSpace.ExecuteQuery(querySourceCDDDADEFC9724A1CA9B7D03CC3D65B57,@"EXEC GetTaskSummary",false);
+var querySourceE7F4446B3E004038A24C73BD6EFC4A82 =GetQueryExpressionDataSource("E7F4446B-3E00-4038-A24C-73BD6EFC4A82");
+Dictionary<short,object> resultE7F4446B3E004038A24C73BD6EFC4A82=iSpace.ExecuteQuery(querySourceE7F4446B3E004038A24C73BD6EFC4A82,@"EXEC GetTaskSummary",false);
 
-base.WriteDebugInfo(@"var querySourceCDDDADEFC9724A1CA9B7D03CC3D65B57 =GetQueryExpressionDataSource(""CDDDADEF-C972-4A1C-A9B7-D03CC3D65B57"");Dictionary<short,object> resultCDDDADEFC9724A1CA9B7D03CC3D65B57=iSpace.ExecuteQuery(querySourceCDDDADEFC9724A1CA9B7D03CC3D65B57,@""EXEC GetTaskSummary"",false);");
+base.WriteDebugInfo(@"var querySourceE7F4446B3E004038A24C73BD6EFC4A82 =GetQueryExpressionDataSource(""E7F4446B-3E00-4038-A24C-73BD6EFC4A82"");Dictionary<short,object> resultE7F4446B3E004038A24C73BD6EFC4A82=iSpace.ExecuteQuery(querySourceE7F4446B3E004038A24C73BD6EFC4A82,@""EXEC GetTaskSummary"",false);");
 base.WriteDebugInfo(@"");
 
-if((resultCDDDADEFC9724A1CA9B7D03CC3D65B57!=null) && (resultCDDDADEFC9724A1CA9B7D03CC3D65B57.Count!=0))
+if((resultE7F4446B3E004038A24C73BD6EFC4A82!=null) && (resultE7F4446B3E004038A24C73BD6EFC4A82.Count!=0))
 {
-if(resultCDDDADEFC9724A1CA9B7D03CC3D65B57.ContainsKey(3))
-ISpace["M_Closed"].Value = resultCDDDADEFC9724A1CA9B7D03CC3D65B57[3];
-if(resultCDDDADEFC9724A1CA9B7D03CC3D65B57.ContainsKey(0))
-ISpace["M_Total"].Value = resultCDDDADEFC9724A1CA9B7D03CC3D65B57[0];
-if(resultCDDDADEFC9724A1CA9B7D03CC3D65B57.ContainsKey(1))
-ISpace["M_Active"].Value = resultCDDDADEFC9724A1CA9B7D03CC3D65B57[1];
-if(resultCDDDADEFC9724A1CA9B7D03CC3D65B57.ContainsKey(2))
-ISpace["M_InActive"].Value = resultCDDDADEFC9724A1CA9B7D03CC3D65B57[2];
+if(resultE7F4446B3E004038A24C73BD6EFC4A82.ContainsKey(3))
+ISpace["M_Closed"].Value = resultE7F4446B3E004038A24C73BD6EFC4A82[3];
+if(resultE7F4446B3E004038A24C73BD6EFC4A82.ContainsKey(0))
+ISpace["M_Total"].Value = resultE7F4446B3E004038A24C73BD6EFC4A82[0];
+if(resultE7F4446B3E004038A24C73BD6EFC4A82.ContainsKey(1))
+ISpace["M_Active"].Value = resultE7F4446B3E004038A24C73BD6EFC4A82[1];
+if(resultE7F4446B3E004038A24C73BD6EFC4A82.ContainsKey(2))
+ISpace["M_InActive"].Value = resultE7F4446B3E004038A24C73BD6EFC4A82[2];
 }
 else{
 ISpace["M_Closed"].Value = null;ISpace["M_Total"].Value = null;ISpace["M_Active"].Value = null;ISpace["M_InActive"].Value = null;
