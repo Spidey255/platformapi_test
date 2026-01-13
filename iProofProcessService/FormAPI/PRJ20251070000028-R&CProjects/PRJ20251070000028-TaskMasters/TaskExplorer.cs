@@ -140,10 +140,6 @@ namespace CPS.Proof.DFSExtension
 		private List<Triplet<string, string, string>> queryExpressionData = new List<Triplet<string, string, string>>
 		{
 	  			
-			     new Triplet<string, string, string>("1e0abf5a-2c93-8afd-e556-c0e6896bcc29","C3BEA3AF-C9B7-4DEA-AE35-EA1C626191C0",
-												     @"38C753DC-ED33-454B-85AF-DD4DF536B530"),
-			
-						
 			     new Triplet<string, string, string>("799aca0d-883e-a868-677d-5f43dddca1bf","C3BEA3AF-C9B7-4DEA-AE35-EA1C626191C0",
 												     @"38C753DC-ED33-454B-85AF-DD4DF536B530"),
 			
@@ -742,13 +738,6 @@ Dictionary<short, object> keyValuePairs = null;base.WriteDebugInfo(@"Root-OnAfte
 if(1==1)
 {
 base.WriteDebugInfo(@"if(1==1)");
-base.WriteDebugInfo(@"EXEC GetTaskSummary");
-
-var querySource1e0abf5a2c938afde556c0e6896bcc29 =GetQueryExpressionDataSource("1e0abf5a-2c93-8afd-e556-c0e6896bcc29");
-Dictionary<short,object> result1e0abf5a2c938afde556c0e6896bcc29=iSpace.ExecuteQuery(querySource1e0abf5a2c938afde556c0e6896bcc29,@"EXEC GetTaskSummary",false);
-
-base.WriteDebugInfo(@"var querySource1e0abf5a2c938afde556c0e6896bcc29 =GetQueryExpressionDataSource(""1e0abf5a-2c93-8afd-e556-c0e6896bcc29"");Dictionary<short,object> result1e0abf5a2c938afde556c0e6896bcc29=iSpace.ExecuteQuery(querySource1e0abf5a2c938afde556c0e6896bcc29,@""EXEC GetTaskSummary"",false);");
-base.WriteDebugInfo(@"");
 
 var querySource799aca0d883ea868677d5f43dddca1bf =GetQueryExpressionDataSource("799aca0d-883e-a868-677d-5f43dddca1bf");
 
@@ -758,6 +747,11 @@ iSpace.InsertGridBindDetails("TastDetails","11",querySource799aca0d883ea868677d5
 
 base.WriteDebugInfo(@"var querySource799aca0d883ea868677d5f43dddca1bf =GetQueryExpressionDataSource(""799aca0d-883e-a868-677d-5f43dddca1bf"");DataTable result799aca0d883ea868677d5f43dddca1bf=iSpace.SetGridDataSource(querySource799aca0d883ea868677d5f43dddca1bf, _objectFactory.GetGridRPP(""TastDetails""),@""EXEC TasKDetails ''"");iSpace.InsertGridBindDetails(""TastDetails"",""11"",querySource799aca0d883ea868677d5f43dddca1bf,""EXEC TasKDetails ''"",_objectFactory.GetGridRPP(""TastDetails""));");
 base.WriteDebugInfo(@"");
+
+
+List<Triplet<string, short, short?>> result3af47cd6d5ccfa0478e604749ae0b6b1=acdataIspace5B035305E81B4571BBE4724D00438E54.GetQueryExpressionBindings("3af47cd6-d5cc-fa04-78e6-04749ae0b6b1");
+iSpace.SetGridData(result799aca0d883ea868677d5f43dddca1bf,result3af47cd6d5ccfa0478e604749ae0b6b1,"TastDetails",ref ISpace);
+iSpace.UpdateGridBindDetails("TastDetails",result3af47cd6d5ccfa0478e604749ae0b6b1);
 }
 if(1==1)
 {
