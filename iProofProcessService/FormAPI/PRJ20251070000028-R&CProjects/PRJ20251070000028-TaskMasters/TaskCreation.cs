@@ -140,15 +140,23 @@ namespace CPS.Proof.DFSExtension
 		private List<Triplet<string, string, string>> queryExpressionData = new List<Triplet<string, string, string>>
 		{
 	  			
+			     new Triplet<string, string, string>("B3A20267-9C7A-4840-9026-AAC7DCD63BBD","C3BEA3AF-C9B7-4DEA-AE35-EA1C626191C0",
+												     @"38C753DC-ED33-454B-85AF-DD4DF536B530"),
+			
+						
+			     new Triplet<string, string, string>("FF4E8443-7981-4370-8A7C-F84BBABF8AA3","C3BEA3AF-C9B7-4DEA-AE35-EA1C626191C0",
+												     @"24F5D845-D560-4FC1-B284-00FB19DFB96F"),
+			
+						
+			     new Triplet<string, string, string>("9091171C-8D16-44E8-A4B8-90B74247A920","C3BEA3AF-C9B7-4DEA-AE35-EA1C626191C0",
+												     @"38C753DC-ED33-454B-85AF-DD4DF536B530"),
+			
+						
 			     new Triplet<string, string, string>("69EAFEBC-A566-478B-B5FB-C936324D1522","C3BEA3AF-C9B7-4DEA-AE35-EA1C626191C0",
 												     @"24F5D845-D560-4FC1-B284-00FB19DFB96F"),
 			
 						
 			     new Triplet<string, string, string>("985C091C-7607-4379-A6D4-70DB10D900AA","C3BEA3AF-C9B7-4DEA-AE35-EA1C626191C0",
-												     @"24F5D845-D560-4FC1-B284-00FB19DFB96F"),
-			
-						
-			     new Triplet<string, string, string>("FF4E8443-7981-4370-8A7C-F84BBABF8AA3","C3BEA3AF-C9B7-4DEA-AE35-EA1C626191C0",
 												     @"24F5D845-D560-4FC1-B284-00FB19DFB96F"),
 			
 						
@@ -768,6 +776,62 @@ catch(Exception ex)
 base.WriteErrorInfo(@"Exception:",ex);
 }
 }
+private void SubscribeElementEvents_submitform (ref Dictionary<string,ServiceElementData> ISpace)
+{
+IISpace iSpace = new ISpace();
+try
+{
+base.WriteDebugInfo(@"SubmitForm-OnClick");
+base.WriteDebugInfo(@"EXEC InnovaceNoCode..[FormSave_3cfe092a-c9df-42bd-bb7a-d4a6e90379fc]  #MF_w1_task_id,'#MF_w1_task_code','#MF_w1_task_name','#MF_w1_task_type_code','#MF_w1_complexity_code','#MF_w1_requirement_id','#MF_w1_task_status',#MF_w1_is_active,'#MF_w1_created_at',#MF_w1_created_by,#MF_w1_updated_by,'#MF_w1_updated_at',#MFG_w2_step_id,'#MFG_w2_task_description',#MFG_w2_task_id,'#MFG_w2_step_state',#MFG_w2_step_sequence,'#MFG_w2_updated_at',#MFG_w2_updated_by,#MFG_w2_created_by,'#MFG_w2_created_at',#MFG_w2_is_active");
+
+var querySourceB3A202679C7A48409026AAC7DCD63BBD =GetQueryExpressionDataSource("B3A20267-9C7A-4840-9026-AAC7DCD63BBD");
+Dictionary<short,object> resultB3A202679C7A48409026AAC7DCD63BBD=iSpace.ExecuteQuery(querySourceB3A202679C7A48409026AAC7DCD63BBD,@"EXEC InnovaceNoCode..[FormSave_3cfe092a-c9df-42bd-bb7a-d4a6e90379fc]  " + ISpace["MF_w1_task_id"].Value + @",'" + ISpace["MF_w1_task_code"].Value + @"','" + ISpace["MF_w1_task_name"].Value + @"','" + ISpace["MF_w1_task_type_code"].Value + @"','" + ISpace["MF_w1_complexity_code"].Value + @"','" + ISpace["MF_w1_requirement_id"].Value + @"','" + ISpace["MF_w1_task_status"].Value + @"'," + ISpace["MF_w1_is_active"].Value + @",'" + ISpace["MF_w1_created_at"].Value + @"'," + ISpace["MF_w1_created_by"].Value + @"," + ISpace["MF_w1_updated_by"].Value + @",'" + ISpace["MF_w1_updated_at"].Value + @"'," + ISpace["MFG_w2_step_id"].Value + @",'" + ISpace["MFG_w2_task_description"].Value + @"'," + ISpace["MFG_w2_task_id"].Value + @",'" + ISpace["MFG_w2_step_state"].Value + @"'," + ISpace["MFG_w2_step_sequence"].Value + @",'" + ISpace["MFG_w2_updated_at"].Value + @"'," + ISpace["MFG_w2_updated_by"].Value + @"," + ISpace["MFG_w2_created_by"].Value + @",'" + ISpace["MFG_w2_created_at"].Value + @"'," + ISpace["MFG_w2_is_active"].Value + @"",false);
+
+base.WriteDebugInfo(@"var querySourceB3A202679C7A48409026AAC7DCD63BBD =GetQueryExpressionDataSource(""B3A20267-9C7A-4840-9026-AAC7DCD63BBD"");Dictionary<short,object> resultB3A202679C7A48409026AAC7DCD63BBD=iSpace.ExecuteQuery(querySourceB3A202679C7A48409026AAC7DCD63BBD,@""EXEC InnovaceNoCode..[FormSave_3cfe092a-c9df-42bd-bb7a-d4a6e90379fc]  "" + ISpace[""MF_w1_task_id""].Value + @"",'"" + ISpace[""MF_w1_task_code""].Value + @""','"" + ISpace[""MF_w1_task_name""].Value + @""','"" + ISpace[""MF_w1_task_type_code""].Value + @""','"" + ISpace[""MF_w1_complexity_code""].Value + @""','"" + ISpace[""MF_w1_requirement_id""].Value + @""','"" + ISpace[""MF_w1_task_status""].Value + @""',"" + ISpace[""MF_w1_is_active""].Value + @"",'"" + ISpace[""MF_w1_created_at""].Value + @""',"" + ISpace[""MF_w1_created_by""].Value + @"","" + ISpace[""MF_w1_updated_by""].Value + @"",'"" + ISpace[""MF_w1_updated_at""].Value + @""',"" + ISpace[""MFG_w2_step_id""].Value + @"",'"" + ISpace[""MFG_w2_task_description""].Value + @""',"" + ISpace[""MFG_w2_task_id""].Value + @"",'"" + ISpace[""MFG_w2_step_state""].Value + @""',"" + ISpace[""MFG_w2_step_sequence""].Value + @"",'"" + ISpace[""MFG_w2_updated_at""].Value + @""',"" + ISpace[""MFG_w2_updated_by""].Value + @"","" + ISpace[""MFG_w2_created_by""].Value + @"",'"" + ISpace[""MFG_w2_created_at""].Value + @""',"" + ISpace[""MFG_w2_is_active""].Value + @"""",false);");
+base.WriteDebugInfo(@"");
+
+if((resultB3A202679C7A48409026AAC7DCD63BBD!=null) && (resultB3A202679C7A48409026AAC7DCD63BBD.Count!=0))
+{
+if(resultB3A202679C7A48409026AAC7DCD63BBD.ContainsKey(0))
+ISpace["Subject"].Value = resultB3A202679C7A48409026AAC7DCD63BBD[0];
+}
+else{
+ISpace["Subject"].Value = null;
+}
+base.WriteDebugInfo(@"#TaskStep[Rows]");
+iSpace.GetLoopExpressionData("TaskStep",ref ISpace);
+
+foreach(var gridChild in ISpace["TaskStep"].Child)
+{foreach(var gridrow in gridChild.Child)
+
+{
+base.WriteDebugInfo(@"EXEC InnovaceNoCode..[GridSave_4EA7F6C5-7148-44C1-A8EF-2BB10145EC09]  #MG_w2_step_id,'#MG_w2_task_description',#MG_w2_task_id,'#MG_w2_step_state',#TaskStep_Sequence,'#MG_w2_updated_at',#MG_w2_updated_by,#MG_w2_created_by,'#MG_w2_created_at',#MG_w2_is_active");
+
+base.WriteDebugInfo(@"");
+base.WriteDebugInfo(@"");
+
+if((result9091171C8D1644E8A4B890B74247A920!=null) && (result9091171C8D1644E8A4B890B74247A920.Count!=0))
+{
+if(result9091171C8D1644E8A4B890B74247A920.ContainsKey(0))
+ISpace["MG_w2_is_active"].Value = result9091171C8D1644E8A4B890B74247A920[0];
+}
+else{
+ISpace["MG_w2_is_active"].Value = null;
+}
+}
+}
+iSpace.SetLoopExpressionData("TaskStep","4EA7F6C5-7148-44C1-A8EF-2BB10145EC09",_objectFactory.GetGridRPP("TaskStep"),_elementBase.GetGridLoopQuery("4EA7F6C5-7148-44C1-A8EF-2BB10145EC09","TaskStep",ISpace), ref ISpace);
+base.WriteDebugInfo(@"iSpace.GetLoopExpressionData(""TaskStep"",ref ISpace);
+
+foreach(var gridChild in ISpace[""TaskStep""].Child)
+{foreach(var gridrow in gridChild.Child)
+");
+}
+catch(Exception ex)
+{
+base.WriteErrorInfo(@"Exception:",ex);
+}
+}
 private void SubscribeElementEvents_m_back (ref Dictionary<string,ServiceElementData> ISpace)
 {
 IISpace iSpace = new ISpace();
@@ -917,6 +981,10 @@ public override void ExecuteMethod
 }
 	if(methodName.ToLower().Equals("onclick"))
 {
+		if(elementName.ToLower().Equals("submitform"))
+{
+			SubscribeElementEvents_submitform(ref dfsParam);
+}
 		if(elementName.ToLower().Equals("m_back"))
 {
 			SubscribeElementEvents_m_back(ref dfsParam);

@@ -148,6 +148,10 @@ namespace CPS.Proof.DFSExtension
 												     @"38C753DC-ED33-454B-85AF-DD4DF536B530"),
 			
 						
+			     new Triplet<string, string, string>("CDDDADEF-C972-4A1C-A9B7-D03CC3D65B57","C3BEA3AF-C9B7-4DEA-AE35-EA1C626191C0",
+												     @"38C753DC-ED33-454B-85AF-DD4DF536B530"),
+			
+						
 			     new Triplet<string, string, string>("799aca0d-883e-a868-677d-5f43dddca1bf","Load Existing Task Details",
 												     @"23E51A25-3499-4878-9320-2D2EC2D75862"),
 			
@@ -746,21 +750,6 @@ Dictionary<short,object> result1e0abf5a2c938afde556c0e6896bcc29=iSpace.ExecuteQu
 base.WriteDebugInfo(@"var querySource1e0abf5a2c938afde556c0e6896bcc29 =GetQueryExpressionDataSource(""1e0abf5a-2c93-8afd-e556-c0e6896bcc29"");Dictionary<short,object> result1e0abf5a2c938afde556c0e6896bcc29=iSpace.ExecuteQuery(querySource1e0abf5a2c938afde556c0e6896bcc29,@""EXEC GetTaskSummary"",false);");
 base.WriteDebugInfo(@"");
 
-if((result1e0abf5a2c938afde556c0e6896bcc29!=null) && (result1e0abf5a2c938afde556c0e6896bcc29.Count!=0))
-{
-if(result1e0abf5a2c938afde556c0e6896bcc29.ContainsKey(3))
-ISpace["M_Closed"].Value = result1e0abf5a2c938afde556c0e6896bcc29[3];
-if(result1e0abf5a2c938afde556c0e6896bcc29.ContainsKey(0))
-ISpace["M_Total"].Value = result1e0abf5a2c938afde556c0e6896bcc29[0];
-if(result1e0abf5a2c938afde556c0e6896bcc29.ContainsKey(1))
-ISpace["M_Active"].Value = result1e0abf5a2c938afde556c0e6896bcc29[1];
-if(result1e0abf5a2c938afde556c0e6896bcc29.ContainsKey(2))
-ISpace["M_InActive"].Value = result1e0abf5a2c938afde556c0e6896bcc29[2];
-}
-else{
-ISpace["M_Closed"].Value = null;ISpace["M_Total"].Value = null;ISpace["M_Active"].Value = null;ISpace["M_InActive"].Value = null;
-}
-
 var querySource799aca0d883ea868677d5f43dddca1bf =GetQueryExpressionDataSource("799aca0d-883e-a868-677d-5f43dddca1bf");
 
 DataTable result799aca0d883ea868677d5f43dddca1bf=iSpace.SetGridDataSource(querySource799aca0d883ea868677d5f43dddca1bf, _objectFactory.GetGridRPP("TastDetails"),@"EXEC TasKDetails ''");
@@ -769,12 +758,46 @@ iSpace.InsertGridBindDetails("TastDetails","11",querySource799aca0d883ea868677d5
 
 base.WriteDebugInfo(@"var querySource799aca0d883ea868677d5f43dddca1bf =GetQueryExpressionDataSource(""799aca0d-883e-a868-677d-5f43dddca1bf"");DataTable result799aca0d883ea868677d5f43dddca1bf=iSpace.SetGridDataSource(querySource799aca0d883ea868677d5f43dddca1bf, _objectFactory.GetGridRPP(""TastDetails""),@""EXEC TasKDetails ''"");iSpace.InsertGridBindDetails(""TastDetails"",""11"",querySource799aca0d883ea868677d5f43dddca1bf,""EXEC TasKDetails ''"",_objectFactory.GetGridRPP(""TastDetails""));");
 base.WriteDebugInfo(@"");
-
-
-List<Triplet<string, short, short?>> result3af47cd6d5ccfa0478e604749ae0b6b1=acdataIspace5B035305E81B4571BBE4724D00438E54.GetQueryExpressionBindings("3af47cd6-d5cc-fa04-78e6-04749ae0b6b1");
-iSpace.SetGridData(result799aca0d883ea868677d5f43dddca1bf,result3af47cd6d5ccfa0478e604749ae0b6b1,"TastDetails",ref ISpace);
-iSpace.UpdateGridBindDetails("TastDetails",result3af47cd6d5ccfa0478e604749ae0b6b1);
 }
+if(1==1)
+{
+base.WriteDebugInfo(@"if(1==1)");
+base.WriteDebugInfo(@"EXEC GetTaskSummary");
+
+var querySourceCDDDADEFC9724A1CA9B7D03CC3D65B57 =GetQueryExpressionDataSource("CDDDADEF-C972-4A1C-A9B7-D03CC3D65B57");
+Dictionary<short,object> resultCDDDADEFC9724A1CA9B7D03CC3D65B57=iSpace.ExecuteQuery(querySourceCDDDADEFC9724A1CA9B7D03CC3D65B57,@"EXEC GetTaskSummary",false);
+
+base.WriteDebugInfo(@"var querySourceCDDDADEFC9724A1CA9B7D03CC3D65B57 =GetQueryExpressionDataSource(""CDDDADEF-C972-4A1C-A9B7-D03CC3D65B57"");Dictionary<short,object> resultCDDDADEFC9724A1CA9B7D03CC3D65B57=iSpace.ExecuteQuery(querySourceCDDDADEFC9724A1CA9B7D03CC3D65B57,@""EXEC GetTaskSummary"",false);");
+base.WriteDebugInfo(@"");
+
+if((resultCDDDADEFC9724A1CA9B7D03CC3D65B57!=null) && (resultCDDDADEFC9724A1CA9B7D03CC3D65B57.Count!=0))
+{
+if(resultCDDDADEFC9724A1CA9B7D03CC3D65B57.ContainsKey(3))
+ISpace["M_Closed"].Value = resultCDDDADEFC9724A1CA9B7D03CC3D65B57[3];
+if(resultCDDDADEFC9724A1CA9B7D03CC3D65B57.ContainsKey(0))
+ISpace["M_Total"].Value = resultCDDDADEFC9724A1CA9B7D03CC3D65B57[0];
+if(resultCDDDADEFC9724A1CA9B7D03CC3D65B57.ContainsKey(1))
+ISpace["M_Active"].Value = resultCDDDADEFC9724A1CA9B7D03CC3D65B57[1];
+if(resultCDDDADEFC9724A1CA9B7D03CC3D65B57.ContainsKey(2))
+ISpace["M_InActive"].Value = resultCDDDADEFC9724A1CA9B7D03CC3D65B57[2];
+}
+else{
+ISpace["M_Closed"].Value = null;ISpace["M_Total"].Value = null;ISpace["M_Active"].Value = null;ISpace["M_InActive"].Value = null;
+}
+}
+}
+catch(Exception ex)
+{
+base.WriteErrorInfo(@"Exception:",ex);
+}
+}
+private void SubscribeElementEvents_save_tastdetails (ref Dictionary<string,ServiceElementData> ISpace)
+{
+IISpace iSpace = new ISpace();
+try
+{
+base.WriteDebugInfo(@"Save_TastDetails-OnClick");
+base.WriteDebugInfo(@"Save_TastDetails-OnClick");
 }
 catch(Exception ex)
 {
@@ -816,6 +839,14 @@ public override void ExecuteMethod
 }
 	if(methodName.ToLower().Equals("onclick"))
 {
+		if(elementName.ToLower().Equals("save_tastdetails"))
+{
+			SubscribeElementEvents_save_tastdetails(ref dfsParam);
+}
+		if(elementName.ToLower().Equals("save_tastdetails"))
+{
+			SubscribeElementEvents_save_tastdetails(ref dfsParam);
+}
 		if(elementName.ToLower().Equals("m_add"))
 {
 			SubscribeElementEvents_m_add(ref dfsParam);
