@@ -350,6 +350,9 @@ namespace CPS.Proof.DFSExtension
                 externalQueryController.GetGridDataSource
                     (connectionString, query, out queryResults);
 
+                if(queryResults==null)
+                    return queryResults;
+
                  _gridtotalRows= queryResults.Rows.Count;   
 
                   if(gridRowsPerPage==-1)
@@ -515,6 +518,7 @@ namespace CPS.Proof.DFSExtension
 
                 short rowsequence = 1;
 
+                if (queryresult != null)
                 foreach (DataRow row in queryresult.Rows)
                 {
 

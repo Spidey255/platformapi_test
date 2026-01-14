@@ -329,7 +329,7 @@ namespace CPS.Proof.DFSExtension
                     if (obj != null && obj.ToString() != "")
                         return bool.Parse(obj.ToString());
                     else
-                        return null;
+                        return "0";
                 }
                 //5 represents Integer               
                 else if (dataType == 5)
@@ -337,7 +337,7 @@ namespace CPS.Proof.DFSExtension
                     if (obj != null && obj.ToString() != "")
                         return int.Parse(obj.ToString());
                     else
-                        return null;
+                        return 0;
                 }
                 //6 represents Long               
                 else if (dataType == 6)
@@ -345,7 +345,15 @@ namespace CPS.Proof.DFSExtension
                     if (obj != null && obj.ToString() != "")
                         return long.Parse(obj.ToString());
                     else
-                        return null;
+                        return 0;
+                }
+                  //8 represents DateTime
+                if (dataType == 9)
+                {
+                    if (obj != null && obj.ToString() != "")
+                        return obj.ToString();
+                    else
+                        return string.Empty;
                 }
                 //7 represents Short
                 else if (dataType == 7)
@@ -353,7 +361,7 @@ namespace CPS.Proof.DFSExtension
                     if (obj != null && obj.ToString() != "")
                         return short.Parse(obj.ToString());
                     else
-                        return null;
+                        return 0;
                 }
                 //3 represents Decimal
                 else if (dataType==3)
@@ -361,7 +369,7 @@ namespace CPS.Proof.DFSExtension
                     if (obj != null && obj.ToString() != "")
                         return Decimal.Parse(obj.ToString());
                     else
-                        return null;
+                        return 0;
                 }
                 //4 represents Double
                 else if (dataType == 4)
@@ -369,7 +377,7 @@ namespace CPS.Proof.DFSExtension
                     if (obj != null && obj.ToString() != "")
                         return Double.Parse(obj.ToString());
                     else
-                        return null;
+                        return 0;
                 }
                 switch (obj)
                 {
