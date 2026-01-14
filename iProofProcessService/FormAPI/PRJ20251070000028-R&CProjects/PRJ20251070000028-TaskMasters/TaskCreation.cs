@@ -862,17 +862,11 @@ base.WriteDebugInfo(@"");
 if((result0da349dcc2b193f5835854d3557731ae!=null) && (result0da349dcc2b193f5835854d3557731ae.Count!=0))
 {
 if(result0da349dcc2b193f5835854d3557731ae.ContainsKey(0))
-ISpace["M_StepId"].Value = result0da349dcc2b193f5835854d3557731ae[0];
+ISpace["MG_w2_step_id"].Value = result0da349dcc2b193f5835854d3557731ae[0];
 }
 else{
-ISpace["M_StepId"].Value = null;
+ISpace["MG_w2_step_id"].Value = null;
 }
-if(gridrow.ElementName == "MG_w2_step_id") ISpace["MG_w2_step_id"].Value=gridrow.Value;
-if(gridrow.ElementName == "M_StepId") ISpace["M_StepId"].Value=gridrow.Value;
-ISpace["MG_w2_step_id"].Value=ISpace["M_StepId"].Value;
-base.WriteDebugInfo(@"if(gridrow.ElementName == ""MG_w2_step_id"") ISpace[""MG_w2_step_id""].Value=gridrow.Value;
-if(gridrow.ElementName == ""M_StepId"") ISpace[""M_StepId""].Value=gridrow.Value;
-ISpace[""MG_w2_step_id""].Value=ISpace[""M_StepId""].Value;");
 if(gridrow.ElementName == "MG_w2_task_id") ISpace["MG_w2_task_id"].Value=gridrow.Value;
 if(gridrow.ElementName == "MF_w1_task_id") ISpace["MF_w1_task_id"].Value=gridrow.Value;
 ISpace["MG_w2_task_id"].Value=ISpace["MF_w1_task_id"].Value;
