@@ -1,0 +1,1528 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FormModels</name>
+    </assembly>
+    <members>
+        <member name="T:CPS.Proof.DFSExtension.AppParams">
+            <summary>
+            Represents a class for retrieval of Application Settings.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.AppParams._sysLog">
+            <summary>
+            A <seealso cref="T:log4net.ILog"/> that holds the Log object.
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.AppParams.#cctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.AppParams.Refresh">
+            <summary>
+            Represents a method to refresh the settings.
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.AppParams.GetValue(System.String)">
+            <summary>
+            Represents a method to get the
+            Param Value
+            </summary>
+            <param name="key">
+            A string representing the key.
+            </param>
+            <returns>
+            Param value otherwise null.
+            </returns>
+            <exception cref="T:System.Exception">
+            Throws exception if the passed in key is null or empty.
+            </exception>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.AppParams.BuildRootSection(System.String)">
+            <summary>
+            Reperesent the method of Bulid Root Section
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.AppParams.BuildApplicationRootSection(System.String)">
+            <summary>
+            Reperesent the method of Bulid Root Section
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.AppParams.BuildApplicationConnectionRootSection(System.String)">
+            <summary>
+            Reperesent the method of Bulid Root Section
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.AppParams.GetAppValue(System.String)">
+            <summary>
+            Represent the method of get app value
+            </summary>
+            <param name="key"></param>
+            <returns>Returns the values of Get app values</returns>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.AppParams.GetApplicationPath">
+            <summary>
+            Represent the method of Get application path
+            </summary>
+            <returns>Returns the values of Get application path</returns>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.AppParams.GetValue``1(System.String,System.Converter{System.Object,``0})">
+            <summary>
+            Represent the method of Get value
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="key"></param>
+            <param name="converter"></param>
+            <returns>Returns the values</returns>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.AppParams.GetAppSettings(System.String)">
+            <summary>
+            Represent the method of Get app settings
+            </summary>
+            <param name="key"></param>
+            <returns>Returns the values of Get app settings</returns>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.AppParams.GetDenyStrings">
+            <summary>
+            Represent the method of Get deny string settings
+            </summary>        
+            <returns>Returns the values of deny strings</returns>
+        </member>
+        <member name="T:CPS.Proof.DFSExtension.ConnectionString">
+            <summary>
+            Gets or Sets a <see cref="T:CPS.Proof.DFSExtension.ConnectionString"/>
+            that holds the Connection String
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ConnectionString.Name">
+            <summary>
+            Gets or sets a <see cref="T:System.String"/> 
+            that contains the name 
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ConnectionString.Connection">
+            <summary>
+            Gets or sets a <see cref="T:System.String"/>
+            that contains the connection 
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ConnectionString.ConnectionId">
+            <summary>
+            Gets or sets a <see cref="T:System.String"/>
+            that contains the ConnectionId
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ConnectionString.DbType">
+            <summary>
+            Gets or sets a <see cref="T:CPS.Proof.DFSExtension.DbTypes"/>
+            that contains the Dbtype
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ConnectionString.HostName">
+            <summary>
+            Gets or Sets a <see cref="T:System.String"/>
+            that contains the Hostname
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ConnectionString.Template">
+            <summary>
+            Gets or Sets a <see cref="T:System.String"/>
+            that contains the template
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ConnectionString.Port">
+            <summary>
+            Gets or sets a <see cref="T:System.Int16"/>
+            that contains the port
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ConnectionString.ConnectionType">
+            <summary>
+            Gets or Sets a <see cref="T:CPS.Proof.DFSExtension.ConnectionTypes"/>
+            that holds the connenctiontype
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ConnectionString.NameSpace">
+            <summary>
+            Gets or Sets a <see cref="T:System.String"/>
+            that holds the Namespace
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ConnectionString.MethodName">
+            <summary>
+            Gets or Sets a <see cref="T:System.String"/>
+            that holds the Method Name
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ConnectionString.RequestType">
+            <summary>
+            Gets or Sets a <see cref="P:CPS.Proof.DFSExtension.ConnectionString.RequestType"/>
+            that holds thr request type
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ConnectionString.ContentType">
+            <summary>
+            Gets or sets a <see cref="T:System.Int16"/> that contains the 
+            ContentType id
+            (1-SOAP,2-XML,3-JSON)
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ConnectionString.RequireAuthentication">
+            <summary>
+            Gets or sets a <see cref="T:System.Boolean"/> 
+            that contains the RequireAuthentication state
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ConnectionString.HasRequestBody">
+            <summary>
+            Gets or sets a <see cref="T:System.Boolean"/> 
+            that contains the HasRqstBdy state
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ConnectionString.UserName">
+            <summary>
+            Gets or sets a <see cref="T:System.String"/> 
+            that contains the UserName
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ConnectionString.Password">
+            <summary>
+            Gets or sets a <see cref="T:System.String"/> 
+            that contains the Password
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ConnectionString.TransportLayeredService">
+            <summary>
+            Gets or Sets the <see cref="T:System.Boolean"/> that
+            contains value for transport layered service.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ConnectionString.AutoReConnect">
+            <summary>
+            Gets or Sets the <see cref="T:System.Boolean"/> that
+            contains value for autoreconnect.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ConnectionString.IdleTimeouts">
+            <summary>
+            Gets or Sets the <see cref="T:System.Boolean"/> that
+            contains value for IdleTimeouts.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ConnectionString.ErrorCodes">
+            <summary>
+            Gets or Sets the <see cref="T:System.String"/> that
+            contains value for ErrorCodes.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ConnectionString.SuccessCodes">
+            <summary>
+            Gets or Sets the <see cref="T:System.String"/> that
+            contains value for SuccessCodes.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ConnectionString.Retries">
+            <summary>
+            Gets or Sets the <see cref="T:System.Int32"/> that
+            contains value for Retries.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ConnectionString.RetryInterval">
+            <summary>
+            Gets or Sets the <see cref="T:System.Double"/> that
+            contains value for RetryInterval.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ConnectionString.IsAsync">
+            <summary>
+            Gets or Sets the <see cref="T:System.Boolean"/> that
+            contains value for IsAsync.
+            </summary>
+        </member>
+        <member name="T:CPS.Proof.DFSExtension.DbTypes">
+            <summary>
+            Represent the Enum for Database that Proof supports. This
+            will have more entries when we support more databases.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.DbTypes.SQLServer">
+            <summary>
+            Represents the Sql server database.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.DbTypes.MySql">
+            <summary>
+            Represents the My Sql server database.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.DbTypes.Oracle">
+            <summary>
+            Represents the Oracle server database.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.DbTypes.ODBC">
+            <summary>
+            Represents the ODBC server database.
+            </summary>
+        </member>
+        <member name="T:CPS.Proof.DFSExtension.ContentType">
+            <summary>
+            Represents the enumeration that holds the Content Types.
+            </summary>
+        </member>
+        <member name="T:CPS.Proof.DFSExtension.Context">
+            <summary>
+            Represents the class that implements Context Model
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.Context.SlotId">
+            <summary>
+            Gets <see cref="T:System.String"/> that holds SlotId identifier
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.Context.ControlId">
+            <summary>
+            Gets <see cref="T:System.String"/> that holds ControlId identifier.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.Context.FormVersionId">
+            <summary>
+            Gets <see cref="T:System.String"/> that holds FormVersionId identifier.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.Context.Action">
+            <summary>
+            Gets <see cref="T:System.String"/> that holds Action identifier.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.Context.WidgetId">
+            <summary>
+            Gets <see cref="T:System.String"/> that holds ControlId identifier.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.Context.PackageProcessMapId">
+            <summary>
+            Gets <see cref="T:System.String"/> that holds PackageProcessMapId identifier.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.Context.ProcessActivityMapId">
+            <summary>
+            Gets <see cref="T:System.String"/> that holds ProcessActivityMapId identifier.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.Context.ViewPort">
+            <summary>
+            Gets <see cref="T:System.String"/> that holds ViewPort identifier.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.Context.FormInstanceId">
+            <summary>
+            Gets <see cref="T:System.String"/> that holds FormInstanceId identifier.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.Context.Params">
+            <summary>
+            Gets <see cref="T:System.Collections.Generic.ICollection`1"/> that holds Dictionary of ControlId and ControlValue
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.Context.FormData">
+            <summary>
+            Gets <see cref="T:System.Collections.Generic.ICollection`1"/> that holds Dictionary of ControlId and ControlValue
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.ElementAttributeType.None">
+            <summary>
+            Represents the default automatic attribute type, which
+            performs no action on the data elements.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.ElementAttributeType.ForeColor">
+            <summary>
+            Represents the attribute, to set the fore 
+            color for the data element.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.ElementAttributeType.BackColor">
+            <summary>
+            Represents the attribute, to set the back 
+            color for the data element.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.ElementAttributeType.BorderColor">
+            <summary>
+            Represents the attribute, to set the border 
+            color for the data element.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.ElementAttributeType.Visible">
+            <summary>
+            Represents the attribute, to set the visibility 
+            for the data element.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.ElementAttributeType.Enable">
+            <summary>
+            Represents the attribute, to enable the data element.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.ElementAttributeType.Value">
+            <summary>
+            Represents the attribute, that specifies the value expression.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.ElementAttributeType.SelectedRowId">
+            <summary>
+            Represents an enum item for SelectedRowId
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.ElementAttributeType.DisplayFormat">
+            <summary>
+            Represents an enum item for Display format.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.ElementAttributeType.Mandatory">
+            <summary>
+            Represents an enum item for Mandatory
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.ElementAttributeType.ShowDialog">
+            <summary>
+            Represents an enum item for show dialog
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.ElementAttributeType.HideDialog">
+            <summary>
+            Represents an enum item for hide dialog
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.ElementAttributeType.CSS">
+            <summary>
+            Represents an enum item for CSS
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.ElementAttributeType.ShowModal">
+            <summary>
+            Represents an enum item for show modal
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.ElementAttributeType.Pattern">
+            <summary>
+            Represents an enum item for Pattern
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.ElementAttributeType.DataKey">
+            <summary>
+            Represents an enum item for Pattern
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.ViewportTypes.Mobile">
+            <summary>
+            Enum that represents the FormVersionStyles Mobile object
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.ViewportTypes.Tab">
+            <summary>
+            Enum that represents the FormVersionStyles Tab object
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.ViewportTypes.Medium">
+            <summary>
+            Enum that represents the FormVersionStyles Medium object
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.ViewportTypes.Large">
+            <summary>
+            Enum that represents the FormVersionStyles Large object
+            </summary>
+        </member>
+        <member name="T:CPS.Proof.DFSExtension.ProcessType">
+            <summary>
+            Represents the enum that holds the different
+            types of a process.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.ProcessType.None">
+            <summary>
+            Represents the none processes.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.ProcessType.RuleBased">
+            <summary>
+            Represents the rule based processes.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.ProcessType.CaseBased">
+            <summary>
+            Represents the case based processes.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.ProcessType.RSpace">
+            <summary>
+            Represents the RSpace processes.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.ProcessType.AtomUI">
+            <summary>
+            Represents the atom UI processes.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.ProcessType.MetaModel">
+            <summary>
+            Represents the MetaModel processes.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.ProcessType.AtomFunctional">
+            <summary>
+            Represents the atom funcional processes.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.ProcessType.MasterDetail">
+            <summary>
+            Represents the MasterDetail.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.ProcessType.API">
+            <summary>
+            Represents the API.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.ProcessType.ExeorService">
+            <summary>
+            Represents the ExeorService.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.ProcessType.ReportsorDashboard">
+            <summary>
+            Represents the ReportsorDashboard.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.ProcessType.Widget">
+            <summary>
+            Represents the Widget.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.ProcessType.Composite">
+            <summary>
+            Represents the Composite.
+            </summary>
+        </member>
+        <member name="T:CPS.Proof.DFSExtension.DataTypes">
+            <summary>
+            Represents an enum for Data Type
+            </summary>
+        </member>
+        <member name="T:CPS.Proof.DFSExtension.RepositoryColumn">
+            <summary>
+            Used to hold the Repository Column details and convert as json.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.RepositoryColumn.Name">
+            <summary>
+            Gets or Sets a <see cref="T:System.String"/>that contains 
+            the Name.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.RepositoryColumn.DataType">
+            <summary>
+            Gets or Sets a <see cref="T:CPS.Proof.DFSExtension.DataTypes"/>that contains 
+            the DataType
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.RepositoryColumn.Value">
+            <summary>
+            Gets or Sets a<see cref="T:System.Object"/>that contains 
+            the Value
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.RepositoryColumn.IsKey">
+            <summary>
+            Gets or Sets a<see cref="T:System.Boolean"/>that contains 
+            the IsKey
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.RepositoryColumn.IsIdentity">
+            <summary>
+            Gets or Sets a<see cref="T:System.Boolean"/>that contains 
+            the IsIdentity
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.RepositoryColumn.IEnc">
+            <summary>
+            Gets or Sets a<see cref="T:System.Boolean"/>that contains 
+            the encryption required or not.
+            </summary>
+        </member>
+        <member name="T:CPS.Proof.DFSExtension.Response">
+            <summary>
+            Represents the class that implements GridColumn Model
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.ServiceElementData._logger">
+            <summary>
+            Represents the <see cref="T:log4net.ILog"/> that holds log instance.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ServiceElementData.ElementId">
+            <summary>
+            Gets <see cref="T:System.String"/> that holds Element identifier.
+            </summary>  
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ServiceElementData.ElementName">
+            <summary>
+            Gets <see cref="T:System.String"/> that holds Element identifier.
+            </summary>  
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ServiceElementData.Value">
+            <summary>
+            Represents the property that holds the 
+            element value.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ServiceElementData.ShowDialog">
+            <summary>
+            Gets <see cref="T:System.String"/> contains ShowDialog.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ServiceElementData.HideDialog">
+            <summary>
+            Gets <see cref="T:System.String"/> contains HideDialog.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ServiceElementData.ShowModal">
+            <summary>
+            Gets <see cref="T:System.String"/> contains ShowModal.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ServiceElementData.ECT">
+            <summary>
+            Gets <see cref="T:System.String"/> contains element control type.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ServiceElementData.EDT">
+            <summary>
+            Gets <see cref="T:System.String"/> contains element data type.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ServiceElementData.SEQ">
+            <summary>
+            Gets <see cref="T:System.Int32"/> contains sequence .
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ServiceElementData.Chk">
+            <summary>
+            Gets <see cref="!:System.boolean"/> that holds checked status 
+            </summary>  
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ServiceElementData.Visible">
+            <summary>
+            Gets <see cref="!:System.boolean"/> that holds visible status 
+            </summary> 
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ServiceElementData.BaCol">
+            <summary>
+            Represents the property that holds the 
+            back color of the element.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ServiceElementData.FCol">
+            <summary>
+            Represents the property that holds the 
+            Fore color of the element.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ServiceElementData.BrCl">
+             <summary>
+             Represents the property that holds the 
+            BorderColor . 
+             </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ServiceElementData.DCss">
+            <summary>
+            Represents the property that holds the 
+            Css of the element.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ServiceElementData.CSS">
+            <summary>
+            Represents the property that holds the 
+            Css of the element.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ServiceElementData.DVl">
+            <summary>
+            Represents the property that holds the 
+            key and value for the element.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ServiceElementData.RwId">
+            <summary>
+            Represents the property that holds the 
+            row id of the element
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ServiceElementData.PRwId">
+            <summary>
+            Represents the property that holds the 
+            Parent row id of the element
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ServiceElementData.Rwstate">
+            <summary>
+            Represents the property that is used to get and set the 
+            is mandatory property of the control.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ServiceElementData.PEId">
+            <summary>
+            Represents the property that holds the 
+            parent id of the element
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ServiceElementData.Child">
+            <summary>
+            Represents the tree structure
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ServiceElementData.PURL">
+            <summary>
+            Gets <see cref="T:System.String"/> that holds url
+            </summary>  
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ServiceElementData.Enbl">
+            <summary>
+            Gets <see cref="T:System.String"/> that holds value that determines
+            whether element is enabled or not.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ServiceElementData.Man">
+            <summary>
+            Represents the property that is used to get and set the 
+            is mandatory property of the control.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ServiceElementData.RedirectType">
+            <summary>
+            Represents the property that is used to get and set the 
+            is mandatory property of the control.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ServiceElementData.rElemData">
+            <summary>
+            Represents the property that is used to get and set RelodableElements .
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ServiceElementData.ControlId">
+            <summary>
+            Represents the property that is used to get and set ControlId .
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ServiceElementData.PageCount">
+            <summary>
+            Represents the property that is used to get and set PageCount .
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ServiceElementData.RecordsFrom">
+            <summary>
+            Represents the property that is used to get and set RecordsFrom .
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ServiceElementData.RecordsTo">
+            <summary>
+            Represents the property that is used to get and set RecordsTo .
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ServiceElementData.TotalRecords">
+            <summary>
+            Represents the property that is used to get and set TotalRecords .
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ServiceElementData.ComboSelectedValue">
+            <summary>
+            Represents the property that is use to get the combobox value.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.ServiceElementData.RType">
+            <summary>
+            Represents the property that is used to get and set RenderType.
+            </summary>
+        </member>
+        <member name="T:CPS.Proof.DFSExtension.SlotToken">
+            <summary>
+            Represents a class used to hold token and
+            logged in user details.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.SID">
+            <summary>
+            Gets or sets the slot token id.
+            </summary>
+            <value>
+            The slot id.
+            </value>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.segmentName">
+            <summary>
+            Gets or sets the slot token id.
+            </summary>
+            <value>
+            The slot id.
+            </value>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.segmentId">
+            <summary>
+            Gets or sets the slot token id.
+            </summary>
+            <value>
+            The slot id.
+            </value>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.totalSegments">
+            <summary>
+            Gets or sets the slot token id.
+            </summary>
+            <value>
+            The slot id.
+            </value>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.apiKey">
+            <summary>
+            Gets or sets the slot token id.
+            </summary>
+            <value>
+            The api Key.
+            </value>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.appId">
+            <summary>
+            Gets or sets the slot token id.
+            </summary>
+            <value>
+            The app Id.
+            </value>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.NotificationId">
+            <summary>
+            Gets or sets the slot token id.
+            </summary>
+            <value>
+            The slot id.
+            </value>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.UID">
+            <summary>
+            Gets or sets the user identifier.
+            </summary>
+            <value>
+            The user identifier.
+            </value>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.TranId">
+            <summary>
+            Gets or sets the user identifier.
+            </summary>
+            <value>
+            The user identifier.
+            </value>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.UMID">
+            <summary>
+            Gets or sets the user map id.
+            </summary>
+            <value>
+            The user map id.
+            </value>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.TZ">
+            <summary>
+            Gets or sets the user time zone.
+            </summary>
+            <value>
+            The user time zone.
+            </value>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.RMId">
+            <summary>
+            Gets or sets the role map id.
+            </summary>
+            <value>
+            The role map id.
+            </value>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.IsRoleBased">
+            <summary>
+            Gets or sets role based authenticate.
+            </summary>
+            <value>
+            return "1" for Role based Authenticate else "0"
+            </value>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.ShowInstancesWithinGroup">
+            <summary>
+            Gets or sets ShowInstances WithinGroup.
+            </summary>
+            <value>
+            return "1" for ShowInstances if 
+            the instnace created by users under the same orgunit.
+            else "0"
+            </value>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.RoleNames">
+            <summary>
+            Gets or sets the RoleNames of the user.
+            </summary>
+            <value>
+            The RoleNames.
+            </value>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.LoggedInRoleName">
+            <summary>
+            Gets or sets the RoleNames of the LoggedInRoleName.
+            </summary>
+            <value>
+            The LoggedInRoleName.
+            </value>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.RoleDescriptions">
+            <summary>
+            Gets or sets the Role Descriptions.
+            </summary>
+            <value>
+            The RoleDescription.
+            </value>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.DisplayName">
+            <summary>
+            Gets or sets the DisplayName.
+            </summary>
+            <value>
+            The DisplayName.
+            </value>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.SesId">
+            <summary>
+            Gets or sets the session id.
+            </summary>
+            <value>
+            Session id.
+            </value>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.TenId">
+            <summary>
+            Gets or sets the tenant id.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.TenCode">
+            <summary>
+            Gets or sets the tenant code.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.LayoutPref">
+            <summary>
+            Gets or sets the layout preferences.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.Lang">
+            <summary>
+            Gets or sets the language.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.RlMIds">
+            <summary>
+            Gets or sets the comma separated role map ids.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.DbType">
+            <summary>
+            Gets or sets database or connection type.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.ConnectionName">
+            <summary>
+            Gets or sets the connection name.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.RemoteUrl">
+            <summary>
+            Gets or sets the connection name.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.ActivityContext">
+            <summary>
+            Gets or sets the ActivityContext.
+            IP and name of client Machine
+            </summary>
+            <value>
+            The ActivityContext.
+            </value>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.RepConnectionName">
+            <summary>
+            Gets or Sets the RepConnectionName
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.AuditLogConnectionName">
+            <summary>
+             Gets or Sets the AuditLogConnectionName
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.RepDbType">
+            <summary>
+            Gets or Sets the RepDbType
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.UserName">
+            <summary>
+            Gets or sets the logged in username.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.CreatedOn">
+            <summary>
+            Gets or sets the token created date.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.IsAdminUser">
+            <summary>
+            Gets or sets the whether logged user is admin or not.
+            </summary>
+            <value>
+            IsAdminUser flag.
+            </value>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.FirstName">
+            <summary>
+            Gets or sets the user FirstName.
+            </summary>
+            <value>
+            FirstName.
+            </value>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.LastName">
+            <summary>
+            Gets or sets the user LastName.
+            </summary>
+            <value>
+            LastName.
+            </value>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.ConnectionString">
+            <summary>
+            Gets or sets the connection string
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.SlotToken.EnblAudLog">
+            <summary>
+            Gets or sets the enable audit log
+            </summary>
+        </member>
+        <member name="T:CPS.Proof.DFSExtension.Status">
+            <summary>
+            Represents the status of exection of methods.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.Success">
+            <summary>
+            Success
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.Failure">
+            <summary>
+            Failure 
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.Duplicate">
+            <summary>
+            Duplicate data found - 8 steps uses this.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.LockError">
+            <summary>
+            Lock Process/Lock Process instance
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.ExternalConnectionError">
+            <summary>
+            Load Process Instance. If a connection to 
+            an external database (when a query is executed) fails
+            this error is returned.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.ExternalSQLError">
+            <summary>
+            While executing an external database call like a Trigger
+            query, if lets say, the tables do not exist, an External
+            SQL error is returned.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.ConcurrencyViolation">
+            <summary>
+            Used for optimistic concurrency implementation of grids
+            in 8 steps.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.NoInstanceFound">
+            <summary>
+            Used to indicate to the user interface that no 
+            instance is available for processing.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.InstanceFound">
+            <summary>
+            Used to indicate the user that there are 
+            instances available for the process.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.DMSLoginFailed">
+            <summary>
+            Used to indicate to the user that the login
+            to Document management server failed.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.RuleExecutionFailed">
+            <summary>
+            Used to indicate to the user that all the
+            rules failed to execute for the activity.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.InstanceLimitExceeded">
+            <summary>
+            Used to indicate to the user that the given limit
+            for adding an instance has exceeded.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.ProcessLimitExceeded">
+            <summary>
+            Used to indicate to the user that the given limit
+            for creating a new process has exceeded.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.VersionLimitExceeded">
+            <summary>
+            Used to indicate to the user that the given limit
+            for creating a new version of the process has exceeded.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.PackagePublishInProgress">
+            <summary>
+            Used to indicate to the user that the given package
+            is under going an offline publish.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.UserLimitExceeded">
+            <summary>
+            Represents the status that indicates the user limit 
+            exceeded for named/concurrent users license.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.EvaluationExpired">
+            <summary>
+            Represents the status that indicates an evaluation 
+            license has expired.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.FeatureDisabled">
+            <summary>
+            Represent the status that indicates the feature is
+            disabled by license or feature upper limit exceeded.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.ActivityNotAccessible">
+            <summary>
+            Represent the status the indicates the Activity not accessible.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.ValidationFailed">
+            <summary>
+            Represents the status that indicates the validation failure 
+            for instance data.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.NoneProcessId">
+            <summary>
+            Represent the status the indicates the whether processid 
+            selected or not.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.ProcessNotDefined">
+            <summary>
+            Represents the status the indicate process is not
+            defined to package.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.SucessDelete">
+            <summary>
+            Represents the status indicate select process deleted
+            successfully
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.FailureDelete">
+            <summary>
+            Represents the status indicate select process deleted
+            failure
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.PackageLocked">
+            <summary>
+            Represents the status indicate Package is locked.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.PackageNotWellDefined">
+            <summary>
+            Represents the status indicate Package is not well
+            defined.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.RightAccessDenied">
+            <summary>
+            Represents the status indicate user does not have
+            right to access.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.InstanceAlreadyAccepted">
+            <summary>
+            Indicates that instance is already accepted.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.NoDataFound">
+            <summary>
+            Indicates that no data found to process the request
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.DomainDataMapAssociated">
+            <summary>
+            Indicates Domain data map associated with some
+            Expressions. So domain data cannot be deleted.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.PrerequisiteRequired">
+            <summary>
+            Indicates Prerequisite Required to perform 
+            the copyProcess operation
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.InstanceAlreadyLocked">
+            <summary>
+            Indicates the same user already Locked the instance 
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.InstanceAlreadySubmitted">
+            <summary>
+            Indicates the same user already Locked the instance 
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.ProcessMismatch">
+            <summary>
+            Indicates the Source and Destination process do match
+            with references during import and merge process
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.ProcessLocked">
+            <summary>
+            Indicates the Status of process
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.InvalidDataType">
+            <summary>
+            Indicates the Status of Invalid datatype
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.InvalidControlType">
+            <summary>
+            Indicates the Status of Invalid control type
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.InvalidName">
+            <summary>
+            Indicates the Status of Invalid name
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.MailIdNotFound">
+            <summary>
+            Indicates the Email not configured for existing user
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.NewlyCreated">
+            <summary>
+            Indicates newly created 
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.InvalidElementName">
+            <summary>
+            Indicates the Status of the Invalid ElementName
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.ProcessPrerequisiteRequired">
+            <summary>
+            Indicates Process-Prerequisite Required to perform 
+            the Import/Copy operation
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.ActivityPrerequisiteRequired">
+            <summary>
+            Indicates  Activity-Prerequisite Required to perform 
+            the Import/Copy operation
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.DataElementsPrerequisiteRequired">
+            <summary>
+            Indicates  DataElements-Prerequisite Required to perform 
+            the Import/Copy operation
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.RulePrerequisiteRequired">
+            <summary>
+            Indicates  Rule-Prerequisite Required to perform 
+            the Import/Copy operation
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.DuplicateProcessNameFound">
+            <summary>
+            Indicates  Duplicate Process Name Warning in 
+            the Import/Copy operation
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.MetaModelPrerequisite">
+            <summary>
+            Indicates  Activity Selection Required to perform
+            the Import operation for Caption Definer
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.DuplicateLocalNumberorEmailFound">
+            <summary>
+            Indicates  Duplicate Local Number or EmailId Warning in
+            the Import operation for OrganizationUnit
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.ActivityNotSaved">
+            <summary>
+            Indicates  Activity not saved
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.ForkingCannotBeDeleted">
+            <summary>
+            Indicates  Forking that is mapped with 
+            the DFS
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.ProductVersionNotAllowed">
+            <summary>
+            Indicates xml Product Version is 
+            not allowed to Import process
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.TenantCodeDuplicate">
+            <summary>
+            Indicates  TenantDuplication   
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.TenantNameDuplicate">
+            <summary>
+            Indicates  TenantName Duplication
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.TemplateReferenceFailed">
+            <summary>
+            Indicates  Template Reference Failed
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.LicenseFailed">
+            <summary>
+            Indicates License Failed
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.update">
+            <summary>
+            Indicates  Template Update
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.DataPresent">
+            <summary>
+            Indicates  Data already present
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.DataNotExists">
+            <summary>
+            Indicates Data already not present
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.deleteprimarykey">
+            <summary>
+            Indicates the Status to delete primary key
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.RemoteMachineFailed">
+            <summary>
+            Indicates the Status that 
+            operation failed in remote machine.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Status.CannotdeleteImportrequirements">
+            <summary>
+            Indicates the Status that 
+            it is aaociated with task
+            </summary>
+        </member>
+        <member name="T:CPS.Proof.DFSExtension.Triplet`3">
+            <summary>
+            Represents a generic placeholder class that can hold three
+            data elements.
+            </summary>
+            <typeparam name="I">
+            A generic type that holds the first value.
+            </typeparam>
+            <typeparam name="J">
+            A generic type that holds the second value.
+            </typeparam>
+            <typeparam name="K">
+            A generic type that holds the third value.
+            </typeparam>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Triplet`3._firstValue">
+            <summary>
+            The first value I.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Triplet`3._secondValue">
+            <summary>
+            The second value J.
+            </summary>
+        </member>
+        <member name="F:CPS.Proof.DFSExtension.Triplet`3._thirdValue">
+            <summary>
+            The third value K.
+            </summary>
+        </member>
+        <member name="M:CPS.Proof.DFSExtension.Triplet`3.#ctor(`0,`1,`2)">
+            <summary>
+            Overloaded constructor that takes three values.
+            </summary>
+            <param name="first">
+            First value.
+            </param>
+            <param name="second">
+            Second value.
+            </param>
+            <param name="third">
+            Third value.
+            </param>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.Triplet`3.FirstValue">
+            <summary>
+            Gets the first value.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.Triplet`3.SecondValue">
+            <summary>
+            Gets the second value.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.Triplet`3.ThirdValue">
+            <summary>
+            Gets the third value.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.UserActivities.DisplayContext">
+            <summary>
+            Gets/Sets the DisplayContext
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.UserActivities.KeyContext">
+            <summary>
+            Gets/Sets the DisplayContext
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.UserActivities.TransactionId">
+            <summary>
+            Gets/Sets the TransactionId
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.UserActivities.ActivityLogId">
+            <summary>
+            gets or sets a <see cref="T:System.String"/> that contains ActivityLogId.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.UserActivities.OperationName">
+            <summary>
+            gets or sets a <see cref="T:System.String"/> that contains the Operation Name.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.UserActivities.OperationContext">
+            <summary>
+            gets or sets a <see cref="T:System.String"/> that contains the Operation Context.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.UserActivities.OperationKeyContext">
+            <summary>
+            gets or sets a <see cref="T:System.String"/> that contains the Operation Context.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.UserActivities.OperationDisplayContext">
+            <summary>
+            gets or sets a <see cref="T:System.String"/> that contains the Operation Context.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.UserActivities.OperationDate">
+            <summary>
+            gets or sets a <see cref="T:System.String"/> taht contains the Operation Date. 
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.UserActivities.SlotId">
+            <summary>
+            gets or sets a <see cref="T:System.String"/> that contains the Slot Id. 
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.UserActivities.ActivityTypeId">
+            <summary>
+            gets or sets a <see cref="T:System.Int32"/> that contains the ActivityType id.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.UserActivities.TotalRecords">
+            <summary>
+            gets or sets a <see cref="T:System.Int64"/> that contains total record count.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.UserActivities.LoginTime">
+            <summary>
+            gets or sets a <see cref="T:System.Int64"/> that contains In time.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.UserActivities.ThreadId">
+            <summary>
+            gets or sets a <see cref="T:System.Int32"/> that contains Thread Id.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.UserActivities.Exception">
+            <summary>
+            gets or sets a <see cref="T:System.String"/> that contains exception.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.UserActivities.ProxyIp">
+            <summary>
+            gets or sets a <see cref="T:System.String"/> that contains the ProxyIp.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.UserActivities.UserName">
+            <summary>
+            gets or sets a <see cref="T:System.String"/> that contains UserName.
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.UserActivities.LogType">
+            <summary>
+            REpresents a property to identify the log type
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.UserActivities.TenantId">
+            <summary>
+            REpresents a property to identify the TenantId
+            </summary>
+        </member>
+        <member name="P:CPS.Proof.DFSExtension.UserActivities.UserMapId">
+            <summary>
+            REpresents a property to identify the UserMapId
+            </summary>
+        </member>
+    </members>
+</doc>

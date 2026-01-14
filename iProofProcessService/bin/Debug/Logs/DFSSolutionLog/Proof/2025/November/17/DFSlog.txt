@@ -1,0 +1,41 @@
+DEBUG 17:11:2025:02:25:00 CPS.Proof.DFSExtension.iProofServicesHubController [SaveWidgetInstanceData 486] Entering SaveWidgetInstanceData
+ERROR 17:11:2025:02:25:00 CPS.Proof.DFSExtension.iProofServicesHubController [SaveWidgetInstanceData 513] Error in  SaveWidgetInstanceData
+System.ArgumentOutOfRangeException: Index and length must refer to a location within the string. (Parameter 'length')
+   at System.String.Substring(Int32 startIndex, Int32 length)
+   at CPS.Proof.DFSExtension.Common.GetSlotTokenfromDB(String strslotToken, UserActivities activity, String isStaySignedIn) in D:\iProofDFSAPISolution\DynamicDFSAPI\testGrid\iProofProcessService\Helper\Common.cs:line 130
+   at CPS.Proof.DFSExtension.Common.Authorize(String strslotToken, UserActivities activity) in D:\iProofDFSAPISolution\DynamicDFSAPI\testGrid\iProofProcessService\Helper\Common.cs:line 69
+   at CPS.Proof.DFSExtension.iProofServicesHubController.SaveWidgetInstanceData(Context context) in D:\iProofDFSAPISolution\DynamicDFSAPI\testGrid\iProofProcessService\Controllers\iProofServicesHubController.cs:line 513
+DEBUG 17:11:2025:02:25:25 CPS.Proof.DFSExtension.iProofServicesHubController [SaveWidgetInstanceData 486] Entering SaveWidgetInstanceData
+ERROR 17:11:2025:02:25:47 CPS.Proof.DFSExtension.iProofServicesHubController [SaveWidgetInstanceData 513] Error in  SaveWidgetInstanceData
+System.ArgumentOutOfRangeException: Index and length must refer to a location within the string. (Parameter 'length')
+   at System.String.Substring(Int32 startIndex, Int32 length)
+   at CPS.Proof.DFSExtension.Common.GetSlotTokenfromDB(String strslotToken, UserActivities activity, String isStaySignedIn) in D:\iProofDFSAPISolution\DynamicDFSAPI\testGrid\iProofProcessService\Helper\Common.cs:line 130
+   at CPS.Proof.DFSExtension.Common.Authorize(String strslotToken, UserActivities activity) in D:\iProofDFSAPISolution\DynamicDFSAPI\testGrid\iProofProcessService\Helper\Common.cs:line 69
+   at CPS.Proof.DFSExtension.iProofServicesHubController.SaveWidgetInstanceData(Context context) in D:\iProofDFSAPISolution\DynamicDFSAPI\testGrid\iProofProcessService\Controllers\iProofServicesHubController.cs:line 513
+DEBUG 17:11:2025:02:26:11 CPS.Proof.DFSExtension.iProofServicesHubController [SaveWidgetInstanceData 486] Entering SaveWidgetInstanceData
+ERROR 17:11:2025:02:26:38 CPS.Proof.DFSExtension.iProofServicesHubController [SaveWidgetInstanceData 513] Error in  SaveWidgetInstanceData
+System.ArgumentOutOfRangeException: Index and length must refer to a location within the string. (Parameter 'length')
+   at System.String.Substring(Int32 startIndex, Int32 length)
+   at CPS.Proof.DFSExtension.Common.GetSlotTokenfromDB(String strslotToken, UserActivities activity, String isStaySignedIn) in D:\iProofDFSAPISolution\DynamicDFSAPI\testGrid\iProofProcessService\Helper\Common.cs:line 130
+   at CPS.Proof.DFSExtension.Common.Authorize(String strslotToken, UserActivities activity) in D:\iProofDFSAPISolution\DynamicDFSAPI\testGrid\iProofProcessService\Helper\Common.cs:line 69
+   at CPS.Proof.DFSExtension.iProofServicesHubController.SaveWidgetInstanceData(Context context) in D:\iProofDFSAPISolution\DynamicDFSAPI\testGrid\iProofProcessService\Controllers\iProofServicesHubController.cs:line 513
+DEBUG 17:11:2025:02:27:11 CPS.Proof.DFSExtension.iProofServicesHubController [SaveWidgetInstanceData 486] Entering SaveWidgetInstanceData
+DEBUG 17:11:2025:02:27:22 CPS.Proof.DFSExtension.SlotMonitorSql [IsSlotValid 58] Entering IsSlotValid
+DEBUG 17:11:2025:02:27:22 CPS.Proof.DFSExtension.SlotMonitorSql [GetConnectionStringById 88] Entering GetConnectionStringById
+DEBUG 17:11:2025:02:27:23 CPS.Proof.DFSExtension.SlotMonitorSql [GetConnectionStringById 85] Exiting GetConnectionStringById
+DEBUG 17:11:2025:02:27:23 CPS.Proof.DFSExtension.SlotMonitorSql [IsSlotValid 52] Exiting IsSlotValid
+ERROR 17:11:2025:02:27:27 CPS.Proof.DFSExtension.iProofServicesHubController [SaveWidgetInstanceData 513] Error in  SaveWidgetInstanceData
+System.Exception: Invalid Slot
+   at CPS.Proof.DFSExtension.Common.GetSlotTokenfromDB(String strslotToken, UserActivities activity, String isStaySignedIn) in D:\iProofDFSAPISolution\DynamicDFSAPI\testGrid\iProofProcessService\Helper\Common.cs:line 151
+   at CPS.Proof.DFSExtension.Common.Authorize(String strslotToken, UserActivities activity) in D:\iProofDFSAPISolution\DynamicDFSAPI\testGrid\iProofProcessService\Helper\Common.cs:line 69
+   at CPS.Proof.DFSExtension.iProofServicesHubController.SaveWidgetInstanceData(Context context) in D:\iProofDFSAPISolution\DynamicDFSAPI\testGrid\iProofProcessService\Controllers\iProofServicesHubController.cs:line 513
+DEBUG 17:11:2025:02:29:03 CPS.Proof.DFSExtension.iProofServicesHubController [SaveWidgetInstanceData 486] Entering SaveWidgetInstanceData
+DEBUG 17:11:2025:02:29:10 CPS.Proof.DFSExtension.SlotMonitorSql [IsSlotValid 58] Entering IsSlotValid
+DEBUG 17:11:2025:02:29:10 CPS.Proof.DFSExtension.SlotMonitorSql [GetConnectionStringById 88] Entering GetConnectionStringById
+DEBUG 17:11:2025:02:29:10 CPS.Proof.DFSExtension.SlotMonitorSql [GetConnectionStringById 85] Exiting GetConnectionStringById
+DEBUG 17:11:2025:02:29:10 CPS.Proof.DFSExtension.SlotMonitorSql [IsSlotValid 52] Exiting IsSlotValid
+ERROR 17:11:2025:02:29:12 CPS.Proof.DFSExtension.iProofServicesHubController [SaveWidgetInstanceData 513] Error in  SaveWidgetInstanceData
+System.Exception: Invalid Slot
+   at CPS.Proof.DFSExtension.Common.GetSlotTokenfromDB(String strslotToken, UserActivities activity, String isStaySignedIn) in D:\iProofDFSAPISolution\DynamicDFSAPI\testGrid\iProofProcessService\Helper\Common.cs:line 151
+   at CPS.Proof.DFSExtension.Common.Authorize(String strslotToken, UserActivities activity) in D:\iProofDFSAPISolution\DynamicDFSAPI\testGrid\iProofProcessService\Helper\Common.cs:line 69
+   at CPS.Proof.DFSExtension.iProofServicesHubController.SaveWidgetInstanceData(Context context) in D:\iProofDFSAPISolution\DynamicDFSAPI\testGrid\iProofProcessService\Controllers\iProofServicesHubController.cs:line 513

@@ -1,0 +1,184 @@
+[
+  {
+    "ContainingType": "CPS.Proof.DFSExtension.iProofServicesHubController",
+    "Method": "DeleteGridInstanceData",
+    "RelativePath": "api/iProofServicesHub/DeleteGridInstanceData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "context",
+        "Type": "CPS.Proof.DFSExtension.Context",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CPS.Proof.DFSExtension.Response",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CPS.Proof.DFSExtension.iProofServicesHubController",
+    "Method": "ExecuteFormLoad",
+    "RelativePath": "api/iProofServicesHub/ExecuteFormLoad",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "context",
+        "Type": "CPS.Proof.DFSExtension.Context",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CPS.Proof.DFSExtension.Response",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CPS.Proof.DFSExtension.iProofServicesHubController",
+    "Method": "ExecuteMultiRequest",
+    "RelativePath": "api/iProofServicesHub/ExecuteMultiRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "context",
+        "Type": "CPS.Proof.DFSExtension.Context",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CPS.Proof.DFSExtension.Response",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CPS.Proof.DFSExtension.iProofServicesHubController",
+    "Method": "GetComboDetails",
+    "RelativePath": "api/iProofServicesHub/GetComboDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "context",
+        "Type": "CPS.Proof.DFSExtension.Context",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CPS.Proof.DFSExtension.iProofServicesHubController",
+    "Method": "GetFormInstanceData",
+    "RelativePath": "api/iProofServicesHub/GetFormInstanceData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "context",
+        "Type": "CPS.Proof.DFSExtension.Context",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CPS.Proof.DFSExtension.Response",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CPS.Proof.DFSExtension.iProofServicesHubController",
+    "Method": "GetGridInstanceData",
+    "RelativePath": "api/iProofServicesHub/GetGridInstanceData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "context",
+        "Type": "CPS.Proof.DFSExtension.Context",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CPS.Proof.DFSExtension.Response",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CPS.Proof.DFSExtension.iProofServicesHubController",
+    "Method": "SaveWidgetInstanceData",
+    "RelativePath": "api/iProofServicesHub/SaveWidgetInstanceData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "context",
+        "Type": "CPS.Proof.DFSExtension.Context",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CPS.Proof.DFSExtension.Response",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
