@@ -144,6 +144,10 @@ namespace CPS.Proof.DFSExtension
 												     @"24F5D845-D560-4FC1-B284-00FB19DFB96F"),
 			
 						
+			     new Triplet<string, string, string>("b9f07d01-3166-6df8-1b01-e851ceafe5b2","C3BEA3AF-C9B7-4DEA-AE35-EA1C626191C0",
+												     @"38C753DC-ED33-454B-85AF-DD4DF536B530"),
+			
+						
 			     new Triplet<string, string, string>("D2758C07-ECD7-4E4E-9A72-0E59AF0C791B","C3BEA3AF-C9B7-4DEA-AE35-EA1C626191C0",
 												     @"38C753DC-ED33-454B-85AF-DD4DF536B530"),
 			
@@ -157,6 +161,10 @@ namespace CPS.Proof.DFSExtension
 			
 						
 			     new Triplet<string, string, string>("25420DB7-4D09-4FEB-8E01-4AF2D8A835BA","C3BEA3AF-C9B7-4DEA-AE35-EA1C626191C0",
+												     @"38C753DC-ED33-454B-85AF-DD4DF536B530"),
+			
+						
+			     new Triplet<string, string, string>("0da349dc-c2b1-93f5-8358-54d3557731ae","C3BEA3AF-C9B7-4DEA-AE35-EA1C626191C0",
 												     @"38C753DC-ED33-454B-85AF-DD4DF536B530"),
 			
 						
@@ -804,6 +812,22 @@ return;
 base.WriteDebugInfo(@"return;");
 }
 }
+base.WriteDebugInfo(@"EXEC GetTaskSeq 1");
+
+var querySourceb9f07d0131666df81b01e851ceafe5b2 =GetQueryExpressionDataSource("b9f07d01-3166-6df8-1b01-e851ceafe5b2");
+Dictionary<short,object> resultb9f07d0131666df81b01e851ceafe5b2=iSpace.ExecuteQuery(querySourceb9f07d0131666df81b01e851ceafe5b2,@"EXEC GetTaskSeq 1",false);
+
+base.WriteDebugInfo(@"var querySourceb9f07d0131666df81b01e851ceafe5b2 =GetQueryExpressionDataSource(""b9f07d01-3166-6df8-1b01-e851ceafe5b2"");Dictionary<short,object> resultb9f07d0131666df81b01e851ceafe5b2=iSpace.ExecuteQuery(querySourceb9f07d0131666df81b01e851ceafe5b2,@""EXEC GetTaskSeq 1"",false);");
+base.WriteDebugInfo(@"");
+
+if((resultb9f07d0131666df81b01e851ceafe5b2!=null) && (resultb9f07d0131666df81b01e851ceafe5b2.Count!=0))
+{
+if(resultb9f07d0131666df81b01e851ceafe5b2.ContainsKey(0))
+ISpace["MF_w1_task_id"].Value = resultb9f07d0131666df81b01e851ceafe5b2[0];
+}
+else{
+ISpace["MF_w1_task_id"].Value = null;
+}
 base.WriteDebugInfo(@"EXEC InnovaceNoCode..[FormSave_3cfe092a-c9df-42bd-bb7a-d4a6e90379fc]  #MF_w1_task_id,'#MF_w1_task_code','#MF_w1_task_name','#MF_w1_task_type_code','#MF_w1_complexity_code','#MF_w1_requirement_id','#MF_w1_task_status',#MF_w1_is_active,'#MF_w1_created_at',#MF_w1_created_by,#MF_w1_updated_by,'#MF_w1_updated_at'");
 
 var querySourceD2758C07ECD74E4E9A720E59AF0C791B =GetQueryExpressionDataSource("D2758C07-ECD7-4E4E-9A72-0E59AF0C791B");
@@ -827,6 +851,34 @@ foreach(var gridChild in ISpace["TaskStep"].Child)
 {foreach(var gridrow in gridChild.Child)
 
 {
+base.WriteDebugInfo(@"EXEC GetTaskSeq 2");
+
+var querySource0da349dcc2b193f5835854d3557731ae =GetQueryExpressionDataSource("0da349dc-c2b1-93f5-8358-54d3557731ae");
+Dictionary<short,object> result0da349dcc2b193f5835854d3557731ae=iSpace.ExecuteQuery(querySource0da349dcc2b193f5835854d3557731ae,@"EXEC GetTaskSeq 2",false);
+
+base.WriteDebugInfo(@"var querySource0da349dcc2b193f5835854d3557731ae =GetQueryExpressionDataSource(""0da349dc-c2b1-93f5-8358-54d3557731ae"");Dictionary<short,object> result0da349dcc2b193f5835854d3557731ae=iSpace.ExecuteQuery(querySource0da349dcc2b193f5835854d3557731ae,@""EXEC GetTaskSeq 2"",false);");
+base.WriteDebugInfo(@"");
+
+if((result0da349dcc2b193f5835854d3557731ae!=null) && (result0da349dcc2b193f5835854d3557731ae.Count!=0))
+{
+if(result0da349dcc2b193f5835854d3557731ae.ContainsKey(0))
+ISpace["M_StepId"].Value = result0da349dcc2b193f5835854d3557731ae[0];
+}
+else{
+ISpace["M_StepId"].Value = null;
+}
+if(gridrow.ElementName == "MG_w2_step_id") ISpace["MG_w2_step_id"].Value=gridrow.Value;
+if(gridrow.ElementName == "M_StepId") ISpace["M_StepId"].Value=gridrow.Value;
+ISpace["MG_w2_step_id"].Value=ISpace["M_StepId"].Value;
+base.WriteDebugInfo(@"if(gridrow.ElementName == ""MG_w2_step_id"") ISpace[""MG_w2_step_id""].Value=gridrow.Value;
+if(gridrow.ElementName == ""M_StepId"") ISpace[""M_StepId""].Value=gridrow.Value;
+ISpace[""MG_w2_step_id""].Value=ISpace[""M_StepId""].Value;");
+if(gridrow.ElementName == "MG_w2_task_id") ISpace["MG_w2_task_id"].Value=gridrow.Value;
+if(gridrow.ElementName == "MF_w1_task_id") ISpace["MF_w1_task_id"].Value=gridrow.Value;
+ISpace["MG_w2_task_id"].Value=ISpace["MF_w1_task_id"].Value;
+base.WriteDebugInfo(@"if(gridrow.ElementName == ""MG_w2_task_id"") ISpace[""MG_w2_task_id""].Value=gridrow.Value;
+if(gridrow.ElementName == ""MF_w1_task_id"") ISpace[""MF_w1_task_id""].Value=gridrow.Value;
+ISpace[""MG_w2_task_id""].Value=ISpace[""MF_w1_task_id""].Value;");
 base.WriteDebugInfo(@"EXEC InnovaceNoCode..[GridSave_4EA7F6C5-7148-44C1-A8EF-2BB10145EC09]  #MG_w2_step_id,'#MG_w2_task_description',#MG_w2_task_id,'#MG_w2_step_state',#TaskStep_Sequence,'#MG_w2_updated_at',#MG_w2_updated_by,#MG_w2_created_by,'#MG_w2_created_at',#MG_w2_is_active");
 
 var querySource25420DB74D094FEB8E014AF2D8A835BA =GetQueryExpressionDataSource("25420DB7-4D09-4FEB-8E01-4AF2D8A835BA");
