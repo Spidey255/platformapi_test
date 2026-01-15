@@ -779,12 +779,12 @@ Dictionary<short, object> keyValuePairs = null;base.WriteDebugInfo(@"Root-OnAfte
 if(1==1)
 {
 base.WriteDebugInfo(@"if(1==1)");
-base.WriteDebugInfo(@"exec [GetTaskSeq] 1");
+base.WriteDebugInfo(@"EXEC [GetTaskSeq] 1");
 
 var querySource4e76790c498ed01989254e9649018b61 =GetQueryExpressionDataSource("4e76790c-498e-d019-8925-4e9649018b61");
-Dictionary<short,object> result4e76790c498ed01989254e9649018b61=iSpace.ExecuteQuery(querySource4e76790c498ed01989254e9649018b61,@"exec[GetTaskSeq] 1",false);
+Dictionary<short,object> result4e76790c498ed01989254e9649018b61=iSpace.ExecuteQuery(querySource4e76790c498ed01989254e9649018b61,@"EXEC [GetTaskSeq] 1",false);
 
-base.WriteDebugInfo(@"var querySource4e76790c498ed01989254e9649018b61 =GetQueryExpressionDataSource(""4e76790c-498e-d019-8925-4e9649018b61"");Dictionary<short,object> result4e76790c498ed01989254e9649018b61=iSpace.ExecuteQuery(querySource4e76790c498ed01989254e9649018b61,@""exec[GetTaskSeq] 1"",false);");
+base.WriteDebugInfo(@"var querySource4e76790c498ed01989254e9649018b61 =GetQueryExpressionDataSource(""4e76790c-498e-d019-8925-4e9649018b61"");Dictionary<short,object> result4e76790c498ed01989254e9649018b61=iSpace.ExecuteQuery(querySource4e76790c498ed01989254e9649018b61,@""EXEC [GetTaskSeq] 1"",false);");
 base.WriteDebugInfo(@"");
 
 if((result4e76790c498ed01989254e9649018b61!=null) && (result4e76790c498ed01989254e9649018b61.Count!=0))
@@ -870,8 +870,8 @@ IISpace iSpace = new ISpace();
 try
 {
 base.WriteDebugInfo(@"Save_TaskStep-OnClick");
-ISpace["MFG_w2_task_id"].Value= ISpace["MF_w1_task_id"].Value;
-base.WriteDebugInfo(@"ISpace[""MFG_w2_task_id""].Value= ISpace[""MF_w1_task_id""].Value;");
+ISpace["MFG_w2_task_id"].Value=ISpace["MF_w1_task_id"].Value;
+base.WriteDebugInfo(@"ISpace[""MFG_w2_task_id""].Value=ISpace[""MF_w1_task_id""].Value;");
 if(ISpace["growid"].Value=="")
 {
 base.WriteDebugInfo(@"if(ISpace[""growid""].Value=="""")");
