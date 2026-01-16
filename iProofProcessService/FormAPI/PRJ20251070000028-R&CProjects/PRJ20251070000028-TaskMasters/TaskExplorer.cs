@@ -785,13 +785,14 @@ catch(Exception ex)
 base.WriteErrorInfo(@"Exception:",ex);
 }
 }
-private void SubscribeElementEvents_save_tastdetails (ref Dictionary<string,ServiceElementData> ISpace)
+private void SubscribeElementEvents_no (ref Dictionary<string,ServiceElementData> ISpace)
 {
 IISpace iSpace = new ISpace();
 try
 {
-base.WriteDebugInfo(@"Save_TastDetails-OnClick");
-base.WriteDebugInfo(@"Save_TastDetails-OnClick");
+base.WriteDebugInfo(@"No-OnClick");
+ISpace["UI_Dialog"].HideDialog=true;;
+base.WriteDebugInfo(@"ISpace[""UI_Dialog""].HideDialog=true;;");
 }
 catch(Exception ex)
 {
@@ -820,6 +821,24 @@ catch(Exception ex)
 base.WriteErrorInfo(@"Exception:",ex);
 }
 }
+private void SubscribeElementEvents_m_confdialog (ref Dictionary<string,ServiceElementData> ISpace)
+{
+IISpace iSpace = new ISpace();
+try
+{
+base.WriteDebugInfo(@"M_ConfDialog-OnClick");
+if(1==1)
+{
+base.WriteDebugInfo(@"if(1==1)");
+ISpace["UI_Dialog"].ShowDialog=true;;
+base.WriteDebugInfo(@"ISpace[""UI_Dialog""].ShowDialog=true;;");
+}
+}
+catch(Exception ex)
+{
+base.WriteErrorInfo(@"Exception:",ex);
+}
+}
 public override void ExecuteMethod
 	(string methodName, string elementName,
 		ref Dictionary<string, ServiceElementData> dfsParam)
@@ -833,17 +852,17 @@ public override void ExecuteMethod
 }
 	if(methodName.ToLower().Equals("onclick"))
 {
-		if(elementName.ToLower().Equals("save_tastdetails"))
+		if(elementName.ToLower().Equals("no"))
 {
-			SubscribeElementEvents_save_tastdetails(ref dfsParam);
-}
-		if(elementName.ToLower().Equals("save_tastdetails"))
-{
-			SubscribeElementEvents_save_tastdetails(ref dfsParam);
+			SubscribeElementEvents_no(ref dfsParam);
 }
 		if(elementName.ToLower().Equals("m_add"))
 {
 			SubscribeElementEvents_m_add(ref dfsParam);
+}
+		if(elementName.ToLower().Equals("m_confdialog"))
+{
+			SubscribeElementEvents_m_confdialog(ref dfsParam);
 }
 }
 }
