@@ -160,6 +160,14 @@ namespace CPS.Proof.DFSExtension
 												     @"24F5D845-D560-4FC1-B284-00FB19DFB96F"),
 			
 						
+			     new Triplet<string, string, string>("b2309149-833c-09d3-5a14-f7f64c7e01c9","C3BEA3AF-C9B7-4DEA-AE35-EA1C626191C0",
+												     @"38C753DC-ED33-454B-85AF-DD4DF536B530"),
+			
+						
+			     new Triplet<string, string, string>("55373037-7410-f09e-80ae-a9378d46dd55","C3BEA3AF-C9B7-4DEA-AE35-EA1C626191C0",
+												     @"38C753DC-ED33-454B-85AF-DD4DF536B530"),
+			
+						
 			     new Triplet<string, string, string>("4e76790c-498e-d019-8925-4e9649018b61","C3BEA3AF-C9B7-4DEA-AE35-EA1C626191C0",
 												     @"38C753DC-ED33-454B-85AF-DD4DF536B530"),
 			
@@ -169,6 +177,10 @@ namespace CPS.Proof.DFSExtension
 			
 						
 			     new Triplet<string, string, string>("2EBB3644-88F4-4F03-9DD1-FCEBF2ED013B","Grid Binding9",
+												     @"4EA7F6C5-7148-44C1-A8EF-2BB10145EC09"),
+			
+						
+			     new Triplet<string, string, string>("b2309149-833c-09d3-5a14-f7f64c7e01c9","Load Task Grid",
 												     @"4EA7F6C5-7148-44C1-A8EF-2BB10145EC09"),
 			
 			
@@ -181,20 +193,20 @@ namespace CPS.Proof.DFSExtension
 
 		
 	  			
-			     new Triplet<string, string, string>("MF_w1_complexity_code","Z4IrlPTfl7E3UHhZKuDmi6JCY+YHcA863SqFhgUyVVzIeVWsNWiw1z/z9sf1712IST2TisZRbDL01cRO080NYHWsKvkYJS77npyn1aWPGFOCecExdgZwESRUvAQUkQSXMQqGc4bTspeEien72gMAsQ==",
-												     @"EXEC GetTaskCombos 1"),
+			     new Triplet<string, string, string>("MF_w1_task_type_code","Z4IrlPTfl7E3UHhZKuDmi6JCY+YHcA863SqFhgUyVVzIeVWsNWiw1z/z9sf1712IST2TisZRbDL01cRO080NYHWsKvkYJS77npyn1aWPGFOCecExdgZwESRUvAQUkQSXMQqGc4bTspeEien72gMAsQ==",
+												     @"EXEC GetTaskCombos 3"),
 			
 						
-			     new Triplet<string, string, string>("MF_w1_task_status","Z4IrlPTfl7E3UHhZKuDmi6JCY+YHcA863SqFhgUyVVzIeVWsNWiw1z/z9sf1712IST2TisZRbDL01cRO080NYHWsKvkYJS77npyn1aWPGFOCecExdgZwESRUvAQUkQSXMQqGc4bTspeEien72gMAsQ==",
-												     @"EXEC GetTaskCombos 4"),
+			     new Triplet<string, string, string>("MF_w1_complexity_code","Z4IrlPTfl7E3UHhZKuDmi6JCY+YHcA863SqFhgUyVVzIeVWsNWiw1z/z9sf1712IST2TisZRbDL01cRO080NYHWsKvkYJS77npyn1aWPGFOCecExdgZwESRUvAQUkQSXMQqGc4bTspeEien72gMAsQ==",
+												     @"EXEC GetTaskCombos 1"),
 			
 						
 			     new Triplet<string, string, string>("MF_w1_requirement_id","Z4IrlPTfl7E3UHhZKuDmi6JCY+YHcA863SqFhgUyVVzIeVWsNWiw1z/z9sf1712IST2TisZRbDL01cRO080NYHWsKvkYJS77npyn1aWPGFOCecExdgZwESRUvAQUkQSXMQqGc4bTspeEien72gMAsQ==",
 												     @"EXEC GetTaskCombos 2"),
 			
 						
-			     new Triplet<string, string, string>("MF_w1_task_type_code","Z4IrlPTfl7E3UHhZKuDmi6JCY+YHcA863SqFhgUyVVzIeVWsNWiw1z/z9sf1712IST2TisZRbDL01cRO080NYHWsKvkYJS77npyn1aWPGFOCecExdgZwESRUvAQUkQSXMQqGc4bTspeEien72gMAsQ==",
-												     @"EXEC GetTaskCombos 3"),
+			     new Triplet<string, string, string>("MF_w1_task_status","Z4IrlPTfl7E3UHhZKuDmi6JCY+YHcA863SqFhgUyVVzIeVWsNWiw1z/z9sf1712IST2TisZRbDL01cRO080NYHWsKvkYJS77npyn1aWPGFOCecExdgZwESRUvAQUkQSXMQqGc4bTspeEien72gMAsQ==",
+												     @"EXEC GetTaskCombos 4"),
 			
 						
 			     new Triplet<string, string, string>("MFG_w2_step_state","Z4IrlPTfl7E3UHhZKuDmi6JCY+YHcA863SqFhgUyVVzIeVWsNWiw1z/z9sf1712IST2TisZRbDL01cRO080NYHWsKvkYJS77npyn1aWPGFOCecExdgZwESRUvAQUkQSXMQqGc4bTspeEien72gMAsQ==",
@@ -776,9 +788,9 @@ try
 {
 Dictionary<short, object> keyValuePairs = null;base.WriteDebugInfo(@"Root-OnAfterFormLoad");
 
-if(1==1)
+if(ISpace["MF_w1_task_id"].Value==0)
 {
-base.WriteDebugInfo(@"if(1==1)");
+base.WriteDebugInfo(@"if(ISpace[""MF_w1_task_id""].Value==0)");
 base.WriteDebugInfo(@"EXEC [GetTaskSeq] 1");
 
 var querySource4e76790c498ed01989254e9649018b61 =GetQueryExpressionDataSource("4e76790c-498e-d019-8925-4e9649018b61");
@@ -795,6 +807,50 @@ ISpace["MF_w1_task_id"].Value = result4e76790c498ed01989254e9649018b61[0];
 else{
 ISpace["MF_w1_task_id"].Value = null;
 }
+}
+if(1==1)
+{
+base.WriteDebugInfo(@"if(1==1)");
+base.WriteDebugInfo(@"EXEC TasKDetails '#MF_w1_task_id'");
+
+var querySource553730377410f09e80aea9378d46dd55 =GetQueryExpressionDataSource("55373037-7410-f09e-80ae-a9378d46dd55");
+Dictionary<short,object> result553730377410f09e80aea9378d46dd55=iSpace.ExecuteQuery(querySource553730377410f09e80aea9378d46dd55,@"EXEC TasKDetails '" + ISpace["MF_w1_task_id"].Value + @"'",false);
+
+base.WriteDebugInfo(@"var querySource553730377410f09e80aea9378d46dd55 =GetQueryExpressionDataSource(""55373037-7410-f09e-80ae-a9378d46dd55"");Dictionary<short,object> result553730377410f09e80aea9378d46dd55=iSpace.ExecuteQuery(querySource553730377410f09e80aea9378d46dd55,@""EXEC TasKDetails '"" + ISpace[""MF_w1_task_id""].Value + @""'"",false);");
+base.WriteDebugInfo(@"");
+
+if((result553730377410f09e80aea9378d46dd55!=null) && (result553730377410f09e80aea9378d46dd55.Count!=0))
+{
+if(result553730377410f09e80aea9378d46dd55.ContainsKey(9))
+ISpace["MF_w1_task_status"].Value = result553730377410f09e80aea9378d46dd55[9];
+if(result553730377410f09e80aea9378d46dd55.ContainsKey(7))
+ISpace["MF_w1_requirement_id"].Value = result553730377410f09e80aea9378d46dd55[7];
+if(result553730377410f09e80aea9378d46dd55.ContainsKey(3))
+ISpace["MF_w1_task_type_code"].Value = result553730377410f09e80aea9378d46dd55[3];
+if(result553730377410f09e80aea9378d46dd55.ContainsKey(5))
+ISpace["MF_w1_complexity_code"].Value = result553730377410f09e80aea9378d46dd55[5];
+if(result553730377410f09e80aea9378d46dd55.ContainsKey(1))
+ISpace["MF_w1_task_code"].Value = result553730377410f09e80aea9378d46dd55[1];
+if(result553730377410f09e80aea9378d46dd55.ContainsKey(2))
+ISpace["MF_w1_task_name"].Value = result553730377410f09e80aea9378d46dd55[2];
+}
+else{
+ISpace["MF_w1_task_status"].Value = null;ISpace["MF_w1_requirement_id"].Value = null;ISpace["MF_w1_task_type_code"].Value = null;ISpace["MF_w1_complexity_code"].Value = null;ISpace["MF_w1_task_code"].Value = null;ISpace["MF_w1_task_name"].Value = null;
+}
+
+var querySourceb2309149833c09d35a14f7f64c7e01c9 =GetQueryExpressionDataSource("b2309149-833c-09d3-5a14-f7f64c7e01c9");
+
+DataTable resultb2309149833c09d35a14f7f64c7e01c9=iSpace.SetGridDataSource(querySourceb2309149833c09d35a14f7f64c7e01c9, _objectFactory.GetGridRPP("TaskStep"),@"EXEC TasKstepDetails '" + ISpace["MF_w1_task_id"].Value + @"'");
+
+iSpace.InsertGridBindDetails("TaskStep","11",querySourceb2309149833c09d35a14f7f64c7e01c9,"EXEC TasKstepDetails '" + ISpace["MF_w1_task_id"].Value + @"'",_objectFactory.GetGridRPP("TaskStep"));
+
+base.WriteDebugInfo(@"var querySourceb2309149833c09d35a14f7f64c7e01c9 =GetQueryExpressionDataSource(""b2309149-833c-09d3-5a14-f7f64c7e01c9"");DataTable resultb2309149833c09d35a14f7f64c7e01c9=iSpace.SetGridDataSource(querySourceb2309149833c09d35a14f7f64c7e01c9, _objectFactory.GetGridRPP(""TaskStep""),@""EXEC TasKstepDetails '"" + ISpace[""MF_w1_task_id""].Value + @""'"");iSpace.InsertGridBindDetails(""TaskStep"",""11"",querySourceb2309149833c09d35a14f7f64c7e01c9,""EXEC TasKstepDetails '"" + ISpace[""MF_w1_task_id""].Value + @""'"",_objectFactory.GetGridRPP(""TaskStep""));");
+base.WriteDebugInfo(@"");
+
+
+List<Triplet<string, short, short?>> resulta3993650589b25c321b1d35d92c673bb=acdataIspace5EC891472FE240AF8446350FE5E13C57.GetQueryExpressionBindings("a3993650-589b-25c3-21b1-d35d92c673bb");
+iSpace.SetGridData(resultb2309149833c09d35a14f7f64c7e01c9,resulta3993650589b25c321b1d35d92c673bb,"TaskStep",ref ISpace);
+iSpace.UpdateGridBindDetails("TaskStep",resulta3993650589b25c321b1d35d92c673bb);
 }
 }
 catch(Exception ex)
@@ -1091,6 +1147,22 @@ using System;
 								   new Triplet<string, short, short?>("MG_w2_updated_by",6,
 														   -1),
 								   new Triplet<string, short, short?>("TaskStep_RowId",10,
+														   -1),
+								}
+			},
+							{"a3993650-589b-25c3-21b1-d35d92c673bb", 
+				
+				new List<Triplet<string, short, short?>> {
+
+								   new Triplet<string, short, short?>("MG_w2_is_active",9,
+														   -1),
+								   new Triplet<string, short, short?>("MG_w2_step_id",0,
+														   -1),
+								   new Triplet<string, short, short?>("MG_w2_step_state",3,
+														   -1),
+								   new Triplet<string, short, short?>("MG_w2_task_description",1,
+														   -1),
+								   new Triplet<string, short, short?>("MG_w2_task_id",2,
 														   -1),
 								}
 			},
