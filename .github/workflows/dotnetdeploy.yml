@@ -3,11 +3,12 @@ name: .NET 6 API Deployment
 on:
   push:
     branches:
-      - main
+      - 
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    environment: 
 
     steps:
       - name: Checkout code
@@ -21,10 +22,13 @@ jobs:
       - name: Restore dependencies
         run: dotnet restore
 
+      - name: Dependency Scan
+        run:  dotnet list package --vulnerable --include-transitive
+
       - name: Build project
         run: dotnet build --configuration Release --no-restore
 
-      - name: publish Build
+      - name: Publish Build
         run: |
           dotnet publish \
             -c Release \
@@ -45,10 +49,10 @@ jobs:
           ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa \
             ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} \
             "mkdir -p /home/cpsadmin/Presentations/TestAPICICD"
-      
+
       - name: Stop API service on server
         run: |
-            ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa \
+          ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa \
             ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} \
             "sudo systemctl stop TestApplication.service || echo 'Service not found, skipping...'"
 
@@ -64,6 +68,6 @@ jobs:
 
       - name: Restart API service on server
         run: |
-            ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa \
+          ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa \
             ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} \
             "sudo systemctl restart TestApplication.service || echo 'Service not found, skipping...'"
