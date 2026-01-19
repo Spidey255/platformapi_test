@@ -3,12 +3,12 @@ name: .NET 6 API Deployment
 on:
   push:
     branches:
-      - 
+      - Dev-Local
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    environment: 
+    environment: Dev-Local
 
     steps:
       - name: Checkout code
