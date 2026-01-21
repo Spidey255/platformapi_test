@@ -1040,11 +1040,16 @@ namespace CPS.Proof.DFSExtension
                                       case "5C0FC3F3-C652-466E-931C-2F3797DB6328":
                     {
                      
-                                     gInsertQuery=@"";
+                                     gInsertQuery=@"
+		
+		DECLARE  @TBL_5C0FC3F3C652466E931C2F3797DB6328 AS TABLE(	  [InstanceId] VARCHAR(36)	, [ProcessActivityMapId] VARCHAR(36)	, [GridId] VARCHAR(36)	, [RowId] VARCHAR(36)	, [Sequence] INT	, [MG_w1_created_by] BIGINT	, [MG_w1_task_status] NVARCHAR(12)	, [MG_w1_task_id] BIGINT	, [MG_w1_complexity_code] NVARCHAR(12)	, [MG_w1_requirement_id] BIGINT	, [MG_w1_updated_at] DATETIME	, [MG_w1_updated_by] BIGINT	, [MG_w1_is_active] BIT	, [MG_w1_task_code] NVARCHAR(12)	, [MG_w1_task_name] NVARCHAR(12)	, [MG_w1_task_type_code] NVARCHAR(12)	, [MG_w1_created_at] DATETIME){0}INSERT INTO [5C0FC3F3-C652-466E-931C-2F3797DB6328](InstanceId,ProcessActivityMapId,GridId,RowId,Sequence,MG_w1_created_by,MG_w1_task_status,MG_w1_task_id,MG_w1_complexity_code,MG_w1_requirement_id,MG_w1_updated_at,MG_w1_updated_by,MG_w1_is_active,MG_w1_task_code,MG_w1_task_name,MG_w1_task_type_code,MG_w1_created_at)
+							SELECT TDT.InstanceId,TDT.ProcessActivityMapId,TDT.GridId,TDT.RowId,TDT.Sequence,TDT.MG_w1_created_by,TDT.MG_w1_task_status,TDT.MG_w1_task_id,TDT.MG_w1_complexity_code,TDT.MG_w1_requirement_id,TDT.MG_w1_updated_at,TDT.MG_w1_updated_by,TDT.MG_w1_is_active,TDT.MG_w1_task_code,TDT.MG_w1_task_name,TDT.MG_w1_task_type_code,TDT.MG_w1_created_at FROM @TBL_5C0FC3F3C652466E931C2F3797DB6328 TDT
+							LEFT JOIN [5C0FC3F3-C652-466E-931C-2F3797DB6328] DT  WITH(NOLOCK)
+							ON	TDT.RowId=DT.RowId WHERE DT.RowId IS NULL;";
 
-                                     colList=@"";
+                                     colList=@"InstanceId,ProcessActivityMapId,GridId,RowId,Sequence,MG_w1_created_by,MG_w1_task_status,MG_w1_task_id,MG_w1_complexity_code,MG_w1_requirement_id,MG_w1_updated_at,MG_w1_updated_by,MG_w1_is_active,MG_w1_task_code,MG_w1_task_name,MG_w1_task_type_code,MG_w1_created_at";
 
-                                     tempInsertQuery=@"INSERT INTO @TBL_5C0FC3F3C652466E931C2F3797DB6328()VALUES({0});";
+                                     tempInsertQuery=@"INSERT INTO @TBL_5C0FC3F3C652466E931C2F3797DB6328(InstanceId,ProcessActivityMapId,GridId,RowId,Sequence,MG_w1_created_by,MG_w1_task_status,MG_w1_task_id,MG_w1_complexity_code,MG_w1_requirement_id,MG_w1_updated_at,MG_w1_updated_by,MG_w1_is_active,MG_w1_task_code,MG_w1_task_name,MG_w1_task_type_code,MG_w1_created_at)VALUES({0});";
                                      
 
                             splitcols = colList.Split(',');
@@ -1259,11 +1264,16 @@ namespace CPS.Proof.DFSExtension
                                          case "5C0FC3F3-C652-466E-931C-2F3797DB6328":
                     {
                      
-                            gInsertQuery=@"";
+                            gInsertQuery=@"
+		
+		DECLARE  @TBL_5C0FC3F3C652466E931C2F3797DB6328 AS TABLE(	  [InstanceId] VARCHAR(36)	, [ProcessActivityMapId] VARCHAR(36)	, [GridId] VARCHAR(36)	, [RowId] VARCHAR(36)	, [Sequence] INT	, [MG_w1_created_by] BIGINT	, [MG_w1_task_status] NVARCHAR(12)	, [MG_w1_task_id] BIGINT	, [MG_w1_complexity_code] NVARCHAR(12)	, [MG_w1_requirement_id] BIGINT	, [MG_w1_updated_at] DATETIME	, [MG_w1_updated_by] BIGINT	, [MG_w1_is_active] BIT	, [MG_w1_task_code] NVARCHAR(12)	, [MG_w1_task_name] NVARCHAR(12)	, [MG_w1_task_type_code] NVARCHAR(12)	, [MG_w1_created_at] DATETIME){0}INSERT INTO [5C0FC3F3-C652-466E-931C-2F3797DB6328](InstanceId,ProcessActivityMapId,GridId,RowId,Sequence,MG_w1_created_by,MG_w1_task_status,MG_w1_task_id,MG_w1_complexity_code,MG_w1_requirement_id,MG_w1_updated_at,MG_w1_updated_by,MG_w1_is_active,MG_w1_task_code,MG_w1_task_name,MG_w1_task_type_code,MG_w1_created_at)
+							SELECT TDT.InstanceId,TDT.ProcessActivityMapId,TDT.GridId,TDT.RowId,TDT.Sequence,TDT.MG_w1_created_by,TDT.MG_w1_task_status,TDT.MG_w1_task_id,TDT.MG_w1_complexity_code,TDT.MG_w1_requirement_id,TDT.MG_w1_updated_at,TDT.MG_w1_updated_by,TDT.MG_w1_is_active,TDT.MG_w1_task_code,TDT.MG_w1_task_name,TDT.MG_w1_task_type_code,TDT.MG_w1_created_at FROM @TBL_5C0FC3F3C652466E931C2F3797DB6328 TDT
+							LEFT JOIN [5C0FC3F3-C652-466E-931C-2F3797DB6328] DT  WITH(NOLOCK)
+							ON	TDT.RowId=DT.RowId WHERE DT.RowId IS NULL;";
 
-                            colList=@"";
+                            colList=@"InstanceId,ProcessActivityMapId,GridId,RowId,Sequence,MG_w1_created_by,MG_w1_task_status,MG_w1_task_id,MG_w1_complexity_code,MG_w1_requirement_id,MG_w1_updated_at,MG_w1_updated_by,MG_w1_is_active,MG_w1_task_code,MG_w1_task_name,MG_w1_task_type_code,MG_w1_created_at";
 
-                            tempInsertQuery=@"INSERT INTO @TBL_5C0FC3F3C652466E931C2F3797DB6328()VALUES({0});";
+                            tempInsertQuery=@"INSERT INTO @TBL_5C0FC3F3C652466E931C2F3797DB6328(InstanceId,ProcessActivityMapId,GridId,RowId,Sequence,MG_w1_created_by,MG_w1_task_status,MG_w1_task_id,MG_w1_complexity_code,MG_w1_requirement_id,MG_w1_updated_at,MG_w1_updated_by,MG_w1_is_active,MG_w1_task_code,MG_w1_task_name,MG_w1_task_type_code,MG_w1_created_at)VALUES({0});";
 
                             splitcols = colList.Split(',');
 
