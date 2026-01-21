@@ -922,19 +922,19 @@ using System;
 				
 				new List<Triplet<string, short, short?>> {
 
-								   new Triplet<string, short, short?>("MG_w1_complexity_code",6,
+								   new Triplet<string, short, short?>("MG_w1_task_name",2,
 														   -1),
 								   new Triplet<string, short, short?>("MG_w1_requirement_id",8,
+														   -1),
+								   new Triplet<string, short, short?>("MG_w1_task_type_code",4,
+														   -1),
+								   new Triplet<string, short, short?>("MG_w1_task_status",9,
+														   -1),
+								   new Triplet<string, short, short?>("MG_w1_complexity_code",6,
 														   -1),
 								   new Triplet<string, short, short?>("MG_w1_task_code",1,
 														   -1),
 								   new Triplet<string, short, short?>("MG_w1_task_id",0,
-														   -1),
-								   new Triplet<string, short, short?>("MG_w1_task_name",2,
-														   -1),
-								   new Triplet<string, short, short?>("MG_w1_task_status",9,
-														   -1),
-								   new Triplet<string, short, short?>("MG_w1_task_type_code",4,
 														   -1),
 								}
 			},
