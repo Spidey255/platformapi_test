@@ -38,7 +38,7 @@ namespace CPS.Proof.DFSExtension
 
         /// <summary>
         /// Represents the constructor that creates an instance
-        /// of TaskFunctionalTesting Controller.
+        /// of TaskExplorer Controller.
         /// </summary>
         /// <param name="configuration">
         /// A <see cref="IConfiguration"/> that holds  
@@ -89,11 +89,18 @@ namespace CPS.Proof.DFSExtension
                 switch(context.PackageProcessMapId)
                 {
             
-                                      case "74bf8517-74c6-4b98-970f-0ad595b13f64":   var  objectFactoryTaskFunctionalTesting=new TaskFunctionalTestingObjectFactory();
-                                             virtualpageinstance = objectFactoryTaskFunctionalTesting.GetDfsVirtualInstance
+                                      case "3cfe092a-c9df-42bd-bb7a-d4a6e90379fc":   var  objectFactoryTaskCreation=new TaskCreationObjectFactory();
+                                             virtualpageinstance = objectFactoryTaskCreation.GetDfsVirtualInstance
                                                         (context.ProcessActivityMapId);
 
-                                            virtualpageinstance._objectFactory = objectFactoryTaskFunctionalTesting;
+                                            virtualpageinstance._objectFactory = objectFactoryTaskCreation;
+                                            break;
+
+                                     case "7e6b302b-b86e-4442-a995-03bc22d48abc":   var  objectFactoryTaskExplorer=new TaskExplorerObjectFactory();
+                                             virtualpageinstance = objectFactoryTaskExplorer.GetDfsVirtualInstance
+                                                        (context.ProcessActivityMapId);
+
+                                            virtualpageinstance._objectFactory = objectFactoryTaskExplorer;
                                             break;
 
                  
@@ -219,10 +226,16 @@ namespace CPS.Proof.DFSExtension
                 switch(context.PackageProcessMapId)
                 {
             
-                                      case "74bf8517-74c6-4b98-970f-0ad595b13f64":   var  objectFactoryTaskFunctionalTesting=new TaskFunctionalTestingObjectFactory();
-                                             virtualpageinstance = objectFactoryTaskFunctionalTesting.GetDfsVirtualInstance
+                                      case "3cfe092a-c9df-42bd-bb7a-d4a6e90379fc":   var  objectFactoryTaskCreation=new TaskCreationObjectFactory();
+                                             virtualpageinstance = objectFactoryTaskCreation.GetDfsVirtualInstance
                                                         (context.ProcessActivityMapId);
-                                            virtualpageinstance._objectFactory = objectFactoryTaskFunctionalTesting;
+                                            virtualpageinstance._objectFactory = objectFactoryTaskCreation;
+                                            break;
+
+                                     case "7e6b302b-b86e-4442-a995-03bc22d48abc":   var  objectFactoryTaskExplorer=new TaskExplorerObjectFactory();
+                                             virtualpageinstance = objectFactoryTaskExplorer.GetDfsVirtualInstance
+                                                        (context.ProcessActivityMapId);
+                                            virtualpageinstance._objectFactory = objectFactoryTaskExplorer;
                                             break;
 
                  
@@ -358,11 +371,21 @@ namespace CPS.Proof.DFSExtension
                 {
             
                                      
-                    case "74bf8517-74c6-4b98-970f-0ad595b13f64":   
+                    case "3cfe092a-c9df-42bd-bb7a-d4a6e90379fc":   
                                              foreach (var item in context.Params)
                                              {
-                                            var  objectFactoryTaskFunctionalTesting=new TaskFunctionalTestingObjectFactory();
-                                             combosource = objectFactoryTaskFunctionalTesting.GetComboDataSource
+                                            var  objectFactoryTaskCreation=new TaskCreationObjectFactory();
+                                             combosource = objectFactoryTaskCreation.GetComboDataSource
+                                                        (item.ElementName);  
+                                             }
+                                            break;
+                   
+                                    
+                    case "7e6b302b-b86e-4442-a995-03bc22d48abc":   
+                                             foreach (var item in context.Params)
+                                             {
+                                            var  objectFactoryTaskExplorer=new TaskExplorerObjectFactory();
+                                             combosource = objectFactoryTaskExplorer.GetComboDataSource
                                                         (item.ElementName);  
                                              }
                                             break;
@@ -473,7 +496,10 @@ namespace CPS.Proof.DFSExtension
                 switch(context.PackageProcessMapId)
                 {
             
-                                      case "74bf8517-74c6-4b98-970f-0ad595b13f64":  var   elementFactoryTaskFunctionalTesting=new TaskFunctionalTestingDataElementFactory();                                            
+                                      case "3cfe092a-c9df-42bd-bb7a-d4a6e90379fc":  var   elementFactoryTaskCreation=new TaskCreationDataElementFactory();                                            
+                                            break;
+
+                                     case "7e6b302b-b86e-4442-a995-03bc22d48abc":  var   elementFactoryTaskExplorer=new TaskExplorerDataElementFactory();                                            
                                             break;
 
                  
