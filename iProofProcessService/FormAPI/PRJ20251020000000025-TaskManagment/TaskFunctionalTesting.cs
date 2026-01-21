@@ -754,7 +754,7 @@ private void SubscribeFormEvents_root(ref Dictionary<string, ServiceElementData>
 {
 try
 {
-Dictionary<short, object> keyValuePairs = null;base.WriteDebugInfo(@"Root-OnAfterFormLoad");
+base.WriteDebugInfo(@"Root-OnAfterFormLoad");
 
 var querySource777a386cd068363db7163d024e037932 =GetQueryExpressionDataSource("777a386c-d068-363d-b716-3d024e037932");
 
@@ -769,7 +769,7 @@ base.WriteDebugInfo(@"");
 List<Triplet<string, short, short?>> resultd42533195ef63c1c187132348108d90a=acdataIspace91001EA5B50642288107E8201462FFC1.GetQueryExpressionBindings("d4253319-5ef6-3c1c-1871-32348108d90a");
 iSpace.SetGridData(result777a386cd068363db7163d024e037932,resultd42533195ef63c1c187132348108d90a,"TaskDetails",ref ISpace);
 iSpace.UpdateGridBindDetails("TaskDetails",resultd42533195ef63c1c187132348108d90a);
-Dictionary<short, object> keyValuePairs = null;base.WriteDebugInfo(@"Root-OnAfterFormLoad");
+base.WriteDebugInfo(@"Root-OnAfterFormLoad");
 if(1==1)
 {
 base.WriteDebugInfo(@"if(1==1)");
