@@ -753,18 +753,12 @@ DataTable result777a386cd068363db7163d024e037932=iSpace.SetGridDataSource(queryS
 iSpace.InsertGridBindDetails("TaskDetails","11",querySource777a386cd068363db7163d024e037932,"EXEC TasKDetails ''",_objectFactory.GetGridRPP("TaskDetails"));
 
 base.WriteDebugInfo(@"var querySource777a386cd068363db7163d024e037932 =GetQueryExpressionDataSource(""777a386c-d068-363d-b716-3d024e037932"");DataTable result777a386cd068363db7163d024e037932=iSpace.SetGridDataSource(querySource777a386cd068363db7163d024e037932, _objectFactory.GetGridRPP(""TaskDetails""),@""EXEC TasKDetails ''"");iSpace.InsertGridBindDetails(""TaskDetails"",""11"",querySource777a386cd068363db7163d024e037932,""EXEC TasKDetails ''"",_objectFactory.GetGridRPP(""TaskDetails""));");
-
-base.WriteDebugInfo(@"");
-
-base.WriteDebugInfo(@"");
 base.WriteDebugInfo(@"");
 
 
 List<Triplet<string, short, short?>> resultd42533195ef63c1c187132348108d90a=acdataIspace91001EA5B50642288107E8201462FFC1.GetQueryExpressionBindings("d4253319-5ef6-3c1c-1871-32348108d90a");
 iSpace.SetGridData(result777a386cd068363db7163d024e037932,resultd42533195ef63c1c187132348108d90a,"TaskDetails",ref ISpace);
 iSpace.UpdateGridBindDetails("TaskDetails",resultd42533195ef63c1c187132348108d90a);
-base.WriteDebugInfo(@"");
-base.WriteDebugInfo(@"");
 Dictionary<short, object> keyValuePairs = null;base.WriteDebugInfo(@"Root-OnAfterFormLoad");
 if(1==1)
 {
