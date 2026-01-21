@@ -144,7 +144,7 @@ namespace CPS.Proof.DFSExtension
 												     @"38C753DC-ED33-454B-85AF-DD4DF536B530"),
 			
 						
-			     new Triplet<string, string, string>("E7F4446B-3E00-4038-A24C-73BD6EFC4A82","C3BEA3AF-C9B7-4DEA-AE35-EA1C626191C0",
+			     new Triplet<string, string, string>("64C51C81-59CF-486D-9B10-072274E5B1A2","C3BEA3AF-C9B7-4DEA-AE35-EA1C626191C0",
 												     @"38C753DC-ED33-454B-85AF-DD4DF536B530"),
 			
 						
@@ -738,6 +738,32 @@ Dictionary<short, object> keyValuePairs = null;base.WriteDebugInfo(@"Root-OnAfte
 if(1==1)
 {
 base.WriteDebugInfo(@"if(1==1)");
+base.WriteDebugInfo(@"EXEC GetTaskSummary");
+
+var querySource64C51C8159CF486D9B10072274E5B1A2 =GetQueryExpressionDataSource("64C51C81-59CF-486D-9B10-072274E5B1A2");
+Dictionary<short,object> result64C51C8159CF486D9B10072274E5B1A2=iSpace.ExecuteQuery(querySource64C51C8159CF486D9B10072274E5B1A2,@"EXEC GetTaskSummary",false);
+
+base.WriteDebugInfo(@"var querySource64C51C8159CF486D9B10072274E5B1A2 =GetQueryExpressionDataSource(""64C51C81-59CF-486D-9B10-072274E5B1A2"");Dictionary<short,object> result64C51C8159CF486D9B10072274E5B1A2=iSpace.ExecuteQuery(querySource64C51C8159CF486D9B10072274E5B1A2,@""EXEC GetTaskSummary"",false);");
+base.WriteDebugInfo(@"");
+
+if((result64C51C8159CF486D9B10072274E5B1A2!=null) && (result64C51C8159CF486D9B10072274E5B1A2.Count!=0))
+{
+if(result64C51C8159CF486D9B10072274E5B1A2.ContainsKey(3))
+ISpace["M_Closed"].Value = result64C51C8159CF486D9B10072274E5B1A2[3];
+if(result64C51C8159CF486D9B10072274E5B1A2.ContainsKey(0))
+ISpace["M_Total"].Value = result64C51C8159CF486D9B10072274E5B1A2[0];
+if(result64C51C8159CF486D9B10072274E5B1A2.ContainsKey(1))
+ISpace["M_Active"].Value = result64C51C8159CF486D9B10072274E5B1A2[1];
+if(result64C51C8159CF486D9B10072274E5B1A2.ContainsKey(2))
+ISpace["M_InActive"].Value = result64C51C8159CF486D9B10072274E5B1A2[2];
+}
+else{
+ISpace["M_Closed"].Value = null;ISpace["M_Total"].Value = null;ISpace["M_Active"].Value = null;ISpace["M_InActive"].Value = null;
+}
+}
+if(1==1)
+{
+base.WriteDebugInfo(@"if(1==1)");
 
 var querySource799aca0d883ea868677d5f43dddca1bf =GetQueryExpressionDataSource("799aca0d-883e-a868-677d-5f43dddca1bf");
 
@@ -752,32 +778,6 @@ base.WriteDebugInfo(@"");
 List<Triplet<string, short, short?>> result3af47cd6d5ccfa0478e604749ae0b6b1=acdataIspace5B035305E81B4571BBE4724D00438E54.GetQueryExpressionBindings("3af47cd6-d5cc-fa04-78e6-04749ae0b6b1");
 iSpace.SetGridData(result799aca0d883ea868677d5f43dddca1bf,result3af47cd6d5ccfa0478e604749ae0b6b1,"TastDetails",ref ISpace);
 iSpace.UpdateGridBindDetails("TastDetails",result3af47cd6d5ccfa0478e604749ae0b6b1);
-}
-if(1==1)
-{
-base.WriteDebugInfo(@"if(1==1)");
-base.WriteDebugInfo(@"EXEC GetTaskSummary");
-
-var querySourceE7F4446B3E004038A24C73BD6EFC4A82 =GetQueryExpressionDataSource("E7F4446B-3E00-4038-A24C-73BD6EFC4A82");
-Dictionary<short,object> resultE7F4446B3E004038A24C73BD6EFC4A82=iSpace.ExecuteQuery(querySourceE7F4446B3E004038A24C73BD6EFC4A82,@"EXEC GetTaskSummary",false);
-
-base.WriteDebugInfo(@"var querySourceE7F4446B3E004038A24C73BD6EFC4A82 =GetQueryExpressionDataSource(""E7F4446B-3E00-4038-A24C-73BD6EFC4A82"");Dictionary<short,object> resultE7F4446B3E004038A24C73BD6EFC4A82=iSpace.ExecuteQuery(querySourceE7F4446B3E004038A24C73BD6EFC4A82,@""EXEC GetTaskSummary"",false);");
-base.WriteDebugInfo(@"");
-
-if((resultE7F4446B3E004038A24C73BD6EFC4A82!=null) && (resultE7F4446B3E004038A24C73BD6EFC4A82.Count!=0))
-{
-if(resultE7F4446B3E004038A24C73BD6EFC4A82.ContainsKey(3))
-ISpace["M_Closed"].Value = resultE7F4446B3E004038A24C73BD6EFC4A82[3];
-if(resultE7F4446B3E004038A24C73BD6EFC4A82.ContainsKey(0))
-ISpace["M_Total"].Value = resultE7F4446B3E004038A24C73BD6EFC4A82[0];
-if(resultE7F4446B3E004038A24C73BD6EFC4A82.ContainsKey(1))
-ISpace["M_Active"].Value = resultE7F4446B3E004038A24C73BD6EFC4A82[1];
-if(resultE7F4446B3E004038A24C73BD6EFC4A82.ContainsKey(2))
-ISpace["M_InActive"].Value = resultE7F4446B3E004038A24C73BD6EFC4A82[2];
-}
-else{
-ISpace["M_Closed"].Value = null;ISpace["M_Total"].Value = null;ISpace["M_Active"].Value = null;ISpace["M_InActive"].Value = null;
-}
 }
 }
 catch(Exception ex)
