@@ -89,7 +89,14 @@ namespace CPS.Proof.DFSExtension
                 switch(context.PackageProcessMapId)
                 {
             
-                                      case "c3e03d70-482e-412c-ab11-9ee7cdbc9d71":   var  objectFactoryTaskExplorer=new TaskExplorerObjectFactory();
+                                      case "3cfe092a-c9df-42bd-bb7a-d4a6e90379fc":   var  objectFactoryTaskCreation=new TaskCreationObjectFactory();
+                                             virtualpageinstance = objectFactoryTaskCreation.GetDfsVirtualInstance
+                                                        (context.ProcessActivityMapId);
+
+                                            virtualpageinstance._objectFactory = objectFactoryTaskCreation;
+                                            break;
+
+                                     case "7e6b302b-b86e-4442-a995-03bc22d48abc":   var  objectFactoryTaskExplorer=new TaskExplorerObjectFactory();
                                              virtualpageinstance = objectFactoryTaskExplorer.GetDfsVirtualInstance
                                                         (context.ProcessActivityMapId);
 
@@ -219,7 +226,13 @@ namespace CPS.Proof.DFSExtension
                 switch(context.PackageProcessMapId)
                 {
             
-                                      case "c3e03d70-482e-412c-ab11-9ee7cdbc9d71":   var  objectFactoryTaskExplorer=new TaskExplorerObjectFactory();
+                                      case "3cfe092a-c9df-42bd-bb7a-d4a6e90379fc":   var  objectFactoryTaskCreation=new TaskCreationObjectFactory();
+                                             virtualpageinstance = objectFactoryTaskCreation.GetDfsVirtualInstance
+                                                        (context.ProcessActivityMapId);
+                                            virtualpageinstance._objectFactory = objectFactoryTaskCreation;
+                                            break;
+
+                                     case "7e6b302b-b86e-4442-a995-03bc22d48abc":   var  objectFactoryTaskExplorer=new TaskExplorerObjectFactory();
                                              virtualpageinstance = objectFactoryTaskExplorer.GetDfsVirtualInstance
                                                         (context.ProcessActivityMapId);
                                             virtualpageinstance._objectFactory = objectFactoryTaskExplorer;
@@ -358,7 +371,17 @@ namespace CPS.Proof.DFSExtension
                 {
             
                                      
-                    case "c3e03d70-482e-412c-ab11-9ee7cdbc9d71":   
+                    case "3cfe092a-c9df-42bd-bb7a-d4a6e90379fc":   
+                                             foreach (var item in context.Params)
+                                             {
+                                            var  objectFactoryTaskCreation=new TaskCreationObjectFactory();
+                                             combosource = objectFactoryTaskCreation.GetComboDataSource
+                                                        (item.ElementName);  
+                                             }
+                                            break;
+                   
+                                    
+                    case "7e6b302b-b86e-4442-a995-03bc22d48abc":   
                                              foreach (var item in context.Params)
                                              {
                                             var  objectFactoryTaskExplorer=new TaskExplorerObjectFactory();
@@ -473,7 +496,10 @@ namespace CPS.Proof.DFSExtension
                 switch(context.PackageProcessMapId)
                 {
             
-                                      case "c3e03d70-482e-412c-ab11-9ee7cdbc9d71":  var   elementFactoryTaskExplorer=new TaskExplorerDataElementFactory();                                            
+                                      case "3cfe092a-c9df-42bd-bb7a-d4a6e90379fc":  var   elementFactoryTaskCreation=new TaskCreationDataElementFactory();                                            
+                                            break;
+
+                                     case "7e6b302b-b86e-4442-a995-03bc22d48abc":  var   elementFactoryTaskExplorer=new TaskExplorerDataElementFactory();                                            
                                             break;
 
                  
