@@ -854,6 +854,7 @@ List<Triplet<string, short, short?>> resulta3993650589b25c321b1d35d92c673bb=acda
 iSpace.SetGridData(resultb2309149833c09d35a14f7f64c7e01c9,resulta3993650589b25c321b1d35d92c673bb,"TaskStep",ref ISpace);
 iSpace.UpdateGridBindDetails("TaskStep",resulta3993650589b25c321b1d35d92c673bb);
 }
+base.WriteDebugInfo(@"Root-OnAfterFormLoad");
 }
 catch(Exception ex)
 {
