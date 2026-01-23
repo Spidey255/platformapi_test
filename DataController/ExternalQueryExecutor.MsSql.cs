@@ -654,14 +654,11 @@ namespace CPS.Proof.DFSExtension
 
                     using (reader = db.ExecuteReader(command))
                     {
-                        var queryDataset = db.ExecuteDataSet(command);
+                        //var queryDataset = db.ExecuteDataSet(command);
 
+                        queryResults = new DataTable();
 
-                        //If the data set is not null and if it having tables
-                        //then setting the resulting table of index 0 to 
-                        //query results data table.
-                        if (queryDataset.Tables.Count == 1)
-                            queryResults = queryDataset.Tables[0];
+                        queryResults.Load(reader);
 
                     }
                 }
