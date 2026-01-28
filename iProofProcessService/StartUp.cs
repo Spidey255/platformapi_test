@@ -43,12 +43,12 @@ namespace CPS.Proof.DFSExtension
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
-                    Title = "TaskCreationforDemo",
+                    Title = "TaskCreation",
                     Description = "Test",
 
                     Contact = new OpenApiContact
                     {
-                        Name = "TaskCreationforDemo",
+                        Name = "TaskCreation",
                     },
                     License = new OpenApiLicense
                     {
@@ -89,8 +89,8 @@ namespace CPS.Proof.DFSExtension
                 app.UseSwaggerUI();
                 app.UseSwaggerUI(c =>
                 {
-                    c.DocumentTitle = "TaskCreationforDemo";
-                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "TaskCreationforDemo");
+                    c.DocumentTitle = "TaskCreation";
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "TaskCreation");
                     c.DisplayOperationId();
                     c.DisplayRequestDuration();
                     c.DocExpansion(DocExpansion.List);
