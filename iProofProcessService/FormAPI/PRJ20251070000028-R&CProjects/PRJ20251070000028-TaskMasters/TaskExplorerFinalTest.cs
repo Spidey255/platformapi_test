@@ -743,13 +743,13 @@ base.WriteDebugInfo(@"if(1==1)");
 
 if(ISpace["FormVersionId"].Value=="2137A87A-E941-4EBB-91BA-18D6676EFE51")
 {
-iSpace.SetUIControlProperty("290e50fa-a28a-516e-d0e1-4c5f4225d1b4","ShowModal","true",ref  ISpace);;
+iSpace.SetUIControlProperty("UI_Modal","ShowModal","true",ref  ISpace);;
 }
 
 base.WriteDebugInfo(@"
 if(ISpace[""FormVersionId""].Value==""2137A87A-E941-4EBB-91BA-18D6676EFE51"")
 {
-iSpace.SetUIControlProperty(""290e50fa-a28a-516e-d0e1-4c5f4225d1b4"",""ShowModal"",""true"",ref  ISpace);;
+iSpace.SetUIControlProperty(""UI_Modal"",""ShowModal"",""true"",ref  ISpace);;
 }
 ");
 }
@@ -941,13 +941,13 @@ base.WriteDebugInfo(@"if(1==1)");
 
 if(ISpace["FormVersionId"].Value=="2137A87A-E941-4EBB-91BA-18D6676EFE51")
 {
-iSpace.SetUIControlProperty("290e50fa-a28a-516e-d0e1-4c5f4225d1b4","ShowModal","true",ref  ISpace);;
+iSpace.SetUIControlProperty("UI_Modal","ShowModal","true",ref  ISpace);;
 }
 
 base.WriteDebugInfo(@"
 if(ISpace[""FormVersionId""].Value==""2137A87A-E941-4EBB-91BA-18D6676EFE51"")
 {
-iSpace.SetUIControlProperty(""290e50fa-a28a-516e-d0e1-4c5f4225d1b4"",""ShowModal"",""true"",ref  ISpace);;
+iSpace.SetUIControlProperty(""UI_Modal"",""ShowModal"",""true"",ref  ISpace);;
 }
 ");
 }
@@ -969,13 +969,13 @@ base.WriteDebugInfo(@"if(1==1)");
 
 if(ISpace["FormVersionId"].Value=="2137A87A-E941-4EBB-91BA-18D6676EFE51")
 {
-iSpace.SetUIControlProperty("290e50fa-a28a-516e-d0e1-4c5f4225d1b4","ShowModal","false",ref  ISpace);;
+iSpace.SetUIControlProperty("UI_Modal","ShowModal","false",ref  ISpace);;
 }
 
 base.WriteDebugInfo(@"
 if(ISpace[""FormVersionId""].Value==""2137A87A-E941-4EBB-91BA-18D6676EFE51"")
 {
-iSpace.SetUIControlProperty(""290e50fa-a28a-516e-d0e1-4c5f4225d1b4"",""ShowModal"",""false"",ref  ISpace);;
+iSpace.SetUIControlProperty(""UI_Modal"",""ShowModal"",""false"",ref  ISpace);;
 }
 ");
 }
