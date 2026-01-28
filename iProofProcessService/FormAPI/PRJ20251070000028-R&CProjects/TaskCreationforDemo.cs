@@ -211,6 +211,12 @@ namespace CPS.Proof.DFSExtension
 		{
 		
 	  			
+			     new Tuple<string, int>("TaskSteps",5),
+			
+						
+			     new Tuple<string, int>("TaskSteps",5),
+			
+						
 		};
 
 	   public override int GetGridRPP(string ElementName)
@@ -855,6 +861,7 @@ using System;
 
 		private Dictionary<string,string> formVersionList =new Dictionary<string,string> 
 		{
+							{"2FC7F724-739D-4142-93AA-12C0893F48C2", "Medium"},
 					};	
 
 		
