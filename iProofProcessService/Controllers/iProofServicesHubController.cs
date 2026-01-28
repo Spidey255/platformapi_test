@@ -38,7 +38,7 @@ namespace CPS.Proof.DFSExtension
 
         /// <summary>
         /// Represents the constructor that creates an instance
-        /// of TaskCreationforDemo Controller.
+        /// of TaskExplorerFinalTest Controller.
         /// </summary>
         /// <param name="configuration">
         /// A <see cref="IConfiguration"/> that holds  
@@ -89,18 +89,11 @@ namespace CPS.Proof.DFSExtension
                 switch(context.PackageProcessMapId)
                 {
             
-                                      case "7e6b302b-b86e-4442-a995-03bc22d48abc":   var  objectFactoryTaskExplorer=new TaskExplorerObjectFactory();
-                                             virtualpageinstance = objectFactoryTaskExplorer.GetDfsVirtualInstance
+                                      case "326f2ae9-a901-4f09-a24f-975c3089ab28":   var  objectFactoryTaskExplorerFinalTest=new TaskExplorerFinalTestObjectFactory();
+                                             virtualpageinstance = objectFactoryTaskExplorerFinalTest.GetDfsVirtualInstance
                                                         (context.ProcessActivityMapId);
 
-                                            virtualpageinstance._objectFactory = objectFactoryTaskExplorer;
-                                            break;
-
-                                     case "5ac5e0d5-e08b-4008-a105-1edbbe51665c":   var  objectFactoryTaskCreationforDemo=new TaskCreationforDemoObjectFactory();
-                                             virtualpageinstance = objectFactoryTaskCreationforDemo.GetDfsVirtualInstance
-                                                        (context.ProcessActivityMapId);
-
-                                            virtualpageinstance._objectFactory = objectFactoryTaskCreationforDemo;
+                                            virtualpageinstance._objectFactory = objectFactoryTaskExplorerFinalTest;
                                             break;
 
                  
@@ -226,16 +219,10 @@ namespace CPS.Proof.DFSExtension
                 switch(context.PackageProcessMapId)
                 {
             
-                                      case "7e6b302b-b86e-4442-a995-03bc22d48abc":   var  objectFactoryTaskExplorer=new TaskExplorerObjectFactory();
-                                             virtualpageinstance = objectFactoryTaskExplorer.GetDfsVirtualInstance
+                                      case "326f2ae9-a901-4f09-a24f-975c3089ab28":   var  objectFactoryTaskExplorerFinalTest=new TaskExplorerFinalTestObjectFactory();
+                                             virtualpageinstance = objectFactoryTaskExplorerFinalTest.GetDfsVirtualInstance
                                                         (context.ProcessActivityMapId);
-                                            virtualpageinstance._objectFactory = objectFactoryTaskExplorer;
-                                            break;
-
-                                     case "5ac5e0d5-e08b-4008-a105-1edbbe51665c":   var  objectFactoryTaskCreationforDemo=new TaskCreationforDemoObjectFactory();
-                                             virtualpageinstance = objectFactoryTaskCreationforDemo.GetDfsVirtualInstance
-                                                        (context.ProcessActivityMapId);
-                                            virtualpageinstance._objectFactory = objectFactoryTaskCreationforDemo;
+                                            virtualpageinstance._objectFactory = objectFactoryTaskExplorerFinalTest;
                                             break;
 
                  
@@ -371,21 +358,11 @@ namespace CPS.Proof.DFSExtension
                 {
             
                                      
-                    case "7e6b302b-b86e-4442-a995-03bc22d48abc":   
+                    case "326f2ae9-a901-4f09-a24f-975c3089ab28":   
                                              foreach (var item in context.Params)
                                              {
-                                            var  objectFactoryTaskExplorer=new TaskExplorerObjectFactory();
-                                             combosource = objectFactoryTaskExplorer.GetComboDataSource
-                                                        (item.ElementName);  
-                                             }
-                                            break;
-                   
-                                    
-                    case "5ac5e0d5-e08b-4008-a105-1edbbe51665c":   
-                                             foreach (var item in context.Params)
-                                             {
-                                            var  objectFactoryTaskCreationforDemo=new TaskCreationforDemoObjectFactory();
-                                             combosource = objectFactoryTaskCreationforDemo.GetComboDataSource
+                                            var  objectFactoryTaskExplorerFinalTest=new TaskExplorerFinalTestObjectFactory();
+                                             combosource = objectFactoryTaskExplorerFinalTest.GetComboDataSource
                                                         (item.ElementName);  
                                              }
                                             break;
@@ -496,10 +473,7 @@ namespace CPS.Proof.DFSExtension
                 switch(context.PackageProcessMapId)
                 {
             
-                                      case "7e6b302b-b86e-4442-a995-03bc22d48abc":  var   elementFactoryTaskExplorer=new TaskExplorerDataElementFactory();                                            
-                                            break;
-
-                                     case "5ac5e0d5-e08b-4008-a105-1edbbe51665c":  var   elementFactoryTaskCreationforDemo=new TaskCreationforDemoDataElementFactory();                                            
+                                      case "326f2ae9-a901-4f09-a24f-975c3089ab28":  var   elementFactoryTaskExplorerFinalTest=new TaskExplorerFinalTestDataElementFactory();                                            
                                             break;
 
                  
