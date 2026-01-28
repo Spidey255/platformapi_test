@@ -38,7 +38,7 @@ namespace CPS.Proof.DFSExtension
 
         /// <summary>
         /// Represents the constructor that creates an instance
-        /// of TaskCreationforDemo Controller.
+        /// of TaskExplorer Controller.
         /// </summary>
         /// <param name="configuration">
         /// A <see cref="IConfiguration"/> that holds  
@@ -94,6 +94,20 @@ namespace CPS.Proof.DFSExtension
                                                         (context.ProcessActivityMapId);
 
                                             virtualpageinstance._objectFactory = objectFactoryTaskCreationforDemo;
+                                            break;
+
+                                     case "3cfe092a-c9df-42bd-bb7a-d4a6e90379fc":   var  objectFactoryTaskCreation=new TaskCreationObjectFactory();
+                                             virtualpageinstance = objectFactoryTaskCreation.GetDfsVirtualInstance
+                                                        (context.ProcessActivityMapId);
+
+                                            virtualpageinstance._objectFactory = objectFactoryTaskCreation;
+                                            break;
+
+                                     case "7e6b302b-b86e-4442-a995-03bc22d48abc":   var  objectFactoryTaskExplorer=new TaskExplorerObjectFactory();
+                                             virtualpageinstance = objectFactoryTaskExplorer.GetDfsVirtualInstance
+                                                        (context.ProcessActivityMapId);
+
+                                            virtualpageinstance._objectFactory = objectFactoryTaskExplorer;
                                             break;
 
                  
@@ -223,6 +237,18 @@ namespace CPS.Proof.DFSExtension
                                              virtualpageinstance = objectFactoryTaskCreationforDemo.GetDfsVirtualInstance
                                                         (context.ProcessActivityMapId);
                                             virtualpageinstance._objectFactory = objectFactoryTaskCreationforDemo;
+                                            break;
+
+                                     case "3cfe092a-c9df-42bd-bb7a-d4a6e90379fc":   var  objectFactoryTaskCreation=new TaskCreationObjectFactory();
+                                             virtualpageinstance = objectFactoryTaskCreation.GetDfsVirtualInstance
+                                                        (context.ProcessActivityMapId);
+                                            virtualpageinstance._objectFactory = objectFactoryTaskCreation;
+                                            break;
+
+                                     case "7e6b302b-b86e-4442-a995-03bc22d48abc":   var  objectFactoryTaskExplorer=new TaskExplorerObjectFactory();
+                                             virtualpageinstance = objectFactoryTaskExplorer.GetDfsVirtualInstance
+                                                        (context.ProcessActivityMapId);
+                                            virtualpageinstance._objectFactory = objectFactoryTaskExplorer;
                                             break;
 
                  
@@ -367,6 +393,26 @@ namespace CPS.Proof.DFSExtension
                                              }
                                             break;
                    
+                                    
+                    case "3cfe092a-c9df-42bd-bb7a-d4a6e90379fc":   
+                                             foreach (var item in context.Params)
+                                             {
+                                            var  objectFactoryTaskCreation=new TaskCreationObjectFactory();
+                                             combosource = objectFactoryTaskCreation.GetComboDataSource
+                                                        (item.ElementName);  
+                                             }
+                                            break;
+                   
+                                    
+                    case "7e6b302b-b86e-4442-a995-03bc22d48abc":   
+                                             foreach (var item in context.Params)
+                                             {
+                                            var  objectFactoryTaskExplorer=new TaskExplorerObjectFactory();
+                                             combosource = objectFactoryTaskExplorer.GetComboDataSource
+                                                        (item.ElementName);  
+                                             }
+                                            break;
+                   
                  
                 }               
                 
@@ -474,6 +520,12 @@ namespace CPS.Proof.DFSExtension
                 {
             
                                       case "5ac5e0d5-e08b-4008-a105-1edbbe51665c":  var   elementFactoryTaskCreationforDemo=new TaskCreationforDemoDataElementFactory();                                            
+                                            break;
+
+                                     case "3cfe092a-c9df-42bd-bb7a-d4a6e90379fc":  var   elementFactoryTaskCreation=new TaskCreationDataElementFactory();                                            
+                                            break;
+
+                                     case "7e6b302b-b86e-4442-a995-03bc22d48abc":  var   elementFactoryTaskExplorer=new TaskExplorerDataElementFactory();                                            
                                             break;
 
                  
