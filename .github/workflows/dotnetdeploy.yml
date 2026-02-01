@@ -3,7 +3,7 @@ name: .NET 6 API Deployment
 on:
   push:
     branches:
-      - Dev-Local
+      - dev
 
 jobs:
   build-and-deploy:
