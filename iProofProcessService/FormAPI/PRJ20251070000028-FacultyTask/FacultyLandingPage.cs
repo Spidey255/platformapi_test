@@ -13,37 +13,37 @@ namespace CPS.Proof.DFSExtension
 	using System.Linq;
 	
 	
-	public partial class TaskExplorerProcessMetadata : ExtensionProcessBase
+	public partial class FacultyLandingPageProcessMetadata : ExtensionProcessBase
 	{		
 
         public override long PackageId
         {
-            get { return 30241; }
+            get { return 30254; }
         }
 
         public override string PackageName
         {
-            get { return "PRJ20251070000028 - Task Masters"; }
+            get { return "PRJ20251070000028-Faculty Task"; }
         }
 
 		public override string PackageDescription
         {
-            get { return "Task Masters"; }
+            get { return "The Faculty Task Module is designed to streamline and manage academic and administrative responsibilities assigned to faculty members. This module enables institutions to allocate tasks such as teaching assignments, assessment duties, academic planning, committee work, research activities, and other institutional responsibilities in an organized manner. Faculty members can view assigned tasks, track progress, meet deadlines, and submit required updates or reports through a centralized platform. The module promotes transparency, accountability, and efficient workload management while supporting effective communication between faculty and academic administration."; }
         }
 
         public override string ProcessId
         {
-            get { return "7e6b302b-b86e-4442-a995-03bc22d48abc"; }
+            get { return "8f1f8561-e4cd-4484-87be-c2264ba41fce"; }
         }
 
         public override string ProcessName
         {
-            get { return "TaskExplorer"; }
+            get { return "FacultyLandingPage"; }
         }
 
 		public override string ProcessDescription
         {
-            get { return "Task Explorer"; }
+            get { return "The Faculty Landing Page serves as the central dashboard for faculty members, providing quick access to academic, administrative, and institutional activities. It offers an organized overview of teaching schedules, assigned tasks, courses, student information, assessments, announcements, and pending actions. Designed for ease of use, the landing page helps faculty manage their responsibilities efficiently, stay informed of updates, and navigate key modules seamlessly, supporting effective teachi"; }
         }
 
         public override ProcessType ProcessType
@@ -65,7 +65,7 @@ namespace CPS.Proof.DFSExtension
 		
         public override string PackageProcessMapId
         {
-            get {return "7e6b302b-b86e-4442-a995-03bc22d48abc";}
+            get {return "8f1f8561-e4cd-4484-87be-c2264ba41fce";}
         }
 
 		public override byte ProcessInstanceMode
@@ -76,7 +76,7 @@ namespace CPS.Proof.DFSExtension
 		public override string MasterFormId
         {
             get {  
-				   return "AF23D0EC-36C6-4FB1-8C58-BE89BD0BC74D";	}
+				   return "C17588AD-F62E-4533-85AC-5E0F51664240";	}
         }
 			
         public override string Comments => throw new NotImplementedException();
@@ -98,7 +98,7 @@ namespace CPS.Proof.DFSExtension
 	using CPS.Proof.DFSExtension;
 	
 
-	public partial class TaskExplorerObjectFactory  : ExtObjectFactoryBase
+	public partial class FacultyLandingPageObjectFactory  : ExtObjectFactoryBase
     {		
        	
 		
@@ -132,7 +132,7 @@ namespace CPS.Proof.DFSExtension
 
 		//public override IExtBaseMetaData GetProcessInstance(string packageProcessMapId)
        // {
-        //    return (IExtBaseMetaData)new TaskExplorerProcessMetadata();
+        //    return (IExtBaseMetaData)new FacultyLandingPageProcessMetadata();
         //}
 	
 
@@ -140,16 +140,16 @@ namespace CPS.Proof.DFSExtension
 		private List<Triplet<string, string, string>> queryExpressionData = new List<Triplet<string, string, string>>
 		{
 	  			
-			     new Triplet<string, string, string>("799aca0d-883e-a868-677d-5f43dddca1bf","C3BEA3AF-C9B7-4DEA-AE35-EA1C626191C0",
+			     new Triplet<string, string, string>("F6D8A0EA-D75F-4546-8CFD-07AEA1B39FD7","C3BEA3AF-C9B7-4DEA-AE35-EA1C626191C0",
 												     @"38C753DC-ED33-454B-85AF-DD4DF536B530"),
 			
 						
-			     new Triplet<string, string, string>("64C51C81-59CF-486D-9B10-072274E5B1A2","C3BEA3AF-C9B7-4DEA-AE35-EA1C626191C0",
-												     @"38C753DC-ED33-454B-85AF-DD4DF536B530"),
+			     new Triplet<string, string, string>("F608F074-46CF-4214-AFA0-52FAD6AB30EF","C3BEA3AF-C9B7-4DEA-AE35-EA1C626191C0",
+												     @"3A103712-5244-4427-B2B6-1C4E046FD337"),
 			
 						
-			     new Triplet<string, string, string>("799aca0d-883e-a868-677d-5f43dddca1bf","Load Existing Task Details",
-												     @"23E51A25-3499-4878-9320-2D2EC2D75862"),
+			     new Triplet<string, string, string>("F608F074-46CF-4214-AFA0-52FAD6AB30EF","MyCourses",
+												     @"5D3459BE-630E-4A56-B68B-2CC326C60635"),
 			
 			
 			
@@ -183,10 +183,10 @@ namespace CPS.Proof.DFSExtension
 		{
 		
 	  			
-			     new Tuple<string, int>("TastDetails",1000),
+			     new Tuple<string, int>("MyCoursesDetails",5),
 			
 						
-			     new Tuple<string, int>("TastDetails",5),
+			     new Tuple<string, int>("MyCoursesDetails",5),
 			
 						
 		};
@@ -226,8 +226,8 @@ namespace CPS.Proof.DFSExtension
 
 			switch(processActivityMapId)	
 				{
-											case "5B035305-E81B-4571-BBE4-724D00438E54":
-							virtualInstance=new ISpace5B035305E81B4571BBE4724D00438E54();
+											case "676395B9-A408-4102-B650-297FAB839973":
+							virtualInstance=new ISpace676395B9A4084102B650297FAB839973();
 							break;
 					
 					
@@ -264,7 +264,7 @@ namespace CPS.Proof.DFSExtension
     using Newtonsoft.Json.Linq;
 	
 
-	public partial class TaskExplorerDataElementFactory  : ExtElementBase
+	public partial class FacultyLandingPageDataElementFactory  : ExtElementBase
     {
 
      /// <summary>
@@ -273,7 +273,7 @@ namespace CPS.Proof.DFSExtension
         /// </summary>
         private readonly ILog _sysLog;
 
-        public TaskExplorerDataElementFactory()
+        public FacultyLandingPageDataElementFactory()
         {
             _sysLog = LogManager.GetLogger(GetType());
         }			
@@ -304,14 +304,14 @@ namespace CPS.Proof.DFSExtension
 
                
                 
-                                      case "AF23D0EC-36C6-4FB1-8C58-BE89BD0BC74D":
+                                      case "C17588AD-F62E-4533-85AC-5E0F51664240":
                     {
                      
-                                     fInsertQuery=@"IF NOT EXISTS(SELECT 1 FROM [AF23D0EC-36C6-4FB1-8C58-BE89BD0BC74D] WHERE InstanceId='{0}' AND  
-       ProcessActivityMapId='{1}' AND FormId='{2}') BEGIN INSERT INTO [AF23D0EC-36C6-4FB1-8C58-BE89BD0BC74D](InstanceId,ProcessActivityMapId,FormId,M_Total,M_Active,M_InActive,M_Closed,Subject,ExecutionStatus,ExecutionMessage,SetDestinationTo,SLATime,AssignToRole,AssignToUser,IN_Priority,IN_InstanceName,IN_SLA,IN_Status,IN_Category,ExecuteCommand,RedirectUrl,Thumbnail,CancelRedirectUrl,KeyContext,DisplayContext,growid,M_SearchBy)  
-       VALUES( {3}) END ELSE BEGIN UPDATE [AF23D0EC-36C6-4FB1-8C58-BE89BD0BC74D]SET {4}WHERE InstanceId='{0}'AND ProcessActivityMapId='{1}'AND FormId='{2}'END ";
+                                     fInsertQuery=@"IF NOT EXISTS(SELECT 1 FROM [C17588AD-F62E-4533-85AC-5E0F51664240] WHERE InstanceId='{0}' AND  
+       ProcessActivityMapId='{1}' AND FormId='{2}') BEGIN INSERT INTO [C17588AD-F62E-4533-85AC-5E0F51664240](InstanceId,ProcessActivityMapId,FormId,uname,Subject,ExecutionStatus,ExecutionMessage,SetDestinationTo,SLATime,M_MyCourseCount,M_MyMenteesCount,M_MyProfileCount,M_MyProjectCount,M_MyPurchaseCount,M_MyStudents,M_TaskCount)  
+       VALUES( {3}) END ELSE BEGIN UPDATE [C17588AD-F62E-4533-85AC-5E0F51664240]SET {4}WHERE InstanceId='{0}'AND ProcessActivityMapId='{1}'AND FormId='{2}'END ";
 
-                                     colList=@"InstanceId,ProcessActivityMapId,FormId,M_Total,M_Active,M_InActive,M_Closed,Subject,ExecutionStatus,ExecutionMessage,SetDestinationTo,SLATime,AssignToRole,AssignToUser,IN_Priority,IN_InstanceName,IN_SLA,IN_Status,IN_Category,ExecuteCommand,RedirectUrl,Thumbnail,CancelRedirectUrl,KeyContext,DisplayContext,growid,M_SearchBy";
+                                     colList=@"InstanceId,ProcessActivityMapId,FormId,uname,Subject,ExecutionStatus,ExecutionMessage,SetDestinationTo,SLATime,M_MyCourseCount,M_MyMenteesCount,M_MyProfileCount,M_MyProjectCount,M_MyPurchaseCount,M_MyStudents,M_TaskCount";
                                     
                      
                             splitcols = colList.Split(',');
@@ -446,19 +446,19 @@ namespace CPS.Proof.DFSExtension
 
                 
                  
-                                      case "23E51A25-3499-4878-9320-2D2EC2D75862":
+                                      case "5D3459BE-630E-4A56-B68B-2CC326C60635":
                     {
                      
                                      gInsertQuery=@"
 		
-		DECLARE  @TBL_23E51A253499487893202D2EC2D75862 AS TABLE(	  [InstanceId] VARCHAR(36)	, [ProcessActivityMapId] VARCHAR(36)	, [GridId] VARCHAR(36)	, [RowId] VARCHAR(36)	, [Sequence] INT	, [MG_w1_task_id] INT	, [MG_w1_task_code] VARCHAR(50)	, [MG_w1_task_name] VARCHAR(50)	, [MG_w1_task_type_code] VARCHAR(50)	, [MG_w1_complexity_code] VARCHAR(50)	, [MG_w1_requirement_id] VARCHAR(50)	, [MG_w1_task_status] VARCHAR(50)	, [MG_w1_is_active] BIT	, [MG_w1_created_at] DATETIME	, [MG_w1_created_by] INT	, [MG_w1_updated_by] INT	, [MG_w1_updated_at] DATETIME){0}INSERT INTO [23E51A25-3499-4878-9320-2D2EC2D75862](InstanceId,ProcessActivityMapId,GridId,RowId,Sequence,MG_w1_task_id,MG_w1_task_code,MG_w1_task_name,MG_w1_task_type_code,MG_w1_complexity_code,MG_w1_requirement_id,MG_w1_task_status,MG_w1_is_active,MG_w1_created_at,MG_w1_created_by,MG_w1_updated_by,MG_w1_updated_at)
-							SELECT TDT.InstanceId,TDT.ProcessActivityMapId,TDT.GridId,TDT.RowId,TDT.Sequence,TDT.MG_w1_task_id,TDT.MG_w1_task_code,TDT.MG_w1_task_name,TDT.MG_w1_task_type_code,TDT.MG_w1_complexity_code,TDT.MG_w1_requirement_id,TDT.MG_w1_task_status,TDT.MG_w1_is_active,TDT.MG_w1_created_at,TDT.MG_w1_created_by,TDT.MG_w1_updated_by,TDT.MG_w1_updated_at FROM @TBL_23E51A253499487893202D2EC2D75862 TDT
-							LEFT JOIN [23E51A25-3499-4878-9320-2D2EC2D75862] DT  WITH(NOLOCK)
+		DECLARE  @TBL_5D3459BE630E4A56B68B2CC326C60635 AS TABLE(	  [RowId] VARCHAR(36)	, [Sequence] INT	, [InstanceId] VARCHAR(36)	, [ProcessActivityMapId] VARCHAR(36)	, [GridId] VARCHAR(36)){0}INSERT INTO [5D3459BE-630E-4A56-B68B-2CC326C60635](RowId,Sequence,InstanceId,ProcessActivityMapId,GridId)
+							SELECT TDT.RowId,TDT.Sequence,TDT.InstanceId,TDT.ProcessActivityMapId,TDT.GridId FROM @TBL_5D3459BE630E4A56B68B2CC326C60635 TDT
+							LEFT JOIN [5D3459BE-630E-4A56-B68B-2CC326C60635] DT  WITH(NOLOCK)
 							ON	TDT.RowId=DT.RowId WHERE DT.RowId IS NULL;";
 
-                                     colList=@"InstanceId,ProcessActivityMapId,GridId,RowId,Sequence,MG_w1_task_id,MG_w1_task_code,MG_w1_task_name,MG_w1_task_type_code,MG_w1_complexity_code,MG_w1_requirement_id,MG_w1_task_status,MG_w1_is_active,MG_w1_created_at,MG_w1_created_by,MG_w1_updated_by,MG_w1_updated_at";
+                                     colList=@"RowId,Sequence,InstanceId,ProcessActivityMapId,GridId";
 
-                                     tempInsertQuery=@"INSERT INTO @TBL_23E51A253499487893202D2EC2D75862(InstanceId,ProcessActivityMapId,GridId,RowId,Sequence,MG_w1_task_id,MG_w1_task_code,MG_w1_task_name,MG_w1_task_type_code,MG_w1_complexity_code,MG_w1_requirement_id,MG_w1_task_status,MG_w1_is_active,MG_w1_created_at,MG_w1_created_by,MG_w1_updated_by,MG_w1_updated_at)VALUES({0});";
+                                     tempInsertQuery=@"INSERT INTO @TBL_5D3459BE630E4A56B68B2CC326C60635(RowId,Sequence,InstanceId,ProcessActivityMapId,GridId)VALUES({0});";
                                      
 
                             splitcols = colList.Split(',');
@@ -599,19 +599,19 @@ namespace CPS.Proof.DFSExtension
                 {
                      
 
-                                         case "23E51A25-3499-4878-9320-2D2EC2D75862":
+                                         case "5D3459BE-630E-4A56-B68B-2CC326C60635":
                     {
                      
                             gInsertQuery=@"
 		
-		DECLARE  @TBL_23E51A253499487893202D2EC2D75862 AS TABLE(	  [InstanceId] VARCHAR(36)	, [ProcessActivityMapId] VARCHAR(36)	, [GridId] VARCHAR(36)	, [RowId] VARCHAR(36)	, [Sequence] INT	, [MG_w1_task_id] INT	, [MG_w1_task_code] VARCHAR(50)	, [MG_w1_task_name] VARCHAR(50)	, [MG_w1_task_type_code] VARCHAR(50)	, [MG_w1_complexity_code] VARCHAR(50)	, [MG_w1_requirement_id] VARCHAR(50)	, [MG_w1_task_status] VARCHAR(50)	, [MG_w1_is_active] BIT	, [MG_w1_created_at] DATETIME	, [MG_w1_created_by] INT	, [MG_w1_updated_by] INT	, [MG_w1_updated_at] DATETIME){0}INSERT INTO [23E51A25-3499-4878-9320-2D2EC2D75862](InstanceId,ProcessActivityMapId,GridId,RowId,Sequence,MG_w1_task_id,MG_w1_task_code,MG_w1_task_name,MG_w1_task_type_code,MG_w1_complexity_code,MG_w1_requirement_id,MG_w1_task_status,MG_w1_is_active,MG_w1_created_at,MG_w1_created_by,MG_w1_updated_by,MG_w1_updated_at)
-							SELECT TDT.InstanceId,TDT.ProcessActivityMapId,TDT.GridId,TDT.RowId,TDT.Sequence,TDT.MG_w1_task_id,TDT.MG_w1_task_code,TDT.MG_w1_task_name,TDT.MG_w1_task_type_code,TDT.MG_w1_complexity_code,TDT.MG_w1_requirement_id,TDT.MG_w1_task_status,TDT.MG_w1_is_active,TDT.MG_w1_created_at,TDT.MG_w1_created_by,TDT.MG_w1_updated_by,TDT.MG_w1_updated_at FROM @TBL_23E51A253499487893202D2EC2D75862 TDT
-							LEFT JOIN [23E51A25-3499-4878-9320-2D2EC2D75862] DT  WITH(NOLOCK)
+		DECLARE  @TBL_5D3459BE630E4A56B68B2CC326C60635 AS TABLE(	  [RowId] VARCHAR(36)	, [Sequence] INT	, [InstanceId] VARCHAR(36)	, [ProcessActivityMapId] VARCHAR(36)	, [GridId] VARCHAR(36)){0}INSERT INTO [5D3459BE-630E-4A56-B68B-2CC326C60635](RowId,Sequence,InstanceId,ProcessActivityMapId,GridId)
+							SELECT TDT.RowId,TDT.Sequence,TDT.InstanceId,TDT.ProcessActivityMapId,TDT.GridId FROM @TBL_5D3459BE630E4A56B68B2CC326C60635 TDT
+							LEFT JOIN [5D3459BE-630E-4A56-B68B-2CC326C60635] DT  WITH(NOLOCK)
 							ON	TDT.RowId=DT.RowId WHERE DT.RowId IS NULL;";
 
-                            colList=@"InstanceId,ProcessActivityMapId,GridId,RowId,Sequence,MG_w1_task_id,MG_w1_task_code,MG_w1_task_name,MG_w1_task_type_code,MG_w1_complexity_code,MG_w1_requirement_id,MG_w1_task_status,MG_w1_is_active,MG_w1_created_at,MG_w1_created_by,MG_w1_updated_by,MG_w1_updated_at";
+                            colList=@"RowId,Sequence,InstanceId,ProcessActivityMapId,GridId";
 
-                            tempInsertQuery=@"INSERT INTO @TBL_23E51A253499487893202D2EC2D75862(InstanceId,ProcessActivityMapId,GridId,RowId,Sequence,MG_w1_task_id,MG_w1_task_code,MG_w1_task_name,MG_w1_task_type_code,MG_w1_complexity_code,MG_w1_requirement_id,MG_w1_task_status,MG_w1_is_active,MG_w1_created_at,MG_w1_created_by,MG_w1_updated_by,MG_w1_updated_at)VALUES({0});";
+                            tempInsertQuery=@"INSERT INTO @TBL_5D3459BE630E4A56B68B2CC326C60635(RowId,Sequence,InstanceId,ProcessActivityMapId,GridId)VALUES({0});";
 
                             splitcols = colList.Split(',');
 
@@ -726,10 +726,10 @@ using System;
 using CPS.Proof.DFSExtension;
 using System.Linq;using System.Data;
 using System.Runtime.CompilerServices;
-public class ISpace5B035305E81B4571BBE4724D00438E54 : VirtualForm
+public class ISpace676395B9A4084102B650297FAB839973 : VirtualForm
 {
 IISpace iSpace = new ISpace();
-AcDataISpace5B035305E81B4571BBE4724D00438E54 acdataIspace5B035305E81B4571BBE4724D00438E54=new AcDataISpace5B035305E81B4571BBE4724D00438E54();
+AcDataISpace676395B9A4084102B650297FAB839973 acdataIspace676395B9A4084102B650297FAB839973=new AcDataISpace676395B9A4084102B650297FAB839973();
 private void SubscribeFormEvents_root(ref Dictionary<string, ServiceElementData> ISpace)
 {
 try
@@ -738,121 +738,64 @@ base.WriteDebugInfo(@"Root-OnAfterFormLoad");
 if(1==1)
 {
 base.WriteDebugInfo(@"if(1==1)");
+ISpace["M_MyCourseCount"].Value=10;
+base.WriteDebugInfo(@"ISpace[""M_MyCourseCount""].Value=10;");
+ISpace["M_MyMenteesCount"].Value=9;
+base.WriteDebugInfo(@"ISpace[""M_MyMenteesCount""].Value=9;");
+ISpace["M_MyProfileCount"].Value=2;
+base.WriteDebugInfo(@"ISpace[""M_MyProfileCount""].Value=2;");
+ISpace["M_MyProjectCount"].Value=15;
+base.WriteDebugInfo(@"ISpace[""M_MyProjectCount""].Value=15;");
+ISpace["M_MyPurchaseCount"].Value=10;
+base.WriteDebugInfo(@"ISpace[""M_MyPurchaseCount""].Value=10;");
+ISpace["M_MyStudents"].Value=16;
+base.WriteDebugInfo(@"ISpace[""M_MyStudents""].Value=16;");
+ISpace["M_TaskCount"].Value=1000;
+base.WriteDebugInfo(@"ISpace[""M_TaskCount""].Value=1000;");
+}
+if(1==1)
+{
+base.WriteDebugInfo(@"if(1==1)");
 base.WriteDebugInfo(@"EXEC GetTaskSummary");
 
-var querySource64C51C8159CF486D9B10072274E5B1A2 =GetQueryExpressionDataSource("64C51C81-59CF-486D-9B10-072274E5B1A2");
-Dictionary<short,object> result64C51C8159CF486D9B10072274E5B1A2=iSpace.ExecuteQuery(querySource64C51C8159CF486D9B10072274E5B1A2,@"EXEC GetTaskSummary",false);
+var querySourceF6D8A0EAD75F45468CFD07AEA1B39FD7 =GetQueryExpressionDataSource("F6D8A0EA-D75F-4546-8CFD-07AEA1B39FD7");
+Dictionary<short,object> resultF6D8A0EAD75F45468CFD07AEA1B39FD7=iSpace.ExecuteQuery(querySourceF6D8A0EAD75F45468CFD07AEA1B39FD7,@"EXEC GetTaskSummary",false);
 
-base.WriteDebugInfo(@"var querySource64C51C8159CF486D9B10072274E5B1A2 =GetQueryExpressionDataSource(""64C51C81-59CF-486D-9B10-072274E5B1A2"");Dictionary<short,object> result64C51C8159CF486D9B10072274E5B1A2=iSpace.ExecuteQuery(querySource64C51C8159CF486D9B10072274E5B1A2,@""EXEC GetTaskSummary"",false);");
+base.WriteDebugInfo(@"var querySourceF6D8A0EAD75F45468CFD07AEA1B39FD7 =GetQueryExpressionDataSource(""F6D8A0EA-D75F-4546-8CFD-07AEA1B39FD7"");Dictionary<short,object> resultF6D8A0EAD75F45468CFD07AEA1B39FD7=iSpace.ExecuteQuery(querySourceF6D8A0EAD75F45468CFD07AEA1B39FD7,@""EXEC GetTaskSummary"",false);");
 base.WriteDebugInfo(@"");
 
-if((result64C51C8159CF486D9B10072274E5B1A2!=null) && (result64C51C8159CF486D9B10072274E5B1A2.Count!=0))
+if((resultF6D8A0EAD75F45468CFD07AEA1B39FD7!=null) && (resultF6D8A0EAD75F45468CFD07AEA1B39FD7.Count!=0))
 {
-if(result64C51C8159CF486D9B10072274E5B1A2.ContainsKey(3))
-ISpace["M_Closed"].Value = result64C51C8159CF486D9B10072274E5B1A2[3];
-if(result64C51C8159CF486D9B10072274E5B1A2.ContainsKey(0))
-ISpace["M_Total"].Value = result64C51C8159CF486D9B10072274E5B1A2[0];
-if(result64C51C8159CF486D9B10072274E5B1A2.ContainsKey(1))
-ISpace["M_Active"].Value = result64C51C8159CF486D9B10072274E5B1A2[1];
-if(result64C51C8159CF486D9B10072274E5B1A2.ContainsKey(2))
-ISpace["M_InActive"].Value = result64C51C8159CF486D9B10072274E5B1A2[2];
+if(resultF6D8A0EAD75F45468CFD07AEA1B39FD7.ContainsKey(0))
+ISpace["M_Total"].Value = resultF6D8A0EAD75F45468CFD07AEA1B39FD7[0];
+if(resultF6D8A0EAD75F45468CFD07AEA1B39FD7.ContainsKey(2))
+ISpace["M_InActive"].Value = resultF6D8A0EAD75F45468CFD07AEA1B39FD7[2];
+if(resultF6D8A0EAD75F45468CFD07AEA1B39FD7.ContainsKey(3))
+ISpace["M_Closed"].Value = resultF6D8A0EAD75F45468CFD07AEA1B39FD7[3];
+if(resultF6D8A0EAD75F45468CFD07AEA1B39FD7.ContainsKey(1))
+ISpace["M_Active"].Value = resultF6D8A0EAD75F45468CFD07AEA1B39FD7[1];
 }
 else{
-ISpace["M_Closed"].Value = null;ISpace["M_Total"].Value = null;ISpace["M_Active"].Value = null;ISpace["M_InActive"].Value = null;
+ISpace["M_Total"].Value = null;ISpace["M_InActive"].Value = null;ISpace["M_Closed"].Value = null;ISpace["M_Active"].Value = null;
 }
 }
 if(1==1)
 {
 base.WriteDebugInfo(@"if(1==1)");
 
-var querySource799aca0d883ea868677d5f43dddca1bf =GetQueryExpressionDataSource("799aca0d-883e-a868-677d-5f43dddca1bf");
+var querySourceF608F07446CF4214AFA052FAD6AB30EF =GetQueryExpressionDataSource("F608F074-46CF-4214-AFA0-52FAD6AB30EF");
 
-DataTable result799aca0d883ea868677d5f43dddca1bf=iSpace.SetGridDataSource(querySource799aca0d883ea868677d5f43dddca1bf, _objectFactory.GetGridRPP("TastDetails"),@"EXEC TasKDetails ''");
+DataTable resultF608F07446CF4214AFA052FAD6AB30EF=iSpace.SetGridDataSource(querySourceF608F07446CF4214AFA052FAD6AB30EF, _objectFactory.GetGridRPP("MyCoursesDetails"),@"exec GetFL_MyCourses '" + ISpace["uname"].Value + @"'");
 
-iSpace.InsertGridBindDetails("TastDetails","11",querySource799aca0d883ea868677d5f43dddca1bf,"EXEC TasKDetails ''",_objectFactory.GetGridRPP("TastDetails"));
+iSpace.InsertGridBindDetails("MyCoursesDetails","11",querySourceF608F07446CF4214AFA052FAD6AB30EF,"exec GetFL_MyCourses '" + ISpace["uname"].Value + @"'",_objectFactory.GetGridRPP("MyCoursesDetails"));
 
-base.WriteDebugInfo(@"var querySource799aca0d883ea868677d5f43dddca1bf =GetQueryExpressionDataSource(""799aca0d-883e-a868-677d-5f43dddca1bf"");DataTable result799aca0d883ea868677d5f43dddca1bf=iSpace.SetGridDataSource(querySource799aca0d883ea868677d5f43dddca1bf, _objectFactory.GetGridRPP(""TastDetails""),@""EXEC TasKDetails ''"");iSpace.InsertGridBindDetails(""TastDetails"",""11"",querySource799aca0d883ea868677d5f43dddca1bf,""EXEC TasKDetails ''"",_objectFactory.GetGridRPP(""TastDetails""));");
+base.WriteDebugInfo(@"var querySourceF608F07446CF4214AFA052FAD6AB30EF =GetQueryExpressionDataSource(""F608F074-46CF-4214-AFA0-52FAD6AB30EF"");DataTable resultF608F07446CF4214AFA052FAD6AB30EF=iSpace.SetGridDataSource(querySourceF608F07446CF4214AFA052FAD6AB30EF, _objectFactory.GetGridRPP(""MyCoursesDetails""),@""exec GetFL_MyCourses '"" + ISpace[""uname""].Value + @""'"");iSpace.InsertGridBindDetails(""MyCoursesDetails"",""11"",querySourceF608F07446CF4214AFA052FAD6AB30EF,""exec GetFL_MyCourses '"" + ISpace[""uname""].Value + @""'"",_objectFactory.GetGridRPP(""MyCoursesDetails""));");
 base.WriteDebugInfo(@"");
 
 
-List<Triplet<string, short, short?>> result3af47cd6d5ccfa0478e604749ae0b6b1=acdataIspace5B035305E81B4571BBE4724D00438E54.GetQueryExpressionBindings("3af47cd6-d5cc-fa04-78e6-04749ae0b6b1");
-iSpace.SetGridData(result799aca0d883ea868677d5f43dddca1bf,result3af47cd6d5ccfa0478e604749ae0b6b1,"TastDetails",ref ISpace);
-iSpace.UpdateGridBindDetails("TastDetails",result3af47cd6d5ccfa0478e604749ae0b6b1);
-}
-}
-catch(Exception ex)
-{
-base.WriteErrorInfo(@"Exception:",ex);
-}
-}
-private void SubscribeElementEvents_edit_tastdetails (ref Dictionary<string,ServiceElementData> ISpace)
-{
-IISpace iSpace = new ISpace();
-try
-{
-base.WriteDebugInfo(@"Edit_TastDetails-OnClick");
-ISpace["MF_TaskId"].Value=ISpace["MG_w1_task_id"].Value;
-base.WriteDebugInfo(@"ISpace[""MF_TaskId""].Value=ISpace[""MG_w1_task_id""].Value;");
-
-ISpace["RedirectUrl"].RedirectType="R";
-ISpace["RedirectUrl"].Value="?PkActMId=5EC89147-2FE2-40AF-8446-350FE5E13C57&frmElementId=74DE8FDB-50E6-4EF1-BA80-FBD2FF5FD49A&PkPrMId=3cfe092a-c9df-42bd-bb7a-d4a6e90379fc&formVersionId=430A1903-C481-4EA5-BDD0-0C7F581A5215&Ver=0.0000&MF_w1_task_id="+ISpace["MF_TaskId"].Value;
-base.WriteDebugInfo(@"
-ISpace[""RedirectUrl""].RedirectType=""R"";
-ISpace[""RedirectUrl""].Value=""?PkActMId=5EC89147-2FE2-40AF-8446-350FE5E13C57&frmElementId=74DE8FDB-50E6-4EF1-BA80-FBD2FF5FD49A&PkPrMId=3cfe092a-c9df-42bd-bb7a-d4a6e90379fc&formVersionId=430A1903-C481-4EA5-BDD0-0C7F581A5215&Ver=0.0000&MF_w1_task_id=""+ISpace[""MF_TaskId""].Value;");
-
-}
-catch(Exception ex)
-{
-base.WriteErrorInfo(@"Exception:",ex);
-}
-}
-private void SubscribeElementEvents_no (ref Dictionary<string,ServiceElementData> ISpace)
-{
-IISpace iSpace = new ISpace();
-try
-{
-base.WriteDebugInfo(@"No-OnClick");
-ISpace["UI_Dialog"].HideDialog=true;;
-base.WriteDebugInfo(@"ISpace[""UI_Dialog""].HideDialog=true;;");
-}
-catch(Exception ex)
-{
-base.WriteErrorInfo(@"Exception:",ex);
-}
-}
-private void SubscribeElementEvents_m_add (ref Dictionary<string,ServiceElementData> ISpace)
-{
-IISpace iSpace = new ISpace();
-try
-{
-base.WriteDebugInfo(@"M_Add-OnClick");
-if(1==1)
-{
-base.WriteDebugInfo(@"if(1==1)");
-
-ISpace["RedirectUrl"].RedirectType="R";
-ISpace["RedirectUrl"].Value="?PkActMId=5EC89147-2FE2-40AF-8446-350FE5E13C57&frmElementId=74DE8FDB-50E6-4EF1-BA80-FBD2FF5FD49A&PkPrMId=3cfe092a-c9df-42bd-bb7a-d4a6e90379fc&formVersionId=430A1903-C481-4EA5-BDD0-0C7F581A5215&Ver=0.0000";
-base.WriteDebugInfo(@"
-ISpace[""RedirectUrl""].RedirectType=""R"";
-ISpace[""RedirectUrl""].Value=""?PkActMId=5EC89147-2FE2-40AF-8446-350FE5E13C57&frmElementId=74DE8FDB-50E6-4EF1-BA80-FBD2FF5FD49A&PkPrMId=3cfe092a-c9df-42bd-bb7a-d4a6e90379fc&formVersionId=430A1903-C481-4EA5-BDD0-0C7F581A5215&Ver=0.0000"";");
-}
-}
-catch(Exception ex)
-{
-base.WriteErrorInfo(@"Exception:",ex);
-}
-}
-private void SubscribeElementEvents_m_confdialog (ref Dictionary<string,ServiceElementData> ISpace)
-{
-IISpace iSpace = new ISpace();
-try
-{
-base.WriteDebugInfo(@"M_ConfDialog-OnClick");
-if(1==1)
-{
-base.WriteDebugInfo(@"if(1==1)");
-ISpace["UI_Dialog"].ShowDialog=true;;
-base.WriteDebugInfo(@"ISpace[""UI_Dialog""].ShowDialog=true;;");
+List<Triplet<string, short, short?>> result0EC7DBF2896E489C9567B9AC59211CE6=acdataIspace676395B9A4084102B650297FAB839973.GetQueryExpressionBindings("0EC7DBF2-896E-489C-9567-B9AC59211CE6");
+iSpace.SetGridData(resultF608F07446CF4214AFA052FAD6AB30EF,result0EC7DBF2896E489C9567B9AC59211CE6,"MyCoursesDetails",ref ISpace);
+iSpace.UpdateGridBindDetails("MyCoursesDetails",result0EC7DBF2896E489C9567B9AC59211CE6);
 }
 }
 catch(Exception ex)
@@ -873,22 +816,6 @@ public override void ExecuteMethod
 }
 	if(methodName.ToLower().Equals("onclick"))
 {
-		if(elementName.ToLower().Equals("edit_tastdetails"))
-{
-			SubscribeElementEvents_edit_tastdetails(ref dfsParam);
-}
-		if(elementName.ToLower().Equals("no"))
-{
-			SubscribeElementEvents_no(ref dfsParam);
-}
-		if(elementName.ToLower().Equals("m_add"))
-{
-			SubscribeElementEvents_m_add(ref dfsParam);
-}
-		if(elementName.ToLower().Equals("m_confdialog"))
-{
-			SubscribeElementEvents_m_confdialog(ref dfsParam);
-}
 }
 }
 }
@@ -911,30 +838,28 @@ using System;
     using System.Linq;	
 
 
-	public partial class AcDataISpace5B035305E81B4571BBE4724D00438E54  : ExtensionActivityBase
+	public partial class AcDataISpace676395B9A4084102B650297FAB839973  : ExtensionActivityBase
 	{		
 		
 		
 		private Dictionary<string,  List<Triplet<string, short, short?>>> queryExpressionBindings = 
 											new Dictionary<string,  List<Triplet<string, short, short?>>>
 		{
-							{"3af47cd6-d5cc-fa04-78e6-04749ae0b6b1", 
+							{"0EC7DBF2-896E-489C-9567-B9AC59211CE6", 
 				
 				new List<Triplet<string, short, short?>> {
 
-								   new Triplet<string, short, short?>("MG_w1_task_name",2,
+								   new Triplet<string, short, short?>("CourseCode",0,
 														   -1),
-								   new Triplet<string, short, short?>("MG_w1_requirement_id",8,
+								   new Triplet<string, short, short?>("Slot",4,
 														   -1),
-								   new Triplet<string, short, short?>("MG_w1_task_type_code",4,
+								   new Triplet<string, short, short?>("RegisteredStudentCount",3,
 														   -1),
-								   new Triplet<string, short, short?>("MG_w1_task_status",9,
+								   new Triplet<string, short, short?>("ClassRoom",5,
 														   -1),
-								   new Triplet<string, short, short?>("MG_w1_complexity_code",6,
+								   new Triplet<string, short, short?>("Credits",2,
 														   -1),
-								   new Triplet<string, short, short?>("MG_w1_task_code",1,
-														   -1),
-								   new Triplet<string, short, short?>("MG_w1_task_id",0,
+								   new Triplet<string, short, short?>("CourseName",1,
 														   -1),
 								}
 			},
@@ -944,20 +869,20 @@ using System;
 
 		private Dictionary<string,string> formVersionList =new Dictionary<string,string> 
 		{
-							{"C75E5B7B-EA0D-42F6-8C53-22D5D2071CCA", "Medium"},
+							{"8E28E3EA-BBF3-4949-82DA-A2D76C215685", "Medium"},
 					};	
 
 		
 		private Dictionary<string,string> formVersionLayoutList =new Dictionary<string,string> 
 		{
-							{"1258F5E9-861B-477F-9ECF-B11DEDCE87E2", ""},
-							{"3E07D973-2A62-4A70-ABF4-6D86290F31E2", ""},
-							{"C75E5B7B-EA0D-42F6-8C53-22D5D2071CCA", ""},
-							{"16B7E381-69C7-448C-AA9A-FCD560C297C7", ""},
-							{"F4209E9A-FA1D-4F19-97F0-4F72891FE520", ""},
-							{"B2B173CE-BF41-43F3-825A-DC5084ECC6C3", ""},
-							{"0A1EBB18-B20D-46EE-819D-AF8FD272E2D9", ""},
-							{"5BFA353B-5FBC-45A7-9BD2-CEDD1EAC6D78", ""},
+							{"AD71AD43-B709-416B-9894-724B0E84EA54", ""},
+							{"6FC272AD-9697-46FA-BB65-BB2C576C093C", ""},
+							{"8E28E3EA-BBF3-4949-82DA-A2D76C215685", ""},
+							{"1211EAE3-5B71-4904-93E5-C76B98BD9E03", ""},
+							{"1CC97C28-854F-40F5-B081-3475B4636FE7", ""},
+							{"9C97DC48-C801-4302-9AE8-F4E5122ED5DE", ""},
+							{"44DBDD0A-C6BE-47A4-BC4B-D70D438CB161", ""},
+							{"3BC858A2-DAD7-467B-B711-DD7806B0C9F4", ""},
 					};	
 
 		
