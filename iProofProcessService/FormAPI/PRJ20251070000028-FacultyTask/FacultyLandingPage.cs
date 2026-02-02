@@ -143,14 +143,6 @@ namespace CPS.Proof.DFSExtension
 			     new Triplet<string, string, string>("F6D8A0EA-D75F-4546-8CFD-07AEA1B39FD7","C3BEA3AF-C9B7-4DEA-AE35-EA1C626191C0",
 												     @"38C753DC-ED33-454B-85AF-DD4DF536B530"),
 			
-						
-			     new Triplet<string, string, string>("F608F074-46CF-4214-AFA0-52FAD6AB30EF","C3BEA3AF-C9B7-4DEA-AE35-EA1C626191C0",
-												     @"3A103712-5244-4427-B2B6-1C4E046FD337"),
-			
-						
-			     new Triplet<string, string, string>("F608F074-46CF-4214-AFA0-52FAD6AB30EF","MyCourses",
-												     @"5D3459BE-630E-4A56-B68B-2CC326C60635"),
-			
 			
 			
 		};
@@ -183,12 +175,6 @@ namespace CPS.Proof.DFSExtension
 		{
 		
 	  			
-			     new Tuple<string, int>("MyCoursesDetails",5),
-			
-						
-			     new Tuple<string, int>("MyCoursesDetails",5),
-			
-						
 		};
 
 	   public override int GetGridRPP(string ElementName)
@@ -446,19 +432,19 @@ namespace CPS.Proof.DFSExtension
 
                 
                  
-                                      case "5D3459BE-630E-4A56-B68B-2CC326C60635":
+                                      case "FC12214A-7A71-4567-A9F2-EE229BBC220B":
                     {
                      
                                      gInsertQuery=@"
 		
-		DECLARE  @TBL_5D3459BE630E4A56B68B2CC326C60635 AS TABLE(	  [RowId] VARCHAR(36)	, [Sequence] INT	, [InstanceId] VARCHAR(36)	, [ProcessActivityMapId] VARCHAR(36)	, [GridId] VARCHAR(36)){0}INSERT INTO [5D3459BE-630E-4A56-B68B-2CC326C60635](RowId,Sequence,InstanceId,ProcessActivityMapId,GridId)
-							SELECT TDT.RowId,TDT.Sequence,TDT.InstanceId,TDT.ProcessActivityMapId,TDT.GridId FROM @TBL_5D3459BE630E4A56B68B2CC326C60635 TDT
-							LEFT JOIN [5D3459BE-630E-4A56-B68B-2CC326C60635] DT  WITH(NOLOCK)
+		DECLARE  @TBL_FC12214A7A714567A9F2EE229BBC220B AS TABLE(	  [InstanceId] VARCHAR(36)	, [ProcessActivityMapId] VARCHAR(36)	, [GridId] VARCHAR(36)	, [RowId] VARCHAR(36)	, [Sequence] INT){0}INSERT INTO [FC12214A-7A71-4567-A9F2-EE229BBC220B](InstanceId,ProcessActivityMapId,GridId,RowId,Sequence)
+							SELECT TDT.InstanceId,TDT.ProcessActivityMapId,TDT.GridId,TDT.RowId,TDT.Sequence FROM @TBL_FC12214A7A714567A9F2EE229BBC220B TDT
+							LEFT JOIN [FC12214A-7A71-4567-A9F2-EE229BBC220B] DT  WITH(NOLOCK)
 							ON	TDT.RowId=DT.RowId WHERE DT.RowId IS NULL;";
 
-                                     colList=@"RowId,Sequence,InstanceId,ProcessActivityMapId,GridId";
+                                     colList=@"InstanceId,ProcessActivityMapId,GridId,RowId,Sequence";
 
-                                     tempInsertQuery=@"INSERT INTO @TBL_5D3459BE630E4A56B68B2CC326C60635(RowId,Sequence,InstanceId,ProcessActivityMapId,GridId)VALUES({0});";
+                                     tempInsertQuery=@"INSERT INTO @TBL_FC12214A7A714567A9F2EE229BBC220B(InstanceId,ProcessActivityMapId,GridId,RowId,Sequence)VALUES({0});";
                                      
 
                             splitcols = colList.Split(',');
@@ -599,19 +585,19 @@ namespace CPS.Proof.DFSExtension
                 {
                      
 
-                                         case "5D3459BE-630E-4A56-B68B-2CC326C60635":
+                                         case "FC12214A-7A71-4567-A9F2-EE229BBC220B":
                     {
                      
                             gInsertQuery=@"
 		
-		DECLARE  @TBL_5D3459BE630E4A56B68B2CC326C60635 AS TABLE(	  [RowId] VARCHAR(36)	, [Sequence] INT	, [InstanceId] VARCHAR(36)	, [ProcessActivityMapId] VARCHAR(36)	, [GridId] VARCHAR(36)){0}INSERT INTO [5D3459BE-630E-4A56-B68B-2CC326C60635](RowId,Sequence,InstanceId,ProcessActivityMapId,GridId)
-							SELECT TDT.RowId,TDT.Sequence,TDT.InstanceId,TDT.ProcessActivityMapId,TDT.GridId FROM @TBL_5D3459BE630E4A56B68B2CC326C60635 TDT
-							LEFT JOIN [5D3459BE-630E-4A56-B68B-2CC326C60635] DT  WITH(NOLOCK)
+		DECLARE  @TBL_FC12214A7A714567A9F2EE229BBC220B AS TABLE(	  [InstanceId] VARCHAR(36)	, [ProcessActivityMapId] VARCHAR(36)	, [GridId] VARCHAR(36)	, [RowId] VARCHAR(36)	, [Sequence] INT){0}INSERT INTO [FC12214A-7A71-4567-A9F2-EE229BBC220B](InstanceId,ProcessActivityMapId,GridId,RowId,Sequence)
+							SELECT TDT.InstanceId,TDT.ProcessActivityMapId,TDT.GridId,TDT.RowId,TDT.Sequence FROM @TBL_FC12214A7A714567A9F2EE229BBC220B TDT
+							LEFT JOIN [FC12214A-7A71-4567-A9F2-EE229BBC220B] DT  WITH(NOLOCK)
 							ON	TDT.RowId=DT.RowId WHERE DT.RowId IS NULL;";
 
-                            colList=@"RowId,Sequence,InstanceId,ProcessActivityMapId,GridId";
+                            colList=@"InstanceId,ProcessActivityMapId,GridId,RowId,Sequence";
 
-                            tempInsertQuery=@"INSERT INTO @TBL_5D3459BE630E4A56B68B2CC326C60635(RowId,Sequence,InstanceId,ProcessActivityMapId,GridId)VALUES({0});";
+                            tempInsertQuery=@"INSERT INTO @TBL_FC12214A7A714567A9F2EE229BBC220B(InstanceId,ProcessActivityMapId,GridId,RowId,Sequence)VALUES({0});";
 
                             splitcols = colList.Split(',');
 
@@ -779,24 +765,6 @@ else{
 ISpace["M_Total"].Value = null;ISpace["M_InActive"].Value = null;ISpace["M_Closed"].Value = null;ISpace["M_Active"].Value = null;
 }
 }
-if(1==1)
-{
-base.WriteDebugInfo(@"if(1==1)");
-
-var querySourceF608F07446CF4214AFA052FAD6AB30EF =GetQueryExpressionDataSource("F608F074-46CF-4214-AFA0-52FAD6AB30EF");
-
-DataTable resultF608F07446CF4214AFA052FAD6AB30EF=iSpace.SetGridDataSource(querySourceF608F07446CF4214AFA052FAD6AB30EF, _objectFactory.GetGridRPP("MyCoursesDetails"),@"exec GetFL_MyCourses '" + ISpace["uname"].Value + @"'");
-
-iSpace.InsertGridBindDetails("MyCoursesDetails","11",querySourceF608F07446CF4214AFA052FAD6AB30EF,"exec GetFL_MyCourses '" + ISpace["uname"].Value + @"'",_objectFactory.GetGridRPP("MyCoursesDetails"));
-
-base.WriteDebugInfo(@"var querySourceF608F07446CF4214AFA052FAD6AB30EF =GetQueryExpressionDataSource(""F608F074-46CF-4214-AFA0-52FAD6AB30EF"");DataTable resultF608F07446CF4214AFA052FAD6AB30EF=iSpace.SetGridDataSource(querySourceF608F07446CF4214AFA052FAD6AB30EF, _objectFactory.GetGridRPP(""MyCoursesDetails""),@""exec GetFL_MyCourses '"" + ISpace[""uname""].Value + @""'"");iSpace.InsertGridBindDetails(""MyCoursesDetails"",""11"",querySourceF608F07446CF4214AFA052FAD6AB30EF,""exec GetFL_MyCourses '"" + ISpace[""uname""].Value + @""'"",_objectFactory.GetGridRPP(""MyCoursesDetails""));");
-base.WriteDebugInfo(@"");
-
-
-List<Triplet<string, short, short?>> result0EC7DBF2896E489C9567B9AC59211CE6=acdataIspace676395B9A4084102B650297FAB839973.GetQueryExpressionBindings("0EC7DBF2-896E-489C-9567-B9AC59211CE6");
-iSpace.SetGridData(resultF608F07446CF4214AFA052FAD6AB30EF,result0EC7DBF2896E489C9567B9AC59211CE6,"MyCoursesDetails",ref ISpace);
-iSpace.UpdateGridBindDetails("MyCoursesDetails",result0EC7DBF2896E489C9567B9AC59211CE6);
-}
 }
 catch(Exception ex)
 {
@@ -845,31 +813,12 @@ using System;
 		private Dictionary<string,  List<Triplet<string, short, short?>>> queryExpressionBindings = 
 											new Dictionary<string,  List<Triplet<string, short, short?>>>
 		{
-							{"0EC7DBF2-896E-489C-9567-B9AC59211CE6", 
-				
-				new List<Triplet<string, short, short?>> {
-
-								   new Triplet<string, short, short?>("CourseCode",0,
-														   -1),
-								   new Triplet<string, short, short?>("Slot",4,
-														   -1),
-								   new Triplet<string, short, short?>("RegisteredStudentCount",3,
-														   -1),
-								   new Triplet<string, short, short?>("ClassRoom",5,
-														   -1),
-								   new Triplet<string, short, short?>("Credits",2,
-														   -1),
-								   new Triplet<string, short, short?>("CourseName",1,
-														   -1),
-								}
-			},
 					};	
 
 	
 
 		private Dictionary<string,string> formVersionList =new Dictionary<string,string> 
 		{
-							{"8E28E3EA-BBF3-4949-82DA-A2D76C215685", "Medium"},
 					};	
 
 		

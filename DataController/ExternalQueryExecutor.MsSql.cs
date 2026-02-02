@@ -1034,19 +1034,19 @@ namespace CPS.Proof.DFSExtension
                 {
 
                  
-                                      case "5D3459BE-630E-4A56-B68B-2CC326C60635":
+                                      case "FC12214A-7A71-4567-A9F2-EE229BBC220B":
                     {
                      
                                      gInsertQuery=@"
 		
-		DECLARE  @TBL_5D3459BE630E4A56B68B2CC326C60635 AS TABLE(	  [RowId] VARCHAR(36)	, [Sequence] INT	, [InstanceId] VARCHAR(36)	, [ProcessActivityMapId] VARCHAR(36)	, [GridId] VARCHAR(36)){0}INSERT INTO [5D3459BE-630E-4A56-B68B-2CC326C60635](RowId,Sequence,InstanceId,ProcessActivityMapId,GridId)
-							SELECT TDT.RowId,TDT.Sequence,TDT.InstanceId,TDT.ProcessActivityMapId,TDT.GridId FROM @TBL_5D3459BE630E4A56B68B2CC326C60635 TDT
-							LEFT JOIN [5D3459BE-630E-4A56-B68B-2CC326C60635] DT  WITH(NOLOCK)
+		DECLARE  @TBL_FC12214A7A714567A9F2EE229BBC220B AS TABLE(	  [InstanceId] VARCHAR(36)	, [ProcessActivityMapId] VARCHAR(36)	, [GridId] VARCHAR(36)	, [RowId] VARCHAR(36)	, [Sequence] INT){0}INSERT INTO [FC12214A-7A71-4567-A9F2-EE229BBC220B](InstanceId,ProcessActivityMapId,GridId,RowId,Sequence)
+							SELECT TDT.InstanceId,TDT.ProcessActivityMapId,TDT.GridId,TDT.RowId,TDT.Sequence FROM @TBL_FC12214A7A714567A9F2EE229BBC220B TDT
+							LEFT JOIN [FC12214A-7A71-4567-A9F2-EE229BBC220B] DT  WITH(NOLOCK)
 							ON	TDT.RowId=DT.RowId WHERE DT.RowId IS NULL;";
 
-                                     colList=@"RowId,Sequence,InstanceId,ProcessActivityMapId,GridId";
+                                     colList=@"InstanceId,ProcessActivityMapId,GridId,RowId,Sequence";
 
-                                     tempInsertQuery=@"INSERT INTO @TBL_5D3459BE630E4A56B68B2CC326C60635(RowId,Sequence,InstanceId,ProcessActivityMapId,GridId)VALUES({0});";
+                                     tempInsertQuery=@"INSERT INTO @TBL_FC12214A7A714567A9F2EE229BBC220B(InstanceId,ProcessActivityMapId,GridId,RowId,Sequence)VALUES({0});";
                                      
 
                             splitcols = colList.Split(',');
@@ -1258,19 +1258,19 @@ namespace CPS.Proof.DFSExtension
                 {
 
 
-                                         case "5D3459BE-630E-4A56-B68B-2CC326C60635":
+                                         case "FC12214A-7A71-4567-A9F2-EE229BBC220B":
                     {
                      
                             gInsertQuery=@"
 		
-		DECLARE  @TBL_5D3459BE630E4A56B68B2CC326C60635 AS TABLE(	  [RowId] VARCHAR(36)	, [Sequence] INT	, [InstanceId] VARCHAR(36)	, [ProcessActivityMapId] VARCHAR(36)	, [GridId] VARCHAR(36)){0}INSERT INTO [5D3459BE-630E-4A56-B68B-2CC326C60635](RowId,Sequence,InstanceId,ProcessActivityMapId,GridId)
-							SELECT TDT.RowId,TDT.Sequence,TDT.InstanceId,TDT.ProcessActivityMapId,TDT.GridId FROM @TBL_5D3459BE630E4A56B68B2CC326C60635 TDT
-							LEFT JOIN [5D3459BE-630E-4A56-B68B-2CC326C60635] DT  WITH(NOLOCK)
+		DECLARE  @TBL_FC12214A7A714567A9F2EE229BBC220B AS TABLE(	  [InstanceId] VARCHAR(36)	, [ProcessActivityMapId] VARCHAR(36)	, [GridId] VARCHAR(36)	, [RowId] VARCHAR(36)	, [Sequence] INT){0}INSERT INTO [FC12214A-7A71-4567-A9F2-EE229BBC220B](InstanceId,ProcessActivityMapId,GridId,RowId,Sequence)
+							SELECT TDT.InstanceId,TDT.ProcessActivityMapId,TDT.GridId,TDT.RowId,TDT.Sequence FROM @TBL_FC12214A7A714567A9F2EE229BBC220B TDT
+							LEFT JOIN [FC12214A-7A71-4567-A9F2-EE229BBC220B] DT  WITH(NOLOCK)
 							ON	TDT.RowId=DT.RowId WHERE DT.RowId IS NULL;";
 
-                            colList=@"RowId,Sequence,InstanceId,ProcessActivityMapId,GridId";
+                            colList=@"InstanceId,ProcessActivityMapId,GridId,RowId,Sequence";
 
-                            tempInsertQuery=@"INSERT INTO @TBL_5D3459BE630E4A56B68B2CC326C60635(RowId,Sequence,InstanceId,ProcessActivityMapId,GridId)VALUES({0});";
+                            tempInsertQuery=@"INSERT INTO @TBL_FC12214A7A714567A9F2EE229BBC220B(InstanceId,ProcessActivityMapId,GridId,RowId,Sequence)VALUES({0});";
 
                             splitcols = colList.Split(',');
 
