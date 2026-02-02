@@ -144,7 +144,7 @@ namespace CPS.Proof.DFSExtension
 												     @"38C753DC-ED33-454B-85AF-DD4DF536B530"),
 			
 						
-			     new Triplet<string, string, string>("64C51C81-59CF-486D-9B10-072274E5B1A2","C3BEA3AF-C9B7-4DEA-AE35-EA1C626191C0",
+			     new Triplet<string, string, string>("1EDD7FD1-A3ED-45A7-9344-7EF6EEE1DFE0","C3BEA3AF-C9B7-4DEA-AE35-EA1C626191C0",
 												     @"38C753DC-ED33-454B-85AF-DD4DF536B530"),
 			
 						
@@ -183,10 +183,10 @@ namespace CPS.Proof.DFSExtension
 		{
 		
 	  			
-			     new Tuple<string, int>("TastDetails",1000),
+			     new Tuple<string, int>("TastDetails",5),
 			
 						
-			     new Tuple<string, int>("TastDetails",5),
+			     new Tuple<string, int>("TastDetails",1000),
 			
 						
 		};
@@ -740,22 +740,22 @@ if(1==1)
 base.WriteDebugInfo(@"if(1==1)");
 base.WriteDebugInfo(@"EXEC GetTaskSummary");
 
-var querySource64C51C8159CF486D9B10072274E5B1A2 =GetQueryExpressionDataSource("64C51C81-59CF-486D-9B10-072274E5B1A2");
-Dictionary<short,object> result64C51C8159CF486D9B10072274E5B1A2=iSpace.ExecuteQuery(querySource64C51C8159CF486D9B10072274E5B1A2,@"EXEC GetTaskSummary",false);
+var querySource1EDD7FD1A3ED45A793447EF6EEE1DFE0 =GetQueryExpressionDataSource("1EDD7FD1-A3ED-45A7-9344-7EF6EEE1DFE0");
+Dictionary<short,object> result1EDD7FD1A3ED45A793447EF6EEE1DFE0=iSpace.ExecuteQuery(querySource1EDD7FD1A3ED45A793447EF6EEE1DFE0,@"EXEC GetTaskSummary",false);
 
-base.WriteDebugInfo(@"var querySource64C51C8159CF486D9B10072274E5B1A2 =GetQueryExpressionDataSource(""64C51C81-59CF-486D-9B10-072274E5B1A2"");Dictionary<short,object> result64C51C8159CF486D9B10072274E5B1A2=iSpace.ExecuteQuery(querySource64C51C8159CF486D9B10072274E5B1A2,@""EXEC GetTaskSummary"",false);");
+base.WriteDebugInfo(@"var querySource1EDD7FD1A3ED45A793447EF6EEE1DFE0 =GetQueryExpressionDataSource(""1EDD7FD1-A3ED-45A7-9344-7EF6EEE1DFE0"");Dictionary<short,object> result1EDD7FD1A3ED45A793447EF6EEE1DFE0=iSpace.ExecuteQuery(querySource1EDD7FD1A3ED45A793447EF6EEE1DFE0,@""EXEC GetTaskSummary"",false);");
 base.WriteDebugInfo(@"");
 
-if((result64C51C8159CF486D9B10072274E5B1A2!=null) && (result64C51C8159CF486D9B10072274E5B1A2.Count!=0))
+if((result1EDD7FD1A3ED45A793447EF6EEE1DFE0!=null) && (result1EDD7FD1A3ED45A793447EF6EEE1DFE0.Count!=0))
 {
-if(result64C51C8159CF486D9B10072274E5B1A2.ContainsKey(3))
-ISpace["M_Closed"].Value = result64C51C8159CF486D9B10072274E5B1A2[3];
-if(result64C51C8159CF486D9B10072274E5B1A2.ContainsKey(0))
-ISpace["M_Total"].Value = result64C51C8159CF486D9B10072274E5B1A2[0];
-if(result64C51C8159CF486D9B10072274E5B1A2.ContainsKey(1))
-ISpace["M_Active"].Value = result64C51C8159CF486D9B10072274E5B1A2[1];
-if(result64C51C8159CF486D9B10072274E5B1A2.ContainsKey(2))
-ISpace["M_InActive"].Value = result64C51C8159CF486D9B10072274E5B1A2[2];
+if(result1EDD7FD1A3ED45A793447EF6EEE1DFE0.ContainsKey(3))
+ISpace["M_Closed"].Value = result1EDD7FD1A3ED45A793447EF6EEE1DFE0[3];
+if(result1EDD7FD1A3ED45A793447EF6EEE1DFE0.ContainsKey(0))
+ISpace["M_Total"].Value = result1EDD7FD1A3ED45A793447EF6EEE1DFE0[0];
+if(result1EDD7FD1A3ED45A793447EF6EEE1DFE0.ContainsKey(1))
+ISpace["M_Active"].Value = result1EDD7FD1A3ED45A793447EF6EEE1DFE0[1];
+if(result1EDD7FD1A3ED45A793447EF6EEE1DFE0.ContainsKey(2))
+ISpace["M_InActive"].Value = result1EDD7FD1A3ED45A793447EF6EEE1DFE0[2];
 }
 else{
 ISpace["M_Closed"].Value = null;ISpace["M_Total"].Value = null;ISpace["M_Active"].Value = null;ISpace["M_InActive"].Value = null;
@@ -841,6 +841,28 @@ catch(Exception ex)
 base.WriteErrorInfo(@"Exception:",ex);
 }
 }
+private void SubscribeElementEvents_m_addtask (ref Dictionary<string,ServiceElementData> ISpace)
+{
+IISpace iSpace = new ISpace();
+try
+{
+base.WriteDebugInfo(@"M_AddTask-OnClick");
+if(1==1)
+{
+base.WriteDebugInfo(@"if(1==1)");
+
+ISpace["RedirectUrl"].RedirectType="R";
+ISpace["RedirectUrl"].Value="?PkActMId=5EC89147-2FE2-40AF-8446-350FE5E13C57&frmElementId=74DE8FDB-50E6-4EF1-BA80-FBD2FF5FD49A&PkPrMId=3cfe092a-c9df-42bd-bb7a-d4a6e90379fc&formVersionId=430A1903-C481-4EA5-BDD0-0C7F581A5215&Ver=0.0000";
+base.WriteDebugInfo(@"
+ISpace[""RedirectUrl""].RedirectType=""R"";
+ISpace[""RedirectUrl""].Value=""?PkActMId=5EC89147-2FE2-40AF-8446-350FE5E13C57&frmElementId=74DE8FDB-50E6-4EF1-BA80-FBD2FF5FD49A&PkPrMId=3cfe092a-c9df-42bd-bb7a-d4a6e90379fc&formVersionId=430A1903-C481-4EA5-BDD0-0C7F581A5215&Ver=0.0000"";");
+}
+}
+catch(Exception ex)
+{
+base.WriteErrorInfo(@"Exception:",ex);
+}
+}
 private void SubscribeElementEvents_m_confdialog (ref Dictionary<string,ServiceElementData> ISpace)
 {
 IISpace iSpace = new ISpace();
@@ -883,6 +905,10 @@ public override void ExecuteMethod
 		if(elementName.ToLower().Equals("m_add"))
 {
 			SubscribeElementEvents_m_add(ref dfsParam);
+}
+		if(elementName.ToLower().Equals("m_addtask"))
+{
+			SubscribeElementEvents_m_addtask(ref dfsParam);
 }
 		if(elementName.ToLower().Equals("m_confdialog"))
 {
