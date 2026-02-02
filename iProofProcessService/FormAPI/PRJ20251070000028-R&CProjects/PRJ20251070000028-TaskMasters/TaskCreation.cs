@@ -859,8 +859,6 @@ iSpace.UpdateGridBindDetails("TaskStep",resultC8A21868E8BD46CA9102DBA971EF6435);
 if(ISpace["MF_w1_task_id"].Value==0)
 {
 base.WriteDebugInfo(@"if(ISpace[""MF_w1_task_id""].Value==0)");
-ISpace["MF_w1_task_id"].Value=0;
-base.WriteDebugInfo(@"ISpace[""MF_w1_task_id""].Value=0;");
 ISpace["MF_w1_task_code"].Value="";
 base.WriteDebugInfo(@"ISpace[""MF_w1_task_code""].Value="""";");
 ISpace["MF_w1_task_type_code"].Value="";
