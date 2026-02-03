@@ -929,6 +929,8 @@ using System;
 														   -1),
 								   new Triplet<string, short, short?>("MG_w1_task_status",9,
 														   -1),
+								   new Triplet<string, short, short?>("MG_w1_updated_at",14,
+														   -1),
 								   new Triplet<string, short, short?>("MG_w1_complexity_code",6,
 														   -1),
 								   new Triplet<string, short, short?>("MG_w1_task_code",1,
