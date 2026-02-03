@@ -250,9 +250,6 @@ namespace CPS.Proof.DFSExtension
 			     new Tuple<string, int>("TaskStep",25),
 			
 						
-			     new Tuple<string, int>("TaskStep",5),
-			
-						
 		};
 
 	   public override int GetGridRPP(string ElementName)
