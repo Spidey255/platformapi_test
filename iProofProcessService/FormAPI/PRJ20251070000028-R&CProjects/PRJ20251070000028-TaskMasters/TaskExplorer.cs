@@ -186,7 +186,7 @@ namespace CPS.Proof.DFSExtension
 			     new Tuple<string, int>("TastDetails",5),
 			
 						
-			     new Tuple<string, int>("TastDetails",1000),
+			     new Tuple<string, int>("TastDetails",100),
 			
 						
 		};
@@ -785,6 +785,42 @@ catch(Exception ex)
 base.WriteErrorInfo(@"Exception:",ex);
 }
 }
+private void SubscribeElementEvents_m_all (ref Dictionary<string,ServiceElementData> ISpace)
+{
+IISpace iSpace = new ISpace();
+try
+{
+base.WriteDebugInfo(@"M_All-OnClick");
+if(1==1)
+{
+base.WriteDebugInfo(@"if(1==1)");
+ISpace["M_TypeCode"].Value="";
+base.WriteDebugInfo(@"ISpace[""M_TypeCode""].Value="""";");
+}
+if(1==1)
+{
+base.WriteDebugInfo(@"if(1==1)");
+
+var querySource799aca0d883ea868677d5f43dddca1bf =GetQueryExpressionDataSource("799aca0d-883e-a868-677d-5f43dddca1bf");
+
+DataTable result799aca0d883ea868677d5f43dddca1bf=iSpace.SetGridDataSource(querySource799aca0d883ea868677d5f43dddca1bf, _objectFactory.GetGridRPP("TastDetails"),@"EXEC TasKDetails '','" + ISpace["M_TypeCode"].Value + @"'");
+
+iSpace.InsertGridBindDetails("TastDetails","11",querySource799aca0d883ea868677d5f43dddca1bf,"EXEC TasKDetails '','" + ISpace["M_TypeCode"].Value + @"'",_objectFactory.GetGridRPP("TastDetails"));
+
+base.WriteDebugInfo(@"var querySource799aca0d883ea868677d5f43dddca1bf =GetQueryExpressionDataSource(""799aca0d-883e-a868-677d-5f43dddca1bf"");DataTable result799aca0d883ea868677d5f43dddca1bf=iSpace.SetGridDataSource(querySource799aca0d883ea868677d5f43dddca1bf, _objectFactory.GetGridRPP(""TastDetails""),@""EXEC TasKDetails '','"" + ISpace[""M_TypeCode""].Value + @""'"");iSpace.InsertGridBindDetails(""TastDetails"",""11"",querySource799aca0d883ea868677d5f43dddca1bf,""EXEC TasKDetails '','"" + ISpace[""M_TypeCode""].Value + @""'"",_objectFactory.GetGridRPP(""TastDetails""));");
+base.WriteDebugInfo(@"");
+
+
+List<Triplet<string, short, short?>> result3af47cd6d5ccfa0478e604749ae0b6b1=acdataIspace5B035305E81B4571BBE4724D00438E54.GetQueryExpressionBindings("3af47cd6-d5cc-fa04-78e6-04749ae0b6b1");
+iSpace.SetGridData(result799aca0d883ea868677d5f43dddca1bf,result3af47cd6d5ccfa0478e604749ae0b6b1,"TastDetails",ref ISpace);
+iSpace.UpdateGridBindDetails("TastDetails",result3af47cd6d5ccfa0478e604749ae0b6b1);
+}
+}
+catch(Exception ex)
+{
+base.WriteErrorInfo(@"Exception:",ex);
+}
+}
 private void SubscribeElementEvents_edit_tastdetails (ref Dictionary<string,ServiceElementData> ISpace)
 {
 IISpace iSpace = new ISpace();
@@ -1020,6 +1056,10 @@ public override void ExecuteMethod
 }
 	if(methodName.ToLower().Equals("onclick"))
 {
+		if(elementName.ToLower().Equals("m_all"))
+{
+			SubscribeElementEvents_m_all(ref dfsParam);
+}
 		if(elementName.ToLower().Equals("edit_tastdetails"))
 {
 			SubscribeElementEvents_edit_tastdetails(ref dfsParam);
