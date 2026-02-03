@@ -186,7 +186,7 @@ namespace CPS.Proof.DFSExtension
 			     new Tuple<string, int>("TastDetails",5),
 			
 						
-			     new Tuple<string, int>("TastDetails",5),
+			     new Tuple<string, int>("TastDetails",1000),
 			
 						
 		};
@@ -767,11 +767,11 @@ base.WriteDebugInfo(@"if(1==1)");
 
 var querySource799aca0d883ea868677d5f43dddca1bf =GetQueryExpressionDataSource("799aca0d-883e-a868-677d-5f43dddca1bf");
 
-DataTable result799aca0d883ea868677d5f43dddca1bf=iSpace.SetGridDataSource(querySource799aca0d883ea868677d5f43dddca1bf, _objectFactory.GetGridRPP("TastDetails"),@"EXEC TasKDetails ''");
+DataTable result799aca0d883ea868677d5f43dddca1bf=iSpace.SetGridDataSource(querySource799aca0d883ea868677d5f43dddca1bf, _objectFactory.GetGridRPP("TastDetails"),@"EXEC TasKDetails '','" + ISpace["M_TypeCode"].Value + @"'");
 
-iSpace.InsertGridBindDetails("TastDetails","11",querySource799aca0d883ea868677d5f43dddca1bf,"EXEC TasKDetails ''",_objectFactory.GetGridRPP("TastDetails"));
+iSpace.InsertGridBindDetails("TastDetails","11",querySource799aca0d883ea868677d5f43dddca1bf,"EXEC TasKDetails '','" + ISpace["M_TypeCode"].Value + @"'",_objectFactory.GetGridRPP("TastDetails"));
 
-base.WriteDebugInfo(@"var querySource799aca0d883ea868677d5f43dddca1bf =GetQueryExpressionDataSource(""799aca0d-883e-a868-677d-5f43dddca1bf"");DataTable result799aca0d883ea868677d5f43dddca1bf=iSpace.SetGridDataSource(querySource799aca0d883ea868677d5f43dddca1bf, _objectFactory.GetGridRPP(""TastDetails""),@""EXEC TasKDetails ''"");iSpace.InsertGridBindDetails(""TastDetails"",""11"",querySource799aca0d883ea868677d5f43dddca1bf,""EXEC TasKDetails ''"",_objectFactory.GetGridRPP(""TastDetails""));");
+base.WriteDebugInfo(@"var querySource799aca0d883ea868677d5f43dddca1bf =GetQueryExpressionDataSource(""799aca0d-883e-a868-677d-5f43dddca1bf"");DataTable result799aca0d883ea868677d5f43dddca1bf=iSpace.SetGridDataSource(querySource799aca0d883ea868677d5f43dddca1bf, _objectFactory.GetGridRPP(""TastDetails""),@""EXEC TasKDetails '','"" + ISpace[""M_TypeCode""].Value + @""'"");iSpace.InsertGridBindDetails(""TastDetails"",""11"",querySource799aca0d883ea868677d5f43dddca1bf,""EXEC TasKDetails '','"" + ISpace[""M_TypeCode""].Value + @""'"",_objectFactory.GetGridRPP(""TastDetails""));");
 base.WriteDebugInfo(@"");
 
 
@@ -819,6 +819,78 @@ catch(Exception ex)
 base.WriteErrorInfo(@"Exception:",ex);
 }
 }
+private void SubscribeElementEvents_m_total (ref Dictionary<string,ServiceElementData> ISpace)
+{
+IISpace iSpace = new ISpace();
+try
+{
+base.WriteDebugInfo(@"M_Total-OnChange");
+if(1==1)
+{
+base.WriteDebugInfo(@"if(1==1)");
+ISpace["M_TypeCode"].Value="";
+base.WriteDebugInfo(@"ISpace[""M_TypeCode""].Value="""";");
+}
+if(1==1)
+{
+base.WriteDebugInfo(@"if(1==1)");
+
+var querySource799aca0d883ea868677d5f43dddca1bf =GetQueryExpressionDataSource("799aca0d-883e-a868-677d-5f43dddca1bf");
+
+DataTable result799aca0d883ea868677d5f43dddca1bf=iSpace.SetGridDataSource(querySource799aca0d883ea868677d5f43dddca1bf, _objectFactory.GetGridRPP("TastDetails"),@"EXEC TasKDetails '','" + ISpace["M_TypeCode"].Value + @"'");
+
+iSpace.InsertGridBindDetails("TastDetails","11",querySource799aca0d883ea868677d5f43dddca1bf,"EXEC TasKDetails '','" + ISpace["M_TypeCode"].Value + @"'",_objectFactory.GetGridRPP("TastDetails"));
+
+base.WriteDebugInfo(@"var querySource799aca0d883ea868677d5f43dddca1bf =GetQueryExpressionDataSource(""799aca0d-883e-a868-677d-5f43dddca1bf"");DataTable result799aca0d883ea868677d5f43dddca1bf=iSpace.SetGridDataSource(querySource799aca0d883ea868677d5f43dddca1bf, _objectFactory.GetGridRPP(""TastDetails""),@""EXEC TasKDetails '','"" + ISpace[""M_TypeCode""].Value + @""'"");iSpace.InsertGridBindDetails(""TastDetails"",""11"",querySource799aca0d883ea868677d5f43dddca1bf,""EXEC TasKDetails '','"" + ISpace[""M_TypeCode""].Value + @""'"",_objectFactory.GetGridRPP(""TastDetails""));");
+base.WriteDebugInfo(@"");
+
+
+List<Triplet<string, short, short?>> result3af47cd6d5ccfa0478e604749ae0b6b1=acdataIspace5B035305E81B4571BBE4724D00438E54.GetQueryExpressionBindings("3af47cd6-d5cc-fa04-78e6-04749ae0b6b1");
+iSpace.SetGridData(result799aca0d883ea868677d5f43dddca1bf,result3af47cd6d5ccfa0478e604749ae0b6b1,"TastDetails",ref ISpace);
+iSpace.UpdateGridBindDetails("TastDetails",result3af47cd6d5ccfa0478e604749ae0b6b1);
+}
+}
+catch(Exception ex)
+{
+base.WriteErrorInfo(@"Exception:",ex);
+}
+}
+private void SubscribeElementEvents_mf_closed (ref Dictionary<string,ServiceElementData> ISpace)
+{
+IISpace iSpace = new ISpace();
+try
+{
+base.WriteDebugInfo(@"MF_Closed-OnClick");
+if(1==1)
+{
+base.WriteDebugInfo(@"if(1==1)");
+ISpace["M_TypeCode"].Value="RND";
+base.WriteDebugInfo(@"ISpace[""M_TypeCode""].Value=""RND"";");
+}
+if(1==1)
+{
+base.WriteDebugInfo(@"if(1==1)");
+
+var querySource799aca0d883ea868677d5f43dddca1bf =GetQueryExpressionDataSource("799aca0d-883e-a868-677d-5f43dddca1bf");
+
+DataTable result799aca0d883ea868677d5f43dddca1bf=iSpace.SetGridDataSource(querySource799aca0d883ea868677d5f43dddca1bf, _objectFactory.GetGridRPP("TastDetails"),@"EXEC TasKDetails '','" + ISpace["M_TypeCode"].Value + @"'");
+
+iSpace.InsertGridBindDetails("TastDetails","11",querySource799aca0d883ea868677d5f43dddca1bf,"EXEC TasKDetails '','" + ISpace["M_TypeCode"].Value + @"'",_objectFactory.GetGridRPP("TastDetails"));
+
+base.WriteDebugInfo(@"var querySource799aca0d883ea868677d5f43dddca1bf =GetQueryExpressionDataSource(""799aca0d-883e-a868-677d-5f43dddca1bf"");DataTable result799aca0d883ea868677d5f43dddca1bf=iSpace.SetGridDataSource(querySource799aca0d883ea868677d5f43dddca1bf, _objectFactory.GetGridRPP(""TastDetails""),@""EXEC TasKDetails '','"" + ISpace[""M_TypeCode""].Value + @""'"");iSpace.InsertGridBindDetails(""TastDetails"",""11"",querySource799aca0d883ea868677d5f43dddca1bf,""EXEC TasKDetails '','"" + ISpace[""M_TypeCode""].Value + @""'"",_objectFactory.GetGridRPP(""TastDetails""));");
+base.WriteDebugInfo(@"");
+
+
+List<Triplet<string, short, short?>> result3af47cd6d5ccfa0478e604749ae0b6b1=acdataIspace5B035305E81B4571BBE4724D00438E54.GetQueryExpressionBindings("3af47cd6-d5cc-fa04-78e6-04749ae0b6b1");
+iSpace.SetGridData(result799aca0d883ea868677d5f43dddca1bf,result3af47cd6d5ccfa0478e604749ae0b6b1,"TastDetails",ref ISpace);
+iSpace.UpdateGridBindDetails("TastDetails",result3af47cd6d5ccfa0478e604749ae0b6b1);
+}
+}
+catch(Exception ex)
+{
+base.WriteErrorInfo(@"Exception:",ex);
+}
+}
 private void SubscribeElementEvents_m_addtask (ref Dictionary<string,ServiceElementData> ISpace)
 {
 IISpace iSpace = new ISpace();
@@ -834,6 +906,42 @@ ISpace["RedirectUrl"].Value="?PkActMId=5EC89147-2FE2-40AF-8446-350FE5E13C57&frmE
 base.WriteDebugInfo(@"
 ISpace[""RedirectUrl""].RedirectType=""R"";
 ISpace[""RedirectUrl""].Value=""?PkActMId=5EC89147-2FE2-40AF-8446-350FE5E13C57&frmElementId=74DE8FDB-50E6-4EF1-BA80-FBD2FF5FD49A&PkPrMId=3cfe092a-c9df-42bd-bb7a-d4a6e90379fc&formVersionId=430A1903-C481-4EA5-BDD0-0C7F581A5215&Ver=0.0000"";");
+}
+}
+catch(Exception ex)
+{
+base.WriteErrorInfo(@"Exception:",ex);
+}
+}
+private void SubscribeElementEvents_mf_active (ref Dictionary<string,ServiceElementData> ISpace)
+{
+IISpace iSpace = new ISpace();
+try
+{
+base.WriteDebugInfo(@"MF_Active-OnClick");
+if(1==1)
+{
+base.WriteDebugInfo(@"if(1==1)");
+ISpace["M_TypeCode"].Value="DEV";
+base.WriteDebugInfo(@"ISpace[""M_TypeCode""].Value=""DEV"";");
+}
+if(1==1)
+{
+base.WriteDebugInfo(@"if(1==1)");
+
+var querySource799aca0d883ea868677d5f43dddca1bf =GetQueryExpressionDataSource("799aca0d-883e-a868-677d-5f43dddca1bf");
+
+DataTable result799aca0d883ea868677d5f43dddca1bf=iSpace.SetGridDataSource(querySource799aca0d883ea868677d5f43dddca1bf, _objectFactory.GetGridRPP("TastDetails"),@"EXEC TasKDetails '','" + ISpace["M_TypeCode"].Value + @"'");
+
+iSpace.InsertGridBindDetails("TastDetails","11",querySource799aca0d883ea868677d5f43dddca1bf,"EXEC TasKDetails '','" + ISpace["M_TypeCode"].Value + @"'",_objectFactory.GetGridRPP("TastDetails"));
+
+base.WriteDebugInfo(@"var querySource799aca0d883ea868677d5f43dddca1bf =GetQueryExpressionDataSource(""799aca0d-883e-a868-677d-5f43dddca1bf"");DataTable result799aca0d883ea868677d5f43dddca1bf=iSpace.SetGridDataSource(querySource799aca0d883ea868677d5f43dddca1bf, _objectFactory.GetGridRPP(""TastDetails""),@""EXEC TasKDetails '','"" + ISpace[""M_TypeCode""].Value + @""'"");iSpace.InsertGridBindDetails(""TastDetails"",""11"",querySource799aca0d883ea868677d5f43dddca1bf,""EXEC TasKDetails '','"" + ISpace[""M_TypeCode""].Value + @""'"",_objectFactory.GetGridRPP(""TastDetails""));");
+base.WriteDebugInfo(@"");
+
+
+List<Triplet<string, short, short?>> result3af47cd6d5ccfa0478e604749ae0b6b1=acdataIspace5B035305E81B4571BBE4724D00438E54.GetQueryExpressionBindings("3af47cd6-d5cc-fa04-78e6-04749ae0b6b1");
+iSpace.SetGridData(result799aca0d883ea868677d5f43dddca1bf,result3af47cd6d5ccfa0478e604749ae0b6b1,"TastDetails",ref ISpace);
+iSpace.UpdateGridBindDetails("TastDetails",result3af47cd6d5ccfa0478e604749ae0b6b1);
 }
 }
 catch(Exception ex)
@@ -859,6 +967,42 @@ catch(Exception ex)
 base.WriteErrorInfo(@"Exception:",ex);
 }
 }
+private void SubscribeElementEvents_mf_inactive (ref Dictionary<string,ServiceElementData> ISpace)
+{
+IISpace iSpace = new ISpace();
+try
+{
+base.WriteDebugInfo(@"MF_InActive-OnClick");
+if(1==1)
+{
+base.WriteDebugInfo(@"if(1==1)");
+ISpace["M_TypeCode"].Value="REVIEW";
+base.WriteDebugInfo(@"ISpace[""M_TypeCode""].Value=""REVIEW"";");
+}
+if(1==1)
+{
+base.WriteDebugInfo(@"if(1==1)");
+
+var querySource799aca0d883ea868677d5f43dddca1bf =GetQueryExpressionDataSource("799aca0d-883e-a868-677d-5f43dddca1bf");
+
+DataTable result799aca0d883ea868677d5f43dddca1bf=iSpace.SetGridDataSource(querySource799aca0d883ea868677d5f43dddca1bf, _objectFactory.GetGridRPP("TastDetails"),@"EXEC TasKDetails '','" + ISpace["M_TypeCode"].Value + @"'");
+
+iSpace.InsertGridBindDetails("TastDetails","11",querySource799aca0d883ea868677d5f43dddca1bf,"EXEC TasKDetails '','" + ISpace["M_TypeCode"].Value + @"'",_objectFactory.GetGridRPP("TastDetails"));
+
+base.WriteDebugInfo(@"var querySource799aca0d883ea868677d5f43dddca1bf =GetQueryExpressionDataSource(""799aca0d-883e-a868-677d-5f43dddca1bf"");DataTable result799aca0d883ea868677d5f43dddca1bf=iSpace.SetGridDataSource(querySource799aca0d883ea868677d5f43dddca1bf, _objectFactory.GetGridRPP(""TastDetails""),@""EXEC TasKDetails '','"" + ISpace[""M_TypeCode""].Value + @""'"");iSpace.InsertGridBindDetails(""TastDetails"",""11"",querySource799aca0d883ea868677d5f43dddca1bf,""EXEC TasKDetails '','"" + ISpace[""M_TypeCode""].Value + @""'"",_objectFactory.GetGridRPP(""TastDetails""));");
+base.WriteDebugInfo(@"");
+
+
+List<Triplet<string, short, short?>> result3af47cd6d5ccfa0478e604749ae0b6b1=acdataIspace5B035305E81B4571BBE4724D00438E54.GetQueryExpressionBindings("3af47cd6-d5cc-fa04-78e6-04749ae0b6b1");
+iSpace.SetGridData(result799aca0d883ea868677d5f43dddca1bf,result3af47cd6d5ccfa0478e604749ae0b6b1,"TastDetails",ref ISpace);
+iSpace.UpdateGridBindDetails("TastDetails",result3af47cd6d5ccfa0478e604749ae0b6b1);
+}
+}
+catch(Exception ex)
+{
+base.WriteErrorInfo(@"Exception:",ex);
+}
+}
 public override void ExecuteMethod
 	(string methodName, string elementName,
 		ref Dictionary<string, ServiceElementData> dfsParam)
@@ -869,6 +1013,10 @@ public override void ExecuteMethod
 }
 	if(methodName.ToLower().Equals("onchange"))
 {
+		if(elementName.ToLower().Equals("m_total"))
+    {
+    			SubscribeElementEvents_m_total(ref dfsParam);
+    }
 }
 	if(methodName.ToLower().Equals("onclick"))
 {
@@ -880,13 +1028,25 @@ public override void ExecuteMethod
 {
 			SubscribeElementEvents_no(ref dfsParam);
 }
+		if(elementName.ToLower().Equals("mf_closed"))
+{
+			SubscribeElementEvents_mf_closed(ref dfsParam);
+}
 		if(elementName.ToLower().Equals("m_addtask"))
 {
 			SubscribeElementEvents_m_addtask(ref dfsParam);
 }
+		if(elementName.ToLower().Equals("mf_active"))
+{
+			SubscribeElementEvents_mf_active(ref dfsParam);
+}
 		if(elementName.ToLower().Equals("m_confdialog"))
 {
 			SubscribeElementEvents_m_confdialog(ref dfsParam);
+}
+		if(elementName.ToLower().Equals("mf_inactive"))
+{
+			SubscribeElementEvents_mf_inactive(ref dfsParam);
 }
 }
 }
