@@ -764,6 +764,12 @@ ISpace["M_Closed"].Value = null;ISpace["M_Total"].Value = null;ISpace["M_Active"
 if(1==1)
 {
 base.WriteDebugInfo(@"if(1==1)");
+ISpace["M_TypeCode"].Value="";
+base.WriteDebugInfo(@"ISpace[""M_TypeCode""].Value="""";");
+}
+if(1==1)
+{
+base.WriteDebugInfo(@"if(1==1)");
 
 var querySource799aca0d883ea868677d5f43dddca1bf =GetQueryExpressionDataSource("799aca0d-883e-a868-677d-5f43dddca1bf");
 
@@ -778,6 +784,11 @@ base.WriteDebugInfo(@"");
 List<Triplet<string, short, short?>> result3af47cd6d5ccfa0478e604749ae0b6b1=acdataIspace5B035305E81B4571BBE4724D00438E54.GetQueryExpressionBindings("3af47cd6-d5cc-fa04-78e6-04749ae0b6b1");
 iSpace.SetGridData(result799aca0d883ea868677d5f43dddca1bf,result3af47cd6d5ccfa0478e604749ae0b6b1,"TastDetails",ref ISpace);
 iSpace.UpdateGridBindDetails("TastDetails",result3af47cd6d5ccfa0478e604749ae0b6b1);
+}
+if(1==1)
+{
+base.WriteDebugInfo(@"if(1==1)");
+
 }
 }
 catch(Exception ex)
@@ -814,6 +825,11 @@ base.WriteDebugInfo(@"");
 List<Triplet<string, short, short?>> result3af47cd6d5ccfa0478e604749ae0b6b1=acdataIspace5B035305E81B4571BBE4724D00438E54.GetQueryExpressionBindings("3af47cd6-d5cc-fa04-78e6-04749ae0b6b1");
 iSpace.SetGridData(result799aca0d883ea868677d5f43dddca1bf,result3af47cd6d5ccfa0478e604749ae0b6b1,"TastDetails",ref ISpace);
 iSpace.UpdateGridBindDetails("TastDetails",result3af47cd6d5ccfa0478e604749ae0b6b1);
+}
+if(1==1)
+{
+base.WriteDebugInfo(@"if(1==1)");
+
 }
 }
 catch(Exception ex)
@@ -960,6 +976,7 @@ if(1==1)
 base.WriteDebugInfo(@"if(1==1)");
 ISpace["M_TypeCode"].Value="DEV";
 base.WriteDebugInfo(@"ISpace[""M_TypeCode""].Value=""DEV"";");
+
 }
 if(1==1)
 {
