@@ -764,12 +764,6 @@ ISpace["M_Closed"].Value = null;ISpace["M_Total"].Value = null;ISpace["M_Active"
 if(1==1)
 {
 base.WriteDebugInfo(@"if(1==1)");
-ISpace["M_TypeCode"].Value="";
-base.WriteDebugInfo(@"ISpace[""M_TypeCode""].Value="""";");
-}
-if(1==1)
-{
-base.WriteDebugInfo(@"if(1==1)");
 
 var querySource799aca0d883ea868677d5f43dddca1bf =GetQueryExpressionDataSource("799aca0d-883e-a868-677d-5f43dddca1bf");
 
