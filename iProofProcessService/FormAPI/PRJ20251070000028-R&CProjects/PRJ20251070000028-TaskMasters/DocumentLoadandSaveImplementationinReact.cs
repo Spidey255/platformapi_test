@@ -555,12 +555,12 @@ base.WriteDebugInfo(@"M_Save-OnClick");
 if(1==1)
 {
 base.WriteDebugInfo(@"if(1==1)");
-base.WriteDebugInfo(@"EXEC UPSERTDocData '#M_DocumentUpload.DocId'");
+base.WriteDebugInfo(@"EXEC UPSERTDocData '#M_DocumentUpload'");
 
 var querySource71ba49b3b8dacf91c78de4f01191c367 =GetQueryExpressionDataSource("71ba49b3-b8da-cf91-c78d-e4f01191c367");
-Dictionary<short,object> result71ba49b3b8dacf91c78de4f01191c367=iSpace.ExecuteQuery(querySource71ba49b3b8dacf91c78de4f01191c367,@"EXEC UPSERTDocData '" + ISpace["M_DocumentUpload"].Value + @".DocId'",false);
+Dictionary<short,object> result71ba49b3b8dacf91c78de4f01191c367=iSpace.ExecuteQuery(querySource71ba49b3b8dacf91c78de4f01191c367,@"EXEC UPSERTDocData '" + ISpace["M_DocumentUpload"].Value + @"'",false);
 
-base.WriteDebugInfo(@"var querySource71ba49b3b8dacf91c78de4f01191c367 =GetQueryExpressionDataSource(""71ba49b3-b8da-cf91-c78d-e4f01191c367"");Dictionary<short,object> result71ba49b3b8dacf91c78de4f01191c367=iSpace.ExecuteQuery(querySource71ba49b3b8dacf91c78de4f01191c367,@""EXEC UPSERTDocData '"" + ISpace[""M_DocumentUpload""].Value + @"".DocId'"",false);");
+base.WriteDebugInfo(@"var querySource71ba49b3b8dacf91c78de4f01191c367 =GetQueryExpressionDataSource(""71ba49b3-b8da-cf91-c78d-e4f01191c367"");Dictionary<short,object> result71ba49b3b8dacf91c78de4f01191c367=iSpace.ExecuteQuery(querySource71ba49b3b8dacf91c78de4f01191c367,@""EXEC UPSERTDocData '"" + ISpace[""M_DocumentUpload""].Value + @""'"",false);");
 base.WriteDebugInfo(@"");
 
 if((result71ba49b3b8dacf91c78de4f01191c367!=null) && (result71ba49b3b8dacf91c78de4f01191c367.Count!=0))
