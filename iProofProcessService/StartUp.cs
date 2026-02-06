@@ -43,12 +43,12 @@ namespace CPS.Proof.DFSExtension
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
-                    Title = "TaskExplorer",
+                    Title = "SaveformandGridModeandDFSTriggersCheck",
                     Description = "Test",
 
                     Contact = new OpenApiContact
                     {
-                        Name = "TaskExplorer",
+                        Name = "SaveformandGridModeandDFSTriggersCheck",
                     },
                     License = new OpenApiLicense
                     {
@@ -89,8 +89,8 @@ namespace CPS.Proof.DFSExtension
                 app.UseSwaggerUI();
                 app.UseSwaggerUI(c =>
                 {
-                    c.DocumentTitle = "TaskExplorer";
-                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "TaskExplorer");
+                    c.DocumentTitle = "SaveformandGridModeandDFSTriggersCheck";
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "SaveformandGridModeandDFSTriggersCheck");
                     c.DisplayOperationId();
                     c.DisplayRequestDuration();
                     c.DocExpansion(DocExpansion.List);
