@@ -379,6 +379,13 @@ namespace CPS.Proof.DFSExtension
                     else
                         return 0;
                 }
+                else if (dataType == 1)
+                {
+                    if (obj != null && obj.ToString() != "")
+                        return long.Parse(obj.ToString());
+                    else
+                        return 0;
+                }
                 switch (obj)
                 {
                     case null:
@@ -409,7 +416,7 @@ namespace CPS.Proof.DFSExtension
             }
             catch (Exception ex)
             {
-                return $"Error: {ex.Message}";
+                throw new Exception(ex.Message);
             }
         }
 

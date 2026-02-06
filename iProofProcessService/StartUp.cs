@@ -43,12 +43,12 @@ namespace CPS.Proof.DFSExtension
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
-                    Title = "DocumentLoadandSaveImplementationinReact",
+                    Title = "TaskExplorer",
                     Description = "Test",
 
                     Contact = new OpenApiContact
                     {
-                        Name = "DocumentLoadandSaveImplementationinReact",
+                        Name = "TaskExplorer",
                     },
                     License = new OpenApiLicense
                     {
@@ -89,8 +89,8 @@ namespace CPS.Proof.DFSExtension
                 app.UseSwaggerUI();
                 app.UseSwaggerUI(c =>
                 {
-                    c.DocumentTitle = "DocumentLoadandSaveImplementationinReact";
-                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "DocumentLoadandSaveImplementationinReact");
+                    c.DocumentTitle = "TaskExplorer";
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "TaskExplorer");
                     c.DisplayOperationId();
                     c.DisplayRequestDuration();
                     c.DocExpansion(DocExpansion.List);

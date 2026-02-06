@@ -89,7 +89,21 @@ namespace CPS.Proof.DFSExtension
                 switch(context.PackageProcessMapId)
                 {
             
-                                      case "71d5fd3d-c295-4a64-956a-9a7262954afb":   var  objectFactoryDocumentLoadandSaveImplementationinReact=new DocumentLoadandSaveImplementationinReactObjectFactory();
+                                      case "7e6b302b-b86e-4442-a995-03bc22d48abc":   var  objectFactoryTaskExplorer=new TaskExplorerObjectFactory();
+                                             virtualpageinstance = objectFactoryTaskExplorer.GetDfsVirtualInstance
+                                                        (context.ProcessActivityMapId);
+
+                                            virtualpageinstance._objectFactory = objectFactoryTaskExplorer;
+                                            break;
+
+                                     case "3cfe092a-c9df-42bd-bb7a-d4a6e90379fc":   var  objectFactoryTaskCreation=new TaskCreationObjectFactory();
+                                             virtualpageinstance = objectFactoryTaskCreation.GetDfsVirtualInstance
+                                                        (context.ProcessActivityMapId);
+
+                                            virtualpageinstance._objectFactory = objectFactoryTaskCreation;
+                                            break;
+
+                                     case "71d5fd3d-c295-4a64-956a-9a7262954afb":   var  objectFactoryDocumentLoadandSaveImplementationinReact=new DocumentLoadandSaveImplementationinReactObjectFactory();
                                              virtualpageinstance = objectFactoryDocumentLoadandSaveImplementationinReact.GetDfsVirtualInstance
                                                         (context.ProcessActivityMapId);
 
@@ -180,7 +194,7 @@ namespace CPS.Proof.DFSExtension
                     return new Response { Message = "Invalid Slot" };
                    }
 
-                return null;
+               return new Response { ExecutionMessage = "Request Failed", Message = string.Format("Error in  ExecuteFormLoad- {0}", ex) };
             }
             finally
             {
@@ -219,7 +233,19 @@ namespace CPS.Proof.DFSExtension
                 switch(context.PackageProcessMapId)
                 {
             
-                                      case "71d5fd3d-c295-4a64-956a-9a7262954afb":   var  objectFactoryDocumentLoadandSaveImplementationinReact=new DocumentLoadandSaveImplementationinReactObjectFactory();
+                                      case "7e6b302b-b86e-4442-a995-03bc22d48abc":   var  objectFactoryTaskExplorer=new TaskExplorerObjectFactory();
+                                             virtualpageinstance = objectFactoryTaskExplorer.GetDfsVirtualInstance
+                                                        (context.ProcessActivityMapId);
+                                            virtualpageinstance._objectFactory = objectFactoryTaskExplorer;
+                                            break;
+
+                                     case "3cfe092a-c9df-42bd-bb7a-d4a6e90379fc":   var  objectFactoryTaskCreation=new TaskCreationObjectFactory();
+                                             virtualpageinstance = objectFactoryTaskCreation.GetDfsVirtualInstance
+                                                        (context.ProcessActivityMapId);
+                                            virtualpageinstance._objectFactory = objectFactoryTaskCreation;
+                                            break;
+
+                                     case "71d5fd3d-c295-4a64-956a-9a7262954afb":   var  objectFactoryDocumentLoadandSaveImplementationinReact=new DocumentLoadandSaveImplementationinReactObjectFactory();
                                              virtualpageinstance = objectFactoryDocumentLoadandSaveImplementationinReact.GetDfsVirtualInstance
                                                         (context.ProcessActivityMapId);
                                             virtualpageinstance._objectFactory = objectFactoryDocumentLoadandSaveImplementationinReact;
@@ -317,7 +343,7 @@ namespace CPS.Proof.DFSExtension
                     return new Response { Message = "Invalid Slot" };
                    }
                                
-                return new Response { ExecutionMessage = "Multirequest Failed" };                    
+                return new Response { ExecutionMessage = "Request Failed",Message=string.Format("Error in  ExecuteMultiRequest in Control {0} {1}", context.ControlId, ex )};                                       
                    
             }
             finally
@@ -358,6 +384,26 @@ namespace CPS.Proof.DFSExtension
                 {
             
                                      
+                    case "7e6b302b-b86e-4442-a995-03bc22d48abc":   
+                                             foreach (var item in context.Params)
+                                             {
+                                            var  objectFactoryTaskExplorer=new TaskExplorerObjectFactory();
+                                             combosource = objectFactoryTaskExplorer.GetComboDataSource
+                                                        (item.ElementName);  
+                                             }
+                                            break;
+                   
+                                    
+                    case "3cfe092a-c9df-42bd-bb7a-d4a6e90379fc":   
+                                             foreach (var item in context.Params)
+                                             {
+                                            var  objectFactoryTaskCreation=new TaskCreationObjectFactory();
+                                             combosource = objectFactoryTaskCreation.GetComboDataSource
+                                                        (item.ElementName);  
+                                             }
+                                            break;
+                   
+                                    
                     case "71d5fd3d-c295-4a64-956a-9a7262954afb":   
                                              foreach (var item in context.Params)
                                              {
@@ -473,7 +519,13 @@ namespace CPS.Proof.DFSExtension
                 switch(context.PackageProcessMapId)
                 {
             
-                                      case "71d5fd3d-c295-4a64-956a-9a7262954afb":  var   elementFactoryDocumentLoadandSaveImplementationinReact=new DocumentLoadandSaveImplementationinReactDataElementFactory();                                            
+                                      case "7e6b302b-b86e-4442-a995-03bc22d48abc":  var   elementFactoryTaskExplorer=new TaskExplorerDataElementFactory();                                            
+                                            break;
+
+                                     case "3cfe092a-c9df-42bd-bb7a-d4a6e90379fc":  var   elementFactoryTaskCreation=new TaskCreationDataElementFactory();                                            
+                                            break;
+
+                                     case "71d5fd3d-c295-4a64-956a-9a7262954afb":  var   elementFactoryDocumentLoadandSaveImplementationinReact=new DocumentLoadandSaveImplementationinReactDataElementFactory();                                            
                                             break;
 
                  
