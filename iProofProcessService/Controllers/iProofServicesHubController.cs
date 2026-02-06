@@ -38,7 +38,7 @@ namespace CPS.Proof.DFSExtension
 
         /// <summary>
         /// Represents the constructor that creates an instance
-        /// of SaveformandGridModeandDFSTriggersCheck Controller.
+        /// of DocumentLoadandSaveImplementationinReact Controller.
         /// </summary>
         /// <param name="configuration">
         /// A <see cref="IConfiguration"/> that holds  
@@ -89,11 +89,11 @@ namespace CPS.Proof.DFSExtension
                 switch(context.PackageProcessMapId)
                 {
             
-                                      case "538a803e-6c06-4c27-93cc-70c799929208":   var  objectFactorySaveformandGridModeandDFSTriggersCheck=new SaveformandGridModeandDFSTriggersCheckObjectFactory();
-                                             virtualpageinstance = objectFactorySaveformandGridModeandDFSTriggersCheck.GetDfsVirtualInstance
+                                      case "71d5fd3d-c295-4a64-956a-9a7262954afb":   var  objectFactoryDocumentLoadandSaveImplementationinReact=new DocumentLoadandSaveImplementationinReactObjectFactory();
+                                             virtualpageinstance = objectFactoryDocumentLoadandSaveImplementationinReact.GetDfsVirtualInstance
                                                         (context.ProcessActivityMapId);
 
-                                            virtualpageinstance._objectFactory = objectFactorySaveformandGridModeandDFSTriggersCheck;
+                                            virtualpageinstance._objectFactory = objectFactoryDocumentLoadandSaveImplementationinReact;
                                             break;
 
                  
@@ -219,10 +219,10 @@ namespace CPS.Proof.DFSExtension
                 switch(context.PackageProcessMapId)
                 {
             
-                                      case "538a803e-6c06-4c27-93cc-70c799929208":   var  objectFactorySaveformandGridModeandDFSTriggersCheck=new SaveformandGridModeandDFSTriggersCheckObjectFactory();
-                                             virtualpageinstance = objectFactorySaveformandGridModeandDFSTriggersCheck.GetDfsVirtualInstance
+                                      case "71d5fd3d-c295-4a64-956a-9a7262954afb":   var  objectFactoryDocumentLoadandSaveImplementationinReact=new DocumentLoadandSaveImplementationinReactObjectFactory();
+                                             virtualpageinstance = objectFactoryDocumentLoadandSaveImplementationinReact.GetDfsVirtualInstance
                                                         (context.ProcessActivityMapId);
-                                            virtualpageinstance._objectFactory = objectFactorySaveformandGridModeandDFSTriggersCheck;
+                                            virtualpageinstance._objectFactory = objectFactoryDocumentLoadandSaveImplementationinReact;
                                             break;
 
                  
@@ -358,11 +358,11 @@ namespace CPS.Proof.DFSExtension
                 {
             
                                      
-                    case "538a803e-6c06-4c27-93cc-70c799929208":   
+                    case "71d5fd3d-c295-4a64-956a-9a7262954afb":   
                                              foreach (var item in context.Params)
                                              {
-                                            var  objectFactorySaveformandGridModeandDFSTriggersCheck=new SaveformandGridModeandDFSTriggersCheckObjectFactory();
-                                             combosource = objectFactorySaveformandGridModeandDFSTriggersCheck.GetComboDataSource
+                                            var  objectFactoryDocumentLoadandSaveImplementationinReact=new DocumentLoadandSaveImplementationinReactObjectFactory();
+                                             combosource = objectFactoryDocumentLoadandSaveImplementationinReact.GetComboDataSource
                                                         (item.ElementName);  
                                              }
                                             break;
@@ -473,7 +473,7 @@ namespace CPS.Proof.DFSExtension
                 switch(context.PackageProcessMapId)
                 {
             
-                                      case "538a803e-6c06-4c27-93cc-70c799929208":  var   elementFactorySaveformandGridModeandDFSTriggersCheck=new SaveformandGridModeandDFSTriggersCheckDataElementFactory();                                            
+                                      case "71d5fd3d-c295-4a64-956a-9a7262954afb":  var   elementFactoryDocumentLoadandSaveImplementationinReact=new DocumentLoadandSaveImplementationinReactDataElementFactory();                                            
                                             break;
 
                  
